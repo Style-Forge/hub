@@ -1,0 +1,14 @@
+{
+  "name": "style-forge",
+  "version": "1.0.1",
+  "description": "Utility SCSS/CSS framework",
+  "main": "index.scss",
+  "repository": "git@github.com:Sarmaged/style-forge.git",
+  "author": "Sarmaged <sarmaged@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "StyleForge",
+    "style-forge",
+    "scss"
+  ]
+}
