@@ -1,3 +1,7 @@
-.idea
-.editorconfig
 test
+.vscode
+.idea
+*.iml
+*.lock
+.editorconfig
+.gitignore

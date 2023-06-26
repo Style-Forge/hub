@@ -1,14 +1,33 @@
 {
   "name": "style-forge",
   "version": "1.0.1",
-  "description": "Utility SCSS/CSS framework",
-  "main": "index.scss",
-  "repository": "git@github.com:Sarmaged/style-forge.git",
+  "description": "StyleForge CSS framework",
+  "main": "style-forge.css",
+  "repository": "github:sarmaged/style-forge.git",
   "author": "Sarmaged <sarmaged@gmail.com>",
   "license": "MIT",
   "keywords": [
     "StyleForge",
     "style-forge",
-    "scss"
-  ]
+    "css",
+    "grid",
+    "html"
+  ],
+  "scripts": {
+    "build": "node builder.js",
+    "prepublishOnly": "node builder.js"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.23",
+    "postcss-combine-duplicated-selectors": "^10.0.3",
+    "postcss-discard-comments": "^6.0.0",
+    "postcss-import": "^15.1.0",
+    "postcss-minify": "^1.1.0"
+  },
+  "dependencies": {
+    "style-forge.base": "^4.0.1",
+    "style-forge.form": "^2.0.0",
+    "style-forge.patterns": "^1.3.0"
+  }
 }
