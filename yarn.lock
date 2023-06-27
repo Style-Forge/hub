@@ -170,20 +170,20 @@ source-map-js@^1.0.2:
   resolved "https://registry.yarnpkg.com/source-map-js/-/source-map-js-1.0.2.tgz#adbc361d9c62df380125e7f161f71c826f1e490c"
   integrity sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==
 
-style-forge.base@^4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/style-forge.base/-/style-forge.base-4.0.1.tgz#41c52276dbe8c6928c289a22cf94c313cf8beb3a"
-  integrity sha512-P9cupk+2Mna29+gJOuckqUDZURvCdbiBBitKnsoj0XnbeX3merJben53/cSOcxsqbxnmtHkRES7jGejWgnPAkg==
+style-forge.base@^4.0.3:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/style-forge.base/-/style-forge.base-4.0.3.tgz#83082c7569ff05d97eb64136516afb8bd68ef6c3"
+  integrity sha512-nj40P0vxZ217hpCCmr64BfpfVbOqGxIFG/QxX57MSqj40SWSmrein/a+/cLxHhf15BbolzqJ12IofL6A4rWI9A==
 
-style-forge.form@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/style-forge.form/-/style-forge.form-2.0.0.tgz#ea4eca7075362473b04eaf26b64d06859af42e3e"
-  integrity sha512-Z7aNxclTMrM2jnC1XQgaK0q2Vy9XnIoPfrxGF5g7oBZcXytph4pCu6G+SpeLa4yIVX15rwvVLbrEG9Pv6gYexA==
+style-forge.form@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/style-forge.form/-/style-forge.form-2.0.1.tgz#2dc312843ced92eecf4e5f77a597647e2e55e269"
+  integrity sha512-jAe3Q2idnl/n/OGaYIVmvoRvb+0Os69+xRVrHIsptTLiseVTZ1y4PL+zHRRsGrpEy5h4DYRJ6CPjsHasYostfg==
 
-style-forge.patterns@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/style-forge.patterns/-/style-forge.patterns-1.3.0.tgz#587c8afb0c65ce54c74641a65644dec402906fa6"
-  integrity sha512-PJzXOIxTp0h8zprNiUeM0omUwOfL3Qe8Iqij5FfcV1vTvhpEmduTd98j+MvopJPzB461yig6itiLBpJUpv8ZFA==
+style-forge.patterns@^1.3.3:
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/style-forge.patterns/-/style-forge.patterns-1.3.3.tgz#44b779284ae538501a04e0efc5f2717f83c885a4"
+  integrity sha512-Ycnyfelhd3PFoAjG5KjTPK/1HfKV0+uDWcV3Z1BQEfeqzAbAMNEqLBevWZ4/WsxlGQlDc3HUOkrtT/5t5KkOtQ==
 
 supports-preserve-symlinks-flag@^1.0.0:
   version "1.0.0"

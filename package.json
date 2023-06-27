@@ -26,8 +26,8 @@
     "postcss-minify": "^1.1.0"
   },
   "dependencies": {
-    "style-forge.base": "^4.0.1",
-    "style-forge.form": "^2.0.0",
-    "style-forge.patterns": "^1.3.0"
+    "style-forge.base": "^4.0.3",
+    "style-forge.form": "^2.0.1",
+    "style-forge.patterns": "^1.3.3"
   }
 }
