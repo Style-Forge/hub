@@ -50,17 +50,29 @@ This is styling of all input fields
 <b>It includes</b>
 
 - button
-- checkbox-radio
-- color
-- file
 - input
-- loading
-- range
-- search
-- select
-- switch [multiple]
+  - text 
+  - search 
+  - email 
+  - number 
+  - password 
+  - tel 
+  - url 
+  - color 
+  - file 
+  - image 
+  - range
+  - time 
+  - week 
+  - month 
+  - date 
+  - datetime-local
+- checkbox
+- radio
+- select [multiple]
+- switch [multiple] [supports vertical]
 - textarea
-- time
+- datalist
 
 <hr />
 
