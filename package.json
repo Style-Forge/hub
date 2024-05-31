@@ -1,7 +1,8 @@
 {
   "name": "style-forge",
-  "version": "1.1.3",
+  "version": "2.0.0",
   "description": "StyleForge CSS framework",
+  "type": "module",
   "main": "style-forge.css",
   "repository": "github:sarmaged/style-forge.git",
   "author": "Sarmaged <sarmaged@gmail.com>",
@@ -9,9 +10,20 @@
   "keywords": [
     "StyleForge",
     "style-forge",
+    "html",
     "css",
+    "addition",
+    "colors",
+    "flex",
+    "form",
     "grid",
-    "html"
+    "helpers",
+    "input",
+    "select",
+    "switch",
+    "textarea",
+    "themes",
+    "validate"
   ],
   "scripts": {
     "build": "node builder.js",
@@ -26,8 +38,11 @@
     "postcss-minify": "^1.1.0"
   },
   "dependencies": {
-    "style-forge.base": "^4.0.3",
-    "style-forge.form": "^2.0.1",
-    "style-forge.patterns": "^1.3.3"
+    "style-forge.base": "^5.0.1",
+    "style-forge.colors": "^1.0.0",
+    "style-forge.form": "^3.0.1",
+    "style-forge.helpers": "^1.0.1",
+    "style-forge.patterns": "^2.0.0",
+    "style-forge.themes": "^1.0.5"
   }
 }
