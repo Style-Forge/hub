@@ -1,5 +1,6 @@
 # StyleForge
 CSS framework
+This CSS framework provides a modern approach to page design that can improve performance/display on all devices.
 
 [![npm](https://img.shields.io/npm/v/style-forge)][npm-link]
 [![npm](https://img.shields.io/npm/dm/style-forge)][npm-link]
@@ -7,16 +8,13 @@ CSS framework
 
 <hr />
 
-This package contains three utilities
-- [style-forge.base][npm-link-base]
-- [style-forge.form][npm-link-form]
-- [style-forge.patterns][npm-link-patterns]
-
-These utilities provide an innovative approach to page layout that can improve (performance/display) of pages on all devices.
-
-⚠️ Warning
-But it can also worsen if there is no understanding of how Grid layout works
-With numerous nested Grid templates, rendering can be degraded (for example, for mobile devices)
+## Utilities
+- [style-forge.base][npm-link-base] 
+- [style-forge.helpers][npm-link-helpers] 
+- [style-forge.form][npm-link-form] 
+- [style-forge.themes][npm-link-themes] 
+- [style-forge.patterns][npm-link-patterns] 
+- [style-forge.colors][npm-link-colors]
 
 <hr />
 
@@ -30,68 +28,16 @@ yarn add style-forge
 
 <hr />
 
-## Description of modules
-
-### [style-forge.base][npm-link-base]
-This is a basic style converter on Grid
-
-<b>It includes</b>
-
-- Normalization of all styles
-- Transformation of block elements into Grid
-- Support for color themes
-- Innovative approach to layout using attributes
-
-<hr />
-
-### [style-forge.form][npm-link-form]
-This is styling of all input fields
-
-<b>It includes</b>
-
-- button
-- input
-  - text 
-  - search 
-  - email 
-  - number 
-  - password 
-  - tel 
-  - url 
-  - color 
-  - file 
-  - image 
-  - range
-  - time 
-  - week 
-  - month 
-  - date 
-  - datetime-local
-- checkbox
-- radio
-- select [multiple]
-- switch [multiple] [supports vertical]
-- textarea
-- datalist
-
-<hr />
-
-### [style-forge.patterns][npm-link-patterns]
-These are grid patterns
-
-<b>It includes</b>
-
-- grid model for the site [media query for mobile devices]
-- media model
-
-
 ## License [![NPM](https://img.shields.io/npm/l/style-forge)](https://github.com/Sarmaged/style-forge/blob/main/LICENSE)
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
 [npm-link]: https://www.npmjs.com/package/style-forge
 [npm-link-base]: https://www.npmjs.com/package/style-forge.base
+[npm-link-helpers]: https://www.npmjs.com/package/style-forge.helpers
 [npm-link-form]: https://www.npmjs.com/package/style-forge.form
+[npm-link-themes]: https://www.npmjs.com/package/style-forge.themes
 [npm-link-patterns]: https://www.npmjs.com/package/style-forge.patterns
+[npm-link-colors]: https://www.npmjs.com/package/style-forge.colors
 
 [github-link]: https://github.com/Sarmaged/style-forge
