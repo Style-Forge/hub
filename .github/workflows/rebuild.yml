@@ -24,22 +24,34 @@ jobs:
 
       - name: Update version in package.json
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           # Extract repository name and tag from client_payload
           REPO_NAME=$(jq -r '.client_payload.repository' $GITHUB_EVENT_PATH)
           TAG=$(jq -r '.client_payload.ref' $GITHUB_EVENT_PATH | sed 's/refs\/tags\///')
 
-          # Update the version in package.json
-          jq --arg repo $REPO_NAME --arg tag $TAG '.dependencies[$repo] = $tag' package.json > temp.json && mv temp.json package.json
+          # Log extracted values
+          echo "Extracted repository name: $REPO_NAME"
+          echo "Extracted tag: $TAG"
 
-          # Commit changes to update dependency version
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add package.json
-          git commit -m "Update $REPO_NAME to version $TAG"
-          git push origin HEAD
+          # Check if REPO_NAME and TAG are not null and not empty
+          if [ "$REPO_NAME" != "null" ] && [ "$TAG" != "null" ] && [ -n "$REPO_NAME" ] && [ -n "$TAG" ]; then
+            echo "Updating package.json with $REPO_NAME@$TAG"
+            # Update the version in package.json
+            jq --arg repo "$REPO_NAME" --arg tag "$TAG" '.dependencies[$repo] = $tag' package.json > temp.json && mv temp.json package.json
 
+            # Log updated package.json
+            cat package.json
+
+            # Commit changes to update dependency version
+            git config --global user.name 'github-actions[bot]'
+            git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+            git add package.json
+            git commit -m "Update $REPO_NAME to version $TAG"
+            git push origin HEAD
+          else
+            echo "REPO_NAME or TAG is null or empty, skipping update"
+          fi
       - name: Increment minor version
         run: |
           git config --global user.name 'github-actions[bot]'
@@ -53,4 +65,4 @@ jobs:
       - name: Publish to npm
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: yarn publish --non-interactive
+        run: yarn publish
