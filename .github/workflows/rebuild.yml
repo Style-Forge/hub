@@ -24,7 +24,7 @@ jobs:
 
       - name: Update version in package.json
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           # Extract repository name and tag from client_payload
           REPO_NAME=$(jq -r '.client_payload.repository' $GITHUB_EVENT_PATH)
@@ -52,6 +52,7 @@ jobs:
           else
             echo "REPO_NAME or TAG is null or empty, skipping update"
           fi
+
       - name: Increment minor version
         run: |
           git config --global user.name 'github-actions[bot]'
