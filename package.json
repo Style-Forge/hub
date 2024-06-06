@@ -44,7 +44,6 @@
     "postcss-minify": "^1.1.0"
   },
   "dependencies": {
-    "null": "null",
     "style-forge.base": "^5.0.1",
     "style-forge.colors": "^1.0.0",
     "style-forge.form": "^3.0.1",
