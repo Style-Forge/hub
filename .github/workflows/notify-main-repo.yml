@@ -1,0 +1,15 @@
+name: Notify main repo on new tag
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send notification
+        run: curl -X POST -H "Content-Type: application/json" \
+               -d '{"repository": "${{ github.repository }}", "ref": "${{ github.ref }}"}' \
+               ${{ secrets.MAIN_REPO_WEBHOOK_URL }}
