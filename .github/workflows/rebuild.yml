@@ -18,7 +18,7 @@ jobs:
           node-version: '14'
 
       - name: Install dependencies
-        run: npm install
+        run: yarn install
 
       - name: Update version in package.json
         env:
@@ -31,15 +31,27 @@ jobs:
           # Update the version in package.json
           jq --arg repo $REPO_NAME --arg tag $TAG '.dependencies[$repo] = $tag' package.json > temp.json && mv temp.json package.json
 
-          # Commit and push changes
+          # Commit changes to update dependency version
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add package.json
           git commit -m "Update $REPO_NAME to version $TAG"
           git push origin HEAD
 
+      - name: Increment minor version
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          yarn version --minor
+          git push origin HEAD --tags
+
       - name: Build project
-        run: npm run build
+        run: yarn build
 
       - name: Run tests
-        run: npm test
+        run: yarn test
+
+      - name: Publish to npm
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: yarn publish --non-interactive

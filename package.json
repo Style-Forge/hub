@@ -23,7 +23,13 @@
     "switch",
     "textarea",
     "themes",
-    "validate"
+    "validate",
+    "responsive design",
+    "CSS grid",
+    "CSS flexbox",
+    "UI components",
+    "form validation",
+    "custom themes"
   ],
   "scripts": {
     "build": "node builder.js",
