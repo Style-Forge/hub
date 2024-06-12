@@ -1,6 +1,6 @@
 {
   "name": "style-forge",
-  "version": "2.5.20",
+  "version": "2.6.0",
   "description": "StyleForge CSS framework",
   "type": "module",
   "main": "style-forge.css",
