@@ -37,6 +37,7 @@ jobs:
         run: |
           git add package.json yarn.lock style-forge.css
           git diff --cached --exit-code || echo "Changes detected" > changes.txt
+          echo "::set-output name=changes::$(cat changes.txt)"
         continue-on-error: true
 
       - name: Commit changes
