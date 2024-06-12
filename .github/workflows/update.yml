@@ -32,15 +32,19 @@ jobs:
         id: get_update_type
         run: echo "Update type is ${{ github.event.client_payload.update_type }}"
 
-      - name: Update dependencies and increment version
+      - name: Update dependencies
+        run: yarn upgrade --latest
+
+      - name: Increment version
         run: |
-          yarn upgrade --latest
           if [ "${{ github.event.client_payload.update_type }}" == "patch" ]; then
             yarn version --patch
           else
             yarn version --minor
           fi
-          yarn build
+
+      - name: Build project
+        run: yarn build
 
       - name: Check for changes
         id: git-status
