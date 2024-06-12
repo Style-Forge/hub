@@ -28,8 +28,21 @@ jobs:
       - name: Yarn
         run: |
           yarn install
+
+      - name: Determine version update type
+        id: get_update_type
+        run: echo "Update type is ${{ github.event.client_payload.update_type }}"
+
+      - name: Update dependencies and increment version
+        run: |
           yarn upgrade --latest
-          yarn version --patch
+          if [ "${{ github.event.client_payload.update_type }}" == "patch" ]; then
+            yarn version --patch
+          elif [ "${{ github.event.client_payload.update_type }}" == "minor" ]; then
+            yarn version --minor
+          elif [ "${{ github.event.client_payload.update_type }}" == "major" ]; then
+            yarn version --major
+          fi
           yarn build
 
       - name: Check for changes
