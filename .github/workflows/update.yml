@@ -45,10 +45,6 @@ jobs:
         run: |
           git commit -m 'chore: update dependencies and increment version'
 
-      - name: Pull latest changes
-        if: steps.git-status.outputs.changes != ''
-        run: git pull origin main --rebase
-
       - name: Push changes
         if: steps.git-status.outputs.changes != ''
         uses: ad-m/github-push-action@v0.6.0
