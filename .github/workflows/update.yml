@@ -18,7 +18,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 20
+          node-version: "20"
 
       - name: Configure git
         run: |
@@ -47,16 +47,16 @@ jobs:
         run: |
           git add package.json yarn.lock style-forge.css
           git diff --cached --exit-code || echo "Changes detected" > changes.txt
-          echo "::set-output name=changes::$(cat changes.txt)"
+          if [ -f changes.txt ]; then echo "changes=true" >> $GITHUB_ENV; else echo "changes=false" >> $GITHUB_ENV; fi
         continue-on-error: true
 
       - name: Commit changes
-        if: steps.git-status.outputs.changes != ''
+        if: env.changes == 'true'
         run: |
           git commit -m 'chore: update dependencies and increment version'
 
       - name: Push changes
-        if: steps.git-status.outputs.changes != ''
+        if: env.changes == 'true'
         uses: ad-m/github-push-action@v0.6.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -64,11 +64,11 @@ jobs:
           tags: true
 
       - name: Set up NPM auth
-        if: steps.git-status.outputs.changes != ''
+        if: env.changes == 'true'
         run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
 
       - name: Publish to npm
-        if: steps.git-status.outputs.changes != ''
+        if: env.changes == 'true'
         run: yarn publish --non-interactive
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
