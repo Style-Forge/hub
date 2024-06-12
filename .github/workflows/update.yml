@@ -56,12 +56,12 @@ jobs:
 
       - name: Commit changes
         if: env.changes == 'true'
-        uses: github-actions-x/commit@v2
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          commit_message: 'chore: update dependencies and increment version'
-          branch: main
-          tags: true
+        run: |
+          git commit -m 'chore: update dependencies and increment version'
+
+      - name: Push changes
+        if: env.changes == 'true'
+        run: git push origin main --tags
 
       - name: Set up NPM auth
         if: env.changes == 'true'
