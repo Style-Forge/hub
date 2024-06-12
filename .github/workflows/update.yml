@@ -29,24 +29,16 @@ jobs:
         run: |
           yarn install
           yarn upgrade --latest
-          yarn build
           yarn version --patch
-
-      - name: Show git status before adding changes
-        run: git status
+          yarn build
 
       - name: Check for changes
         id: git-status
         run: |
           git add package.json yarn.lock style-forge.css
-          git status
           git diff --cached --exit-code || echo "Changes detected" > changes.txt
           echo "::set-output name=changes::$(cat changes.txt)"
         continue-on-error: true
-
-      - name: Show changes
-        if: always()
-        run: git diff --cached
 
       - name: Commit changes
         if: steps.git-status.outputs.changes != ''
@@ -61,15 +53,12 @@ jobs:
           branch: main
           tags: true
 
+      - name: Set up NPM auth
+        if: steps.git-status.outputs.changes != ''
+        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+
       - name: Publish to npm
         if: steps.git-status.outputs.changes != ''
         run: yarn publish --non-interactive
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-
-      - name: Debug output
-        run: |
-          echo "Contents of package.json after updates:"
-          cat package.json
-          echo "Contents of style-forge.css after build:"
-          cat style-forge.css
