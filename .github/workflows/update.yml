@@ -37,10 +37,10 @@ jobs:
 
       - name: Increment version
         run: |
-          if [ "${{ github.event.client_payload.update_type }}" == "patch" ]; then
-            yarn version --patch
-          else
+          if [ "${{ github.event.client_payload.update_type }}" == "minor" ] || [ "${{ github.event.client_payload.update_type }}" == "major" ]; then
             yarn version --minor
+          else
+            yarn version --patch
           fi
 
       - name: Build project
