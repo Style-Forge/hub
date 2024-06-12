@@ -1,6 +1,6 @@
 {
   "name": "style-forge",
-  "version": "2.5.0",
+  "version": "2.5.1",
   "description": "StyleForge CSS framework",
   "type": "module",
   "main": "style-forge.css",
@@ -38,15 +38,15 @@
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.23",
     "postcss-combine-duplicated-selectors": "^10.0.3",
-    "postcss-discard-comments": "^6.0.0",
-    "postcss-import": "^15.1.0",
+    "postcss-discard-comments": "^7.0.0",
+    "postcss-import": "^16.1.0",
     "postcss-minify": "^1.1.0"
   },
   "dependencies": {
     "style-forge.base": "^5.0.1",
     "style-forge.colors": "^1.0.0",
     "style-forge.form": "^3.0.1",
-    "style-forge.helpers": "^1.0.1",
+    "style-forge.helpers": "^1.0.134",
     "style-forge.patterns": "^2.0.0",
     "style-forge.themes": "^1.0.5"
   }
