@@ -170,10 +170,10 @@ source-map-js@^1.2.0:
   resolved "https://registry.yarnpkg.com/source-map-js/-/source-map-js-1.2.0.tgz#16b809c162517b5b8c3e7dcd315a2a5c2612b2af"
   integrity sha512-itJW8lvSA0TXEphiRoawsCksnlf8SyvmFzIhltqAHluXd88pkCd+cXJVHTDwdCr0IzwptSm035IHQktUu1QUMg==
 
-style-forge.base@^5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/style-forge.base/-/style-forge.base-5.0.1.tgz#98497318f88efb18cf5531a9af1522dd7725ad50"
-  integrity sha512-acDpAFu0PCJDSMNbX5UkPUnPrNQOgQPSTAm9KDW82hWZeru95BOCvAJGW00sOroQMABC9DHS4BZmYVCMI2aAOQ==
+style-forge.base@^5.0.2:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/style-forge.base/-/style-forge.base-5.0.2.tgz#3fafcca8522d673c1d7edfacac113d8fe558bfe2"
+  integrity sha512-hLH+hT+/yUtAt+OIGxUqJZN864LGllNtEarw/jTVaPzoaeD72AVnexKundZmQOPiYBNve1WTmYn++7E9eaC2/g==
 
 style-forge.colors@^1.0.0:
   version "1.0.0"
