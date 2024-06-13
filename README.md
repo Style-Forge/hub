@@ -8,7 +8,7 @@
 
 ## Description
 
-The `style-forge` package is a comprehensive CSS framework designed for modern web development. It provides a wide range of utilities and components to streamline the process of building responsive, aesthetically pleasing websites. With features like customizable themes, utility classes, and support for modern CSS technologies like flexbox and grid, `style-forge` aims to enhance productivity and maintainability in frontend development.
+`Style-Forge` package is a comprehensive CSS framework designed for modern web development. It provides a wide range of utilities and components to streamline the process of building responsive, aesthetically pleasing websites. With features like customizable themes, utility classes, and support for modern CSS technologies like flexbox and grid, `style-forge` aims to enhance productivity and maintainability in frontend development.
 
 ## Installation
 
