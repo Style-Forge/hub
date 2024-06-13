@@ -38,15 +38,14 @@ import 'style-forge';
 
 ## Contributing
 
-We welcome contributions from the community! Please follow these steps to contribute:
+If you would like to contribute, please refer to the contributing guidelines in the following repositories:
 
-1. Fork the repository.
-2. Create a new branch: `git checkout -b feature/branch-name`.
-3. Make your changes and commit them: `git commit -am 'Add some feature'`.
-4. Push your changes to the forked repository: `git push origin feature/branch-name`.
-5. Create a pull request in the original repository.
-
-For more detailed information, please refer to [CONTRIBUTING.md](CONTRIBUTING.md).
+- [style-forge.base](https://github.com/Sarmaged/style-forge.base)
+- [style-forge.colors](https://github.com/Sarmaged/style-forge.colors)
+- [style-forge.form](https://github.com/Sarmaged/style-forge.form)
+- [style-forge.helpers](https://github.com/Sarmaged/style-forge.helpers)
+- [style-forge.patterns](https://github.com/Sarmaged/style-forge.patterns)
+- [style-forge.themes](https://github.com/Sarmaged/style-forge.themes)
 
 ## License
 
