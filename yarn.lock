@@ -195,10 +195,10 @@ style-forge.patterns@^2.0.0:
   resolved "https://registry.yarnpkg.com/style-forge.patterns/-/style-forge.patterns-2.0.0.tgz#f7afa99d998f8f1279b5581c08cdf02abc14007c"
   integrity sha512-l9VOQe5qvUCFRwTmNt8+p5/0TcjRN08HaEIBw0LgVewaBAU133monoFShVTRP12+vNXXRxq+5zof9A3JkajxpQ==
 
-style-forge.themes@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/style-forge.themes/-/style-forge.themes-1.0.6.tgz#7cc7465066a7d10511383aeea006003584e5c521"
-  integrity sha512-rj5zs4BWgEEUrHZPEYGXduJtnlKcmBYe+hpckjIGSa9ecysWsfnQppVEEM16jEaFJUxHZWLAwJPNJWqIP5CPSg==
+style-forge.themes@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/style-forge.themes/-/style-forge.themes-1.0.7.tgz#83cfbc52fde6bfc23029054469be69433e953496"
+  integrity sha512-TJeRvkdZ9eHlzhFhob0Pd1c0Ih+b6qGdIMRXy4WfCm3noeK9J9EX05QUtE9EBRJr3l0e4koGmIzweyArU5Paxw==
 
 supports-preserve-symlinks-flag@^1.0.0:
   version "1.0.0"
