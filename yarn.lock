@@ -35,9 +35,9 @@ cssesc@^3.0.0:
   integrity sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==
 
 electron-to-chromium@^1.4.796:
-  version "1.4.801"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.801.tgz#0dba4f20638d80a2de512ca5aab138fda0b13637"
-  integrity sha512-PnlUz15ii38MZMD2/CEsAzyee8tv9vFntX5nhtd2/4tv4HqY7C5q2faUAjmkXS/UFpVooJ/5H6kayRKYWoGMXQ==
+  version "1.4.802"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.802.tgz#49b397eadc95a49b1ac33eebee146b8e5a93773f"
+  integrity sha512-TnTMUATbgNdPXVSHsxvNVSG0uEd6cSZsANjm8c9HbvflZVVn1yTRcmVXYT1Ma95/ssB/Dcd30AHweH2TE+dNpA==
 
 escalade@^3.1.2:
   version "3.1.2"
@@ -195,10 +195,10 @@ style-forge.patterns@^2.0.2:
   resolved "https://registry.yarnpkg.com/style-forge.patterns/-/style-forge.patterns-2.0.2.tgz#503895d6447e7fbd4c9613fd868f21ff4b2e8066"
   integrity sha512-fx43XgEoWeiOP9hT5ki942Sp40T3fi41rMsV/vaug8LgVqwRCcCmRXPQMUxZ5hxaUTmz9YW/inOwYcOaIHZHMg==
 
-style-forge.themes@^1.0.8:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/style-forge.themes/-/style-forge.themes-1.0.8.tgz#002f687e01345e66e52750ce9473336ce796d044"
-  integrity sha512-ST5+G4YcdVNuMRg78FGrxVRtLatimC6EuBIat4IJy1pQjyu4esdOrNukI11XF6b6fYvA9sVutBZ4xsP4kknF9Q==
+style-forge.themes@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/style-forge.themes/-/style-forge.themes-1.0.9.tgz#f8e704bb50e0f140924a3830885fc77f9b530ab5"
+  integrity sha512-77uvJbDB7smBMvDN8I6Gyo2L/a47jxk7MK9mpFLdsL41xLphST5D8BiIZyZJQ8i3dmwYuvFEDFPrkpneDE/Ajg==
 
 supports-preserve-symlinks-flag@^1.0.0:
   version "1.0.0"
