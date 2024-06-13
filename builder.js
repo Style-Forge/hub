@@ -13,7 +13,7 @@ const css = fs.readFileSync(from, 'utf8')
 const packageFile = JSON.parse(fs.readFileSync('package.json', 'utf8'))
 const title = packageFile.name + ' v' + packageFile.version
 const license = packageFile.license + ' License'
-const link = 'github.com/' + packageFile.repository.split(':')[1]
+const link = packageFile.repository.url.replace('git+', '').replace('.git', '')
 const header = '/*! ' + [title, license, link].join(' | ') + ' */'
 
 const plugins = [pImport, pDuplicated, pComments, pAutoprefixer, pMinify]
