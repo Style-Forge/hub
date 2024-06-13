@@ -32,6 +32,9 @@ jobs:
         id: get_update_type
         run: echo "Update type is ${{ github.event.client_payload.update_type }}"
 
+      - name: Wait for 10 seconds
+        run: sleep 10
+
       - name: Update dependencies
         run: yarn upgrade --latest
 
