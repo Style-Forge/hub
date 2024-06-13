@@ -1,12 +1,14 @@
-# Style Forge
 
-Style Forge is a CSS framework that provides a modern approach to page design, improving performance and display on all devices.
+# Style-Forge
 
-[![npm](https://img.shields.io/npm/v/style-forge)][npm-link]
-[![npm](https://img.shields.io/npm/dm/style-forge)][npm-link]
-[![GitHub Repo stars](https://img.shields.io/github/stars/sarmaged/style-forge?style=social)][github-link]
+![npm](https://img.shields.io/npm/v/style-forge)
+![npm](https://img.shields.io/npm/dm/style-forge)
+![license](https://img.shields.io/npm/l/style-forge)
+![build](https://github.com/Sarmaged/style-forge/actions/workflows/publish.yml/badge.svg)
 
-<hr />
+## Description
+
+The `style-forge` package is a comprehensive CSS framework designed for modern web development. It provides a wide range of utilities and components to streamline the process of building responsive, aesthetically pleasing websites. With features like customizable themes, utility classes, and support for modern CSS technologies like flexbox and grid, `style-forge` aims to enhance productivity and maintainability in frontend development.
 
 ## Installation
 
@@ -20,28 +22,9 @@ npm install style-forge
 yarn add style-forge
 ```
 
-<hr />
-
 ## Usage
 
-Here's a basic example of how to use Style Forge:
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="path/to/style-forge.css">
-</head>
-<body>
-    <!-- Your HTML content -->
-</body>
-</html>
-```
-
-Or, after installation, you can import the CSS file into your project:
+After installation, you can import the CSS file into your project:
 
 ```css
 @import "style-forge";
@@ -53,38 +36,36 @@ Or, if you are using Webpack or another module bundler:
 import 'style-forge';
 ```
 
+## Contributing
 
-## Features
+We welcome contributions from the community! Please follow these steps to contribute:
 
-- Modern and responsive design
-- Utilities for various styling needs
-- Integration with different components
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature/branch-name`.
+3. Make your changes and commit them: `git commit -am 'Add some feature'`.
+4. Push your changes to the forked repository: `git push origin feature/branch-name`.
+5. Create a pull request in the original repository.
 
-## Utilities and Rebuild
-
-This repository is rebuilt using the following external repositories when their main branch is updated after a successful PR:
-
-- [style-forge.base][npm-link-base]
-- [style-forge.helpers][npm-link-helpers]
-- [style-forge.form][npm-link-form]
-- [style-forge.themes][npm-link-themes]
-- [style-forge.patterns][npm-link-patterns]
-- [style-forge.colors][npm-link-colors]
+For more detailed information, please refer to [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Links
+
+- [style-forge](https://github.com/Sarmaged/style-forge)
+- [style-forge.base](https://github.com/Sarmaged/style-forge.base)
+- [style-forge.colors](https://github.com/Sarmaged/style-forge.colors)
+- [style-forge.form](https://github.com/Sarmaged/style-forge.form)
+- [style-forge.helpers](https://github.com/Sarmaged/style-forge.helpers)
+- [style-forge.patterns](https://github.com/Sarmaged/style-forge.patterns)
+- [style-forge.themes](https://github.com/Sarmaged/style-forge.themes)
 
 ## Authors
 
 - **Dmitrii Sagalov** - *Expert in interface development* - [Sarmaged](https://github.com/Sarmaged)
 
-[npm-link]: https://www.npmjs.com/package/style-forge
-[npm-link-base]: https://www.npmjs.com/package/style-forge.base
-[npm-link-helpers]: https://www.npmjs.com/package/style-forge.helpers
-[npm-link-form]: https://www.npmjs.com/package/style-forge.form
-[npm-link-themes]: https://www.npmjs.com/package/style-forge.themes
-[npm-link-patterns]: https://www.npmjs.com/package/style-forge.patterns
-[npm-link-colors]: https://www.npmjs.com/package/style-forge.colors
+## Contact
 
-[github-link]: https://github.com/Sarmaged/style-forge
+If you have any questions or suggestions, please open an issue in [Issues](https://github.com/Sarmaged/style-forge/issues).
