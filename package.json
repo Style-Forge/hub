@@ -1,6 +1,6 @@
 {
   "name": "style-forge",
-  "version": "2.6.3",
+  "version": "2.6.4",
   "description": "StyleForge CSS framework",
   "type": "module",
   "main": "style-forge.css",
@@ -43,7 +43,7 @@
     "postcss-minify": "^1.1.0"
   },
   "dependencies": {
-    "style-forge.base": "^5.0.1",
+    "style-forge.base": "^5.0.2",
     "style-forge.colors": "^1.0.0",
     "style-forge.form": "^3.0.1",
     "style-forge.helpers": "^1.0.153",
