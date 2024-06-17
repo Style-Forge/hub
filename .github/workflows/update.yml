@@ -40,7 +40,9 @@ jobs:
 
       - name: Increment version
         run: |
-          if [ "${{ github.event.client_payload.update_type }}" == "minor" ] || [ "${{ github.event.client_payload.update_type }}" == "major" ]; then
+          if [ "${{ github.event.client_payload.update_type }}" == "major" ]; then
+            yarn version --major
+          elif [ "${{ github.event.client_payload.update_type }}" == "minor" ]; then
             yarn version --minor
           else
             yarn version --patch
