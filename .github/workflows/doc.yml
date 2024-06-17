@@ -27,12 +27,9 @@ jobs:
           git config --global user.email 'github-actions@github.com'
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
-        working-directory: ./docs
-
-      - name: Build documentation
-        run: yarn build
-        working-directory: ./docs
+        run: |
+          yarn install --frozen-lockfile
+          yarn docs:build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
