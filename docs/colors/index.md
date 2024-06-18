@@ -72,7 +72,7 @@ After installation, you can import the CSS file into your project:
     v-for="color in webColors"
     :key="color"
     :title="color"
-    :class="color"
+    :class="'sf-c-' + color"
   ></div>
 </div>
 
@@ -101,7 +101,7 @@ import 'style-forge.colors';
     v-for="color in colors"
     :key="color"
     :title="color"
-    :class="color"
+    :class="'sf-c-' + color"
   ></div>
 </div>
 
@@ -148,7 +148,7 @@ You can select a single color with (10/20) lightness gradient
     <div
       v-for="color in colors"
       :key="color"
-      :class="color"
+      :class="'sf-c-' + color"
       :title="color"
       @click="onClick(color)"
     ></div>
