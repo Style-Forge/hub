@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue';
 
+const webActivated = ref(false);
 const selected = ref('aliceblue');
 
 const webColors = [
@@ -65,15 +66,15 @@ yarn add style-forge.colors
 
 After installation, you can import the CSS file into your project:
 
-### Web (16 colors) - `default`
+### `default` Web (16 colors) - 10 lightness gradient
 
-<div class="colors hover">
+<div class="colors d:f:x wrap gap:0">
   <div
     v-for="color in webColors"
     :key="color"
     :title="color"
     :class="'sf-c-' + color"
-  ></div>
+  />
 </div>
 
 ```css
@@ -96,16 +97,17 @@ import 'style-forge.colors';
 
 ### 148 colors - (10/20) lightness gradient
 
-<div class="colors hover">
+<div class="colors d:f:x wrap gap:0">
   <div
     v-for="color in colors"
     :key="color"
     :title="color"
     :class="'sf-c-' + color"
-  ></div>
+  />
 </div>
 
-::: info It is recommended to use the package by default.
+::: warning
+**It is recommended to use the package by default.**<br />
 If you decide to use another option (10/20) **lightness gradient**, you should choose the color and upload it separately.<br />
 Example: <a href="#choose-your-color">Choose your color</a>
 :::
@@ -144,29 +146,50 @@ import 'style-forge.colors/20.css';
 You can select a single color with (10/20) lightness gradient
 
 <div class="d:f:y">
-  <div class="colors select hover">
+  <label class="sf-switch">
+    <input v-model="webActivated" type="checkbox" /> <span>{{ webActivated ? 16 : 148 }} colors</span>
+  </label>
+
+  <div :class="['colors', 'select', 'hover', 'd:f:x', 'wrap', 'gap:0', { activated: webActivated }]">
     <div
       v-for="color in colors"
       :key="color"
-      :class="'sf-c-' + color"
+      :class="['sf-c-' + color, { web: webColors.includes(color) }]"
       :title="color"
       @click="onClick(color)"
     ></div>
   </div>
-  
-  <div class="d:f auto">
+
+  <div class="d:f:x auto">
     <div class="d:f:y">
-      <div class="title">10 lightness gradient</div>
+      <div class="txt:c">10 lightness</div>
       <div>
-        <div :class="['item', 'sf-c-' + selected]">sf-c-{{ selected }}</div>
-        <div v-for="i in 9" :class="['item', 'sf-c-' + selected + ':' + step(i)]">sf-c-{{ selected }}:{{ step(i) }}</div>
+        <div :class="['item', 'txt:c', 'sf-c-' + selected]">sf-c-{{ selected }}</div>
+        <div v-for="i in 9" :class="['item', 'txt:c', 'sf-c-' + selected + ':' + step(i)]">sf-c-{{ selected }}:{{ step(i) }}</div>
       </div>
     </div>
     <div class="d:f:y">
-      <div class="title">20 lightness gradient</div>
+      <div class="txt:c">10 lightness</div>
       <div>
-        <div :class="['item', 'sf-c-' + selected]">sf-c-{{ selected }}</div>
-        <div v-for="i in 19" :class="['item', 'sf-c-' + selected + ':' + step(i, 19)]">sf-c-{{ selected }}:{{ step(i, 19) }}</div>
+        <div :class="['item', 'txt:c', 'sf-c-txt-' + selected]">sf-c-{{ selected }}</div>
+        <div v-for="i in 9" :class="['item', 'txt:c', 'sf-c-txt-' + selected + ':' + step(i)]">sf-c-txt-{{ selected }}:{{ step(i) }}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="d:f:x auto">
+    <div class="d:f:y">
+      <div class="txt:c">20 lightness</div>
+      <div>
+        <div :class="['item', 'txt:c', 'sf-c-' + selected]">sf-c-{{ selected }}</div>
+        <div v-for="i in 19" :class="['item', 'txt:c', 'sf-c-' + selected + ':' + step(i, 19)]">sf-c-{{ selected }}:{{ step(i, 19) }}</div>
+      </div>
+    </div>
+    <div class="d:f:y">
+      <div class="txt:c">20 lightness</div>
+      <div>
+        <div :class="['item', 'txt:c', 'sf-c-txt-' + selected]">sf-c-{{ selected }}</div>
+        <div v-for="i in 19" :class="['item', 'txt:c', 'sf-c-txt-' + selected + ':' + step(i, 19)]">sf-c-txt-{{ selected }}:{{ step(i, 19) }}</div>
       </div>
     </div>
   </div>
@@ -174,39 +197,31 @@ You can select a single color with (10/20) lightness gradient
 
 ```css
 /*
-- color aqua
 - 10 lightness gradient
  */
-@import "style-forge.colors/src/colors/10/aqua.css";
+@import "style-forge.colors/src/colors/10/COLOR_NAME.css";
 ```
 
 ```css
 /*
-- color aqua
 - 20 lightness gradient
  */
-@import "style-forge.colors/src/colors/20/aqua.css";
+@import "style-forge.colors/src/colors/20/COLOR_NAME.css";
 ```
 
 Or, if you are using Webpack or another module bundler:
 
 ```js
-// - color aqua
 // - 10 lightness gradient
-import 'style-forge.colors/src/colors/10/aqua.css';
+import 'style-forge.colors/src/colors/10/COLOR_NAME.css';
 ```
 
 ```js
-// - color aqua
 // - 20 lightness gradient
-import 'style-forge.colors/src/colors/20/aqua.css';
+import 'style-forge.colors/src/colors/20/COLOR_NAME.css';
 ```
 
 <style scoped>
-.colors {
-  display: flex;
-  flex-flow: wrap row;
-}
 .colors > div {
   position:relative;
 
@@ -215,11 +230,18 @@ import 'style-forge.colors/src/colors/20/aqua.css';
   height: var(--size);
 }
 
-.select > div {
+.colors.activated > div:not(.web) {
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.select:not(.activated) > div,
+.select.activated > div.web {
   cursor:pointer;
 }
 
-.hover > div::after {
+.hover:not(.activated) > div::after,
+.hover.activated > div.web::after {
   position: absolute;
   z-index: 1;
 
@@ -229,7 +251,8 @@ import 'style-forge.colors/src/colors/20/aqua.css';
 
   box-shadow: 0 0 5px black;
 }
-.hover > div:hover::after {
+.hover:not(.activated) > div:hover::after,
+.hover.activated > div.web:hover::after {
   --offset: -5px;
 
   top: var(--offset);
@@ -239,7 +262,7 @@ import 'style-forge.colors/src/colors/20/aqua.css';
 }
 
 .item {
-  font-size: 12px;
-  padding: 0 0.5em;
+  font-size: 14px;
+  padding: 0.5em;
 }
 </style>

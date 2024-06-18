@@ -1,2 +1,30 @@
+@import "style-forge.base";
 @import "style-forge.helpers";
+@import "style-forge.form";
+@import "style-forge.themes";
+@import "style-forge.patterns";
 @import "style-forge.colors/20.css";
+
+body {
+  margin: inherit;
+  width: inherit;
+  min-width: inherit;
+  min-height: inherit;
+  line-height: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  /*color: inherit;*/
+  /*background-color: inherit;*/
+  font-synthesis: inherit;
+  text-rendering: inherit;
+  -webkit-font-smoothing: inherit;
+}
+
+#app {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
