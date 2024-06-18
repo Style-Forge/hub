@@ -4,6 +4,14 @@ export default defineConfig({
   title: "Style-Forge",
   description: "Style-Forge is a comprehensive CSS framework designed for modern web development. It offers customizable themes, utility classes, and support for flexbox and grid, enabling developers to create responsive and aesthetically pleasing websites efficiently",
 
+  head: [
+    ['meta', { name: 'description', content: 'Style-Forge is a comprehensive CSS framework designed for modern web development.' }],
+    ['meta', { property: 'og:title', content: 'Style-Forge' }],
+    ['meta', { property: 'og:description', content: 'Style-Forge is a comprehensive CSS framework designed for modern web development.' }],
+    ['meta', { property: 'og:url', content: 'https://style-forge.dev' }],
+    ['meta', { property: 'og:type', content: 'website' }]
+  ],
+
   themeConfig: {
     search: {
       provider: 'local'
