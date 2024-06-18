@@ -10,7 +10,7 @@
 
 ## Documentation
 
-To check out docs, visit <a href="https://style-forge.dev" target="_blank">style-forge.dev</a>.
+To check out docs, visit [style-forge.dev](https://style-forge.dev).
 
 ## Contributing
 
