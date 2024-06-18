@@ -1,4 +1,4 @@
-name: Deploy Documentation
+name: Update documentation Style-Forge
 
 on:
   push:
@@ -6,10 +6,11 @@ on:
       - main
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
 
 jobs:
-  deploy:
+  documentation:
     runs-on: ubuntu-latest
 
     steps:
@@ -20,6 +21,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: yarn
 
       - name: Configure git
         run: |
@@ -28,7 +30,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          yarn install --frozen-lockfile
+          yarn --frozen-lockfile
           yarn docs:build
 
       - name: Deploy to GitHub Pages

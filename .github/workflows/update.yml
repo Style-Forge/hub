@@ -1,4 +1,4 @@
-name: Update style-forge
+name: Update and Publish Style-Forge
 
 on:
   repository_dispatch:
@@ -8,7 +8,7 @@ permissions:
   contents: write
 
 jobs:
-  update-helpers:
+  update-publish:
     runs-on: ubuntu-latest
 
     steps:
@@ -19,6 +19,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: yarn
 
       - name: Configure git
         run: |
@@ -26,7 +27,7 @@ jobs:
           git config --global user.email 'github-actions@github.com'
 
       - name: Yarn
-        run: yarn install --frozen-lockfile
+        run: yarn
 
       - name: Determine version update type
         id: get_update_type
