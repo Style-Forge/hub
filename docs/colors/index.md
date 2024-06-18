@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue';
 
-const webActivated = ref(false);
+const activated = ref(false);
 const selected = ref('aliceblue');
 
 const webColors = [
@@ -147,10 +147,10 @@ You can select a single color with (10/20) lightness gradient
 
 <div class="d:f:y">
   <label class="sf-switch">
-    <input v-model="webActivated" type="checkbox" /> <span>{{ webActivated ? 16 : 148 }} colors</span>
+    <input v-model="activated" type="checkbox" /> <span>{{ activated ? 'Web ' + webColors.length : 'All ' + colors.length }} colors</span>
   </label>
 
-  <div :class="['colors', 'select', 'hover', 'd:f:x', 'wrap', 'gap:0', { activated: webActivated }]">
+  <div :class="['colors', 'select', 'hover', 'd:f:x', 'wrap', 'gap:0', { activated }]">
     <div
       v-for="color in colors"
       :key="color"
