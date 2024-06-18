@@ -1,3 +1,4 @@
+
 # Colors
 
 `Style-Forge.Colors` package provides a comprehensive and customizable set of color palettes for your web applications. It includes predefined color schemes and the ability to create your own custom palettes, ensuring consistent and visually appealing designs across your projects.
@@ -15,9 +16,9 @@ yarn add style-forge.colors
 ```
 
 ::: info
-Рекомендуется использовать пакет по умолчанию.
-Если вы решите использовать другую опцию (10/20) **lightness gradient**, то стоит определиться с цветом и загрузить её отдельно.
-Пример: <a href="#custom-usage">Custom usage</a>
+It is recommended to use the package by default.
+If you decide to use another option (10/20) **lightness gradient**, you should choose the color and upload it separately.
+Example: <a href="#custom-usage">Custom usage</a>
 :::
 
 ## Usage
@@ -71,7 +72,7 @@ import 'style-forge.colors/20.css';
 ```
 
 ## Custom usage
-Вы можете выбрать отдельный цвет с (10/20) lightness gradient
+You can select a single color with (10/20) lightness gradient
 
 ```css
 /*
