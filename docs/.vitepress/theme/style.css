@@ -126,3 +126,8 @@ a {
 ul {
   margin: 0;
 }
+
+.shields > p {
+  display: flex;
+  gap: 0.5em;
+}

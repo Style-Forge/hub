@@ -48,6 +48,15 @@ const step = (x, i = 9) => x * 100 / (i + 1);
 
 # Colors
 
+<div class="shields">
+
+![npm](https://img.shields.io/npm/v/style-forge.colors)
+![npm](https://img.shields.io/npm/dm/style-forge.colors)
+![license](https://img.shields.io/npm/l/style-forge.colors)
+![build](https://github.com/Sarmaged/style-forge.colors/actions/workflows/publish.yml/badge.svg)
+
+</div>
+
 `Style-Forge.Colors` package provides a comprehensive and customizable set of color palettes for your web applications. It includes predefined color schemes and the ability to create your own custom palettes, ensuring consistent and visually appealing designs across your projects.
 
 ## Installation
