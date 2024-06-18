@@ -14,17 +14,91 @@ npm install style-forge.colors
 yarn add style-forge.colors
 ```
 
+::: info
+Рекомендуется использовать пакет по умолчанию.
+Если вы решите использовать другую опцию (10/20) **lightness gradient**, то стоит определиться с цветом и загрузить её отдельно.
+Пример: <a href="#custom-usage">Custom usage</a>
+:::
+
 ## Usage
 
 After installation, you can import the CSS file into your project:
 
 ```css
+/*
+Web - `default`
+- 16 - colors
+- 10 lightness gradient
+*/
 @import "style-forge.colors";
+```
+
+```css
+/*
+- 148 - colors
+- 10 lightness gradient
+ */
+@import "style-forge.colors/10.css";
+```
+
+```css
+/*
+- 148 - colors
+- 20 lightness gradient
+*/
+@import "style-forge.colors/20.css";
 ```
 
 Or, if you are using Webpack or another module bundler:
 
 ```js
+// Web - `default`
+// - 16 - colors
+// - 10 lightness gradient
 import 'style-forge.colors';
 ```
 
+```js
+// - 148 - colors
+// - 10 lightness gradient
+import 'style-forge.colors/10.css';
+```
+
+```js
+// - 148 - colors
+// - 20 lightness gradient
+import 'style-forge.colors/20.css';
+```
+
+## Custom usage
+Вы можете выбрать отдельный цвет с (10/20) lightness gradient
+
+```css
+/*
+- color aqua
+- 10 lightness gradient
+ */
+@import "style-forge.colors/src/colors/10/aqua.css";
+```
+
+```css
+/*
+- color aqua
+- 20 lightness gradient
+ */
+@import "style-forge.colors/src/colors/20/aqua.css";
+```
+
+Or, if you are using Webpack or another module bundler:
+
+```js
+// - color aqua
+// - 10 lightness gradient
+import 'style-forge.colors/src/colors/10/aqua.css';
+```
+
+```js
+// - color aqua
+// - 20 lightness gradient
+import 'style-forge.colors/src/colors/20/aqua.css';
+```

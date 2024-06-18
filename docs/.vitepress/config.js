@@ -71,5 +71,7 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/sarmaged/style-forge' },
       { icon: 'npm', link: 'https://npmjs.com/package/style-forge' }
     ]
-  }
+  },
+
+  lastUpdated: true
 })
