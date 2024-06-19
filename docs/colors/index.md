@@ -169,36 +169,46 @@ You can select a single color with (10/20) lightness gradient
     ></div>
   </div>
 
-  <div class="d:f:x auto">
-    <div class="d:f:y">
+  <div class="content-out d:f:y">
+    <div>
       <div class="txt:c">10 lightness</div>
-      <div>
-        <div :class="['item', 'txt:c', 'sf-c-' + selected]">sf-c-{{ selected }}</div>
-        <div v-for="i in 9" :class="['item', 'txt:c', 'sf-c-' + selected + ':' + step(i)]">sf-c-{{ selected }}:{{ step(i) }}</div>
-      </div>
     </div>
-    <div class="d:f:y">
-      <div class="txt:c">10 lightness</div>
-      <div>
-        <div :class="['item', 'txt:c', 'sf-c-txt-' + selected]">sf-c-{{ selected }}</div>
-        <div v-for="i in 9" :class="['item', 'txt:c', 'sf-c-txt-' + selected + ':' + step(i)]">sf-c-txt-{{ selected }}:{{ step(i) }}</div>
+    <div class="d:f:x auto">
+      <div class="d:f:y">
+        <div class="txt:c">background</div>
+        <div>
+          <div :class="['item', 'txt:c', 'sf-c-' + selected]">sf-c-{{ selected }}</div>
+          <div v-for="i in 9" :class="['item', 'txt:c', 'sf-c-' + selected + ':' + step(i)]">sf-c-{{ selected }}:{{ step(i) }}</div>
+        </div>
+      </div>
+      <div class="d:f:y">
+        <div class="txt:c">text</div>
+        <div>
+          <div :class="['item', 'txt:c', 'sf-c-txt-' + selected]">sf-c-txt-{{ selected }}</div>
+          <div v-for="i in 9" :class="['item', 'txt:c', 'sf-c-txt-' + selected + ':' + step(i)]">sf-c-txt-{{ selected }}:{{ step(i) }}</div>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="d:f:x auto">
-    <div class="d:f:y">
+  <div class="content-out d:f:y">
+    <div>
       <div class="txt:c">20 lightness</div>
-      <div>
-        <div :class="['item', 'txt:c', 'sf-c-' + selected]">sf-c-{{ selected }}</div>
-        <div v-for="i in 19" :class="['item', 'txt:c', 'sf-c-' + selected + ':' + step(i, 19)]">sf-c-{{ selected }}:{{ step(i, 19) }}</div>
-      </div>
     </div>
-    <div class="d:f:y">
-      <div class="txt:c">20 lightness</div>
-      <div>
-        <div :class="['item', 'txt:c', 'sf-c-txt-' + selected]">sf-c-{{ selected }}</div>
-        <div v-for="i in 19" :class="['item', 'txt:c', 'sf-c-txt-' + selected + ':' + step(i, 19)]">sf-c-txt-{{ selected }}:{{ step(i, 19) }}</div>
+    <div class="d:f:x auto">
+      <div class="d:f:y">
+        <div class="txt:c">background</div>
+        <div>
+          <div :class="['item', 'txt:c', 'sf-c-' + selected]">sf-c-{{ selected }}</div>
+          <div v-for="i in 19" :class="['item', 'txt:c', 'sf-c-' + selected + ':' + step(i, 19)]">sf-c-{{ selected }}:{{ step(i, 19) }}</div>
+        </div>
+      </div>
+      <div class="d:f:y">
+        <div class="txt:c">text</div>
+        <div>
+          <div :class="['item', 'txt:c', 'sf-c-txt-' + selected]">sf-c-txt-{{ selected }}</div>
+          <div v-for="i in 19" :class="['item', 'txt:c', 'sf-c-txt-' + selected + ':' + step(i, 19)]">sf-c-txt-{{ selected }}:{{ step(i, 19) }}</div>
+        </div>
       </div>
     </div>
   </div>
@@ -273,5 +283,14 @@ import 'style-forge.colors/src/colors/20/COLOR_NAME.css';
 .item {
   font-size: 14px;
   padding: 0.5em;
+}
+
+.content-out {
+  margin-top: 1em;
+}
+
+.content-out + .content-out {
+  padding-top: 1em;
+  border-top: 1px solid;
 }
 </style>
