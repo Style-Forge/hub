@@ -1,6 +1,6 @@
 {
   "name": "style-forge",
-  "version": "2.6.34",
+  "version": "2.6.35",
   "description": "Style-Forge is a comprehensive CSS framework designed for modern web development. It offers customizable themes, utility classes, and support for flexbox and grid, enabling developers to create responsive and aesthetically pleasing websites efficiently",
   "type": "module",
   "main": "style-forge.css",
@@ -42,13 +42,13 @@
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.23",
     "postcss-combine-duplicated-selectors": "^10.0.3",
-    "postcss-discard-comments": "^7.0.0",
+    "postcss-discard-comments": "^7.0.1",
     "postcss-import": "^16.1.0",
     "postcss-minify": "^1.1.0",
     "vitepress": "^1.2.3"
   },
   "dependencies": {
-    "style-forge.base": "^5.0.6",
+    "style-forge.base": "^5.0.7",
     "style-forge.colors": "^1.0.6",
     "style-forge.form": "^3.0.8",
     "style-forge.helpers": "^1.0.157",
