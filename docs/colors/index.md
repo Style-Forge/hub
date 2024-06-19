@@ -103,7 +103,6 @@ Or, if you are using Webpack or another module bundler:
 import 'style-forge.colors';
 ```
 
-
 ### 148 colors - (10/20) lightness gradient
 
 <div class="colors d:f:x wrap gap:0">
@@ -191,7 +190,7 @@ You can select a single color with (10/20) lightness gradient
     </div>
   </div>
 
-  <div class="content-out d:f:y">
+  <div v-if="!activated" class="content-out d:f:y">
     <div>
       <div class="txt:c">20 lightness</div>
     </div>
@@ -215,29 +214,15 @@ You can select a single color with (10/20) lightness gradient
 </div>
 
 ```css
-/*
-- 10 lightness gradient
- */
-@import "style-forge.colors/src/colors/10/COLOR_NAME.css";
-```
-
-```css
-/*
-- 20 lightness gradient
- */
-@import "style-forge.colors/src/colors/20/COLOR_NAME.css";
+/* LIGHTNESS_GRADIENT - 10 / 20 lightness gradient */
+@import "style-forge.colors/src/colors/LIGHTNESS_GRADIENT/COLOR_NAME.css";
 ```
 
 Or, if you are using Webpack or another module bundler:
 
 ```js
-// - 10 lightness gradient
-import 'style-forge.colors/src/colors/10/COLOR_NAME.css';
-```
-
-```js
-// - 20 lightness gradient
-import 'style-forge.colors/src/colors/20/COLOR_NAME.css';
+// LIGHTNESS_GRADIENT - 10 / 20 lightness gradient
+import 'style-forge.colors/src/colors/LIGHTNESS_GRADIENT/COLOR_NAME.css';
 ```
 
 <style scoped>
