@@ -129,5 +129,6 @@ ul {
 
 .shields > p {
   display: flex;
+  flex-flow: wrap row;
   gap: 0.5em;
 }
