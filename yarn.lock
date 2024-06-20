@@ -632,9 +632,9 @@ csstype@^3.1.3:
   integrity sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==
 
 electron-to-chromium@^1.4.796:
-  version "1.4.806"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.806.tgz#2cb046631cbabceb26fc72be68d273fa183e36bc"
-  integrity sha512-nkoEX2QIB8kwCOtvtgwhXWy2IHVcOLQZu9Qo36uaGB835mdX/h8uLRlosL6QIhLVUnAiicXRW00PwaPZC74Nrg==
+  version "1.4.807"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.807.tgz#4d6c5ea1516f0164ac5bfd487ccd4ee9507c8f01"
+  integrity sha512-kSmJl2ZwhNf/bcIuCH/imtNOKlpkLDn2jqT5FJ+/0CXjhnFaOa9cOe9gHKKy71eM49izwuQjZhKk+lWQ1JxB7A==
 
 entities@^4.5.0:
   version "4.5.0"
@@ -914,10 +914,10 @@ style-forge.colors@^1.0.6:
   resolved "https://registry.yarnpkg.com/style-forge.colors/-/style-forge.colors-1.0.6.tgz#4275f8dbd0881bd4b35eb7d9c2e15e9200dfa7a5"
   integrity sha512-O1eZg8Bi5s0DKkZD13k9uIoo6MzxFWf8MxMbB6H/10dUU/7Ve0aGocakS3YEfF1TaQuVRRtfPJvajU5ir/KjkQ==
 
-style-forge.form@^3.0.8:
-  version "3.0.8"
-  resolved "https://registry.yarnpkg.com/style-forge.form/-/style-forge.form-3.0.8.tgz#1f6c41a01239368d091c0e838ce8b41581c6e62a"
-  integrity sha512-Ys4SdJDKtjgwGNonCBnuPKclThg6O0QJeuxChH2sGCaEHknhRlggJ7xRZgOtNKqIR7AXituq/JFjfRSwX7XbZA==
+style-forge.form@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/style-forge.form/-/style-forge.form-3.1.0.tgz#73cbb20a3d6c7a51fa7ce458a629b85e68f4da6e"
+  integrity sha512-wKxuD3ClhUlWDuNwK6MG8jIX60SFUdL0UxiigUUdgUOpKpiW49C3HyGgs2HVNL+Amm9rIZym/rbrgI5Pvv+gvw==
 
 style-forge.helpers@^1.0.157:
   version "1.0.157"
