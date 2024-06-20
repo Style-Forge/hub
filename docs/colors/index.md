@@ -1,3 +1,29 @@
+---
+title: Style-Forge.Colors
+titleTemplate: false
+description: "Style-Forge.Colors: customizable color palettes for consistent, visually appealing web designs."
+
+head:
+  - - meta
+    - name: keywords
+      content: style-forge, colors, color palettes, theme, CSS-in-JS, color schemes, design, UI, web development, frontend, JavaScript, react, custom colors, color management, web design
+  - - meta
+    - property: og:title
+      content: Style-Forge.Colors
+  - - meta
+    - property: og:description
+      content: "Style-Forge.Colors: customizable color palettes for consistent, visually appealing web designs."
+  - - meta
+    - property: og:url
+      content: https://style-forge.dev/colors/
+  - - meta
+    - name: twitter:title
+      content: Style-Forge.Colors
+  - - meta
+    - name: twitter:description
+      content: "Style-Forge.Colors: customizable color palettes for consistent, visually appealing web designs."
+---
+
 <script setup>
 import { ref } from 'vue';
 
@@ -46,7 +72,7 @@ const onClick = color => selected.value = color;
 const step = (x, i = 9) => x * 100 / (i + 1);
 </script>
 
-# Colors
+# Style-Forge.Colors
 
 <div class="shields">
 

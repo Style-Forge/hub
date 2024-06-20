@@ -1,7 +1,7 @@
 {
   "name": "style-forge",
   "version": "2.6.36",
-  "description": "Style-Forge is a comprehensive CSS framework designed for modern web development. It offers customizable themes, utility classes, and support for flexbox and grid, enabling developers to create responsive and aesthetically pleasing websites efficiently",
+  "description": "Style-Forge: CSS framework with themes, utilities, flexbox, and grid for creating responsive websites.",
   "type": "module",
   "main": "style-forge.css",
   "repository": {

@@ -2,14 +2,26 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   title: "Style-Forge",
-  description: "Style-Forge is a comprehensive CSS framework designed for modern web development. It offers customizable themes, utility classes, and support for flexbox and grid, enabling developers to create responsive and aesthetically pleasing websites efficiently",
+  description: "Style-Forge: CSS framework with themes, utilities, flexbox, and grid for creating responsive websites",
 
   head: [
-    ['meta', { name: 'description', content: 'Style-Forge is a comprehensive CSS framework designed for modern web development. It offers customizable themes, utility classes, and support for flexbox and grid, enabling developers to create responsive and aesthetically pleasing websites efficiently' }],
+    ['meta', { name: 'keywords', content: 'style-forge, CSS framework, modern design, responsive design, utilities, web development, frontend, UI components, CSS grid, CSS flexbox, themes, form validation, custom themes, grid, flex, input, select, switch, textarea, helpers, colors' }],
+    ['meta', { name: 'robots', content: 'index, follow' }],
+
+    ['link', { rel: 'apple-touch-icon', size: '180x180', href: '/apple-touch-icon.png' }],
+    ['link', { rel: 'icon', size: '32x32', href: '/favicon-32x32.png' }],
+    ['link', { rel: 'icon', size: '16x16', href: '/favicon-16x16.png' }],
+    ['link', { rel: 'manifest', href: '/site.webmanifest' }],
+
     ['meta', { property: 'og:title', content: 'Style-Forge' }],
-    ['meta', { property: 'og:description', content: 'Style-Forge is a comprehensive CSS framework designed for modern web development. It offers customizable themes, utility classes, and support for flexbox and grid, enabling developers to create responsive and aesthetically pleasing websites efficiently' }],
+    ['meta', { property: 'og:description', content: 'Style-Forge: CSS framework with themes, utilities, flexbox, and grid for creating responsive websites' }],
     ['meta', { property: 'og:url', content: 'https://style-forge.dev' }],
-    ['meta', { property: 'og:type', content: 'website' }]
+    ['meta', { property: 'og:image', content: '/images/main.jpg' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { name: 'twitter:title', content: 'Style-Forge' }],
+    ['meta', { name: 'twitter:description', content: 'Style-Forge: CSS framework with themes, utilities, flexbox, and grid for creating responsive websites' }],
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+    ['meta', { name: 'twitter:image', content: '/images/main.jpg' }]
   ],
 
   themeConfig: {

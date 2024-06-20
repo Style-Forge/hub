@@ -1,4 +1,39 @@
-# Form
+---
+title: Style-Forge.Form
+titleTemplate: false
+description: "Style-Forge.Form: versatile library for easy form creation, validation, styling, and submission in web apps."
+
+head:
+  - - meta
+    - name: keywords
+      content: style-forge, form, input, select, switch, textarea, validate, html, css, styling, web development, frontend, form elements, form styles, responsive
+  - - meta
+    - property: og:title
+      content: Style-Forge.Form
+  - - meta
+    - property: og:description
+      content: "Style-Forge.Form: versatile library for easy form creation, validation, styling, and submission in web apps."
+  - - meta
+    - property: og:url
+      content: https://style-forge.dev/form/
+  - - meta
+    - name: twitter:title
+      content: Style-Forge.Form
+  - - meta
+    - name: twitter:description
+      content: "Style-Forge.Form: versatile library for easy form creation, validation, styling, and submission in web apps."
+---
+
+# Style-Forge.Form
+
+<div class="shields">
+
+![npm](https://img.shields.io/npm/v/style-forge.form)
+![npm](https://img.shields.io/npm/dm/style-forge.form)
+![license](https://img.shields.io/npm/l/style-forge.form)
+![build](https://github.com/Sarmaged/style-forge.form/actions/workflows/publish.yml/badge.svg)
+
+</div>
 
 `Style-Forge.Form` package is a versatile and easy-to-use library designed to streamline the creation and management of forms in web applications. It offers a robust set of tools to handle form validation, styling, and submission processes, enhancing user experience and developer productivity.
 
@@ -53,7 +88,7 @@ import 'style-forge.form';
   --sf-form-c-warning: 39 100% 50%;
 
   --sf-form-c-bg: 0 0% 100%;
-  --sf-form-c-border: 0 0% 10%;
+  --sf-form-c-bd: 0 0% 10%;
   --sf-form-c-loading: 0 0% 10%;
   --sf-form-c-txt: 0 0% 10%;
 
@@ -65,7 +100,7 @@ import 'style-forge.form';
   --sf-form-dark-c-warning: 39 100% 60%;
 
   --sf-form-dark-c-bg: 0 0% 20%;
-  --sf-form-dark-c-border: 0 0% 100%;
+  --sf-form-dark-c-bd: 0 0% 100%;
   --sf-form-dark-c-loading: 0 0% 100%;
   --sf-form-dark-c-txt: 0 0% 90%;
 }

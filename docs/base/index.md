@@ -1,4 +1,39 @@
-# Base
+---
+title: Style-Forge.Base
+titleTemplate: false
+description: "Style-Forge.Base: foundational CSS variables, base styles, typography, colors, utilities for consistent design."
+
+head:
+  - - meta
+    - name: keywords
+      content: style-forge, base, CSS, variables, styles, design, web development, frontend, responsive, typography, colors, system-ui, HSL, lightweight, performance, consistent
+  - - meta
+    - property: og:title
+      content: Style-Forge.Base
+  - - meta
+    - property: og:description
+      content: "Style-Forge.Base: foundational CSS variables, base styles, typography, colors, utilities for consistent design."
+  - - meta
+    - property: og:url
+      content: https://style-forge.dev/base/
+  - - meta
+    - name: twitter:title
+      content: Style-Forge.Base
+  - - meta
+    - name: twitter:description
+      content: "Style-Forge.Base: foundational CSS variables, base styles, typography, colors, utilities for consistent design."
+---
+
+# Style-Forge.Base
+
+<div class="shields">
+
+![npm](https://img.shields.io/npm/v/style-forge.base)
+![npm](https://img.shields.io/npm/dm/style-forge.base)
+![license](https://img.shields.io/npm/l/style-forge.base)
+![build](https://github.com/Sarmaged/style-forge.base/actions/workflows/publish.yml/badge.svg)
+
+</div>
 
 `Style-Forge.Base` provides the foundational CSS variables and base styles for the Style Forge framework. It includes essential typography, color schemes, and utility classes, ensuring a consistent and customizable design system for your web projects.
 
@@ -57,9 +92,10 @@ import 'style-forge.base';
 
   --sf-c-txt: 0 0% 10%; /* All color */
   --sf-c-bg: 0 0% 100%; /* All background */
-  --sf-c-bd: 0 0% 75%; /* All border */
   --sf-c-shape-bg: 0 0% 90%; /* <pre> - background */
   --sf-c-backdrop: 0 0% 10%; /* ::backdrop */
+  --sf-table-c-bd: 0 0% 75%; /* Table border */
+  --sf-form-c-bd: 0 0% 10%; /* All Elements Form border */
 }
 ```
 
