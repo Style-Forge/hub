@@ -53,33 +53,5 @@
       "sizes": "any",
       "type": "image/svg+xml"
     }
-  ],
-  "shortcuts": [
-    {
-      "name": "Documentation",
-      "short_name": "Docs",
-      "description": "Go to the documentation",
-      "url": "/docs/",
-      "icons": [
-        {
-          "src": "/icons/shortcut-docs.png",
-          "sizes": "96x96",
-          "type": "image/png"
-        }
-      ]
-    },
-    {
-      "name": "GitHub Repository",
-      "short_name": "GitHub",
-      "description": "Visit the GitHub repository",
-      "url": "https://github.com/Sarmaged/style-forge",
-      "icons": [
-        {
-          "src": "/icons/shortcut-github.png",
-          "sizes": "96x96",
-          "type": "image/png"
-        }
-      ]
-    }
   ]
 }
