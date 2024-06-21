@@ -16,12 +16,12 @@ export default defineConfig({
     ['meta', { property: 'og:title', content: 'Style-Forge' }],
     ['meta', { property: 'og:description', content: 'Style-Forge: CSS framework with themes, utilities, flexbox, and grid for creating responsive websites' }],
     ['meta', { property: 'og:url', content: 'https://style-forge.dev' }],
-    ['meta', { property: 'og:image', content: '/images/main.jpg' }],
+    ['meta', { property: 'og:image', content: '/images/main.png' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { name: 'twitter:title', content: 'Style-Forge' }],
     ['meta', { name: 'twitter:description', content: 'Style-Forge: CSS framework with themes, utilities, flexbox, and grid for creating responsive websites' }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-    ['meta', { name: 'twitter:image', content: '/images/main.jpg' }]
+    ['meta', { name: 'twitter:image', content: '/images/main.png' }]
   ],
 
   themeConfig: {
