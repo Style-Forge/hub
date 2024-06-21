@@ -24,6 +24,7 @@ export default defineConfig({
     ['meta', { name: 'twitter:image', content: '/images/main.png' }],
 
     ...(process.env.NODE_ENV === 'production' ? [
+      // Google Analytics
       [
         'script',
         { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-YG8WG38YDF' }
@@ -38,15 +39,34 @@ export default defineConfig({
           gtag('config', 'G-YG8WG38YDF');
         `
       ],
+      // Tarteaucitron.js
       [
         'script',
-        {
-          id: 'Cookiebot',
-          src: 'https://consent.cookiebot.com/uc.js',
-          'data-cbid': '96247cfc-9386-46a8-81d1-4feb1afb3ebb',
-          'data-blockingmode': 'auto',
-          type: 'text/javascript'
-        }
+        { src: 'https://cdn.jsdelivr.net/npm/tarteaucitronjs@latest/tarteaucitron.min.js', type: 'text/javascript' }
+      ],
+      [
+        'script',
+        {},
+        `
+          tarteaucitron.init({
+            "privacyUrl": "",
+            "hashtag": "#tarteaucitron",
+            "cookieName": "tarteaucitron",
+            "orientation": "bottom",
+            "showAlertSmall": true,
+            "cookieslist": true,
+            "adblocker": false,
+            "AcceptAllCta": true,
+            "highPrivacy": true,
+            "handleBrowserDNTRequest": false,
+            "removeCredit": false,
+            "moreInfoLink": true,
+            "useExternalCss": false,
+            "cookieDomain": ""
+          });
+          tarteaucitron.user.gtagUa = 'G-YG8WG38YDF';
+          (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
+        `
       ]
     ] : [])
   ],
