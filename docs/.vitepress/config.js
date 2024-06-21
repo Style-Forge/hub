@@ -8,9 +8,9 @@ export default defineConfig({
     ['meta', { name: 'keywords', content: 'style-forge, CSS framework, modern design, responsive design, utilities, web development, frontend, UI components, CSS grid, CSS flexbox, themes, form validation, custom themes, grid, flex, input, select, switch, textarea, helpers, colors' }],
     ['meta', { name: 'robots', content: 'index, follow' }],
 
-    ['link', { rel: 'apple-touch-icon', size: '180x180', href: '/apple-touch-icon.png' }],
-    ['link', { rel: 'icon', size: '32x32', href: '/favicon-32x32.png' }],
-    ['link', { rel: 'icon', size: '16x16', href: '/favicon-16x16.png' }],
+    ['link', { rel: 'apple-touch-icon', size: '180x180', href: '/icons/icon-180x180.png' }],
+    ['link', { rel: 'icon', size: '32x32', href: '/icons/icon-32x32.png' }],
+    ['link', { rel: 'icon', size: '16x16', href: '/icons/icon-16x16.png' }],
     ['link', { rel: 'manifest', href: '/site.webmanifest' }],
 
     ['meta', { property: 'og:title', content: 'Style-Forge' }],
