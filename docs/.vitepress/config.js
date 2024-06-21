@@ -21,7 +21,24 @@ export default defineConfig({
     ['meta', { name: 'twitter:title', content: 'Style-Forge' }],
     ['meta', { name: 'twitter:description', content: 'Style-Forge: CSS framework with themes, utilities, flexbox, and grid for creating responsive websites' }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-    ['meta', { name: 'twitter:image', content: '/images/main.png' }]
+    ['meta', { name: 'twitter:image', content: '/images/main.png' }],
+
+    ...(process.env.NODE_ENV === 'production' ? [
+      [
+        'script',
+        { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-YG8WG38YDF' }
+      ],
+      [
+        'script',
+        {},
+        `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-YG8WG38YDF');
+        `
+      ]
+    ] : [])
   ],
 
   themeConfig: {
