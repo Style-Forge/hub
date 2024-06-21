@@ -37,6 +37,16 @@ export default defineConfig({
           gtag('js', new Date());
           gtag('config', 'G-YG8WG38YDF');
         `
+      ],
+      [
+        'script',
+        {
+          id: 'Cookiebot',
+          src: 'https://consent.cookiebot.com/uc.js',
+          'data-cbid': '96247cfc-9386-46a8-81d1-4feb1afb3ebb',
+          'data-blockingmode': 'auto',
+          type: 'text/javascript'
+        }
       ]
     ] : [])
   ],
