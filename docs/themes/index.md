@@ -39,29 +39,39 @@ head:
 
 ## Installation
 
-You can install the package via npm or yarn:
-
-```bash
-npm install style-forge.themes
+:::tabs
+== npm
+```shell
+npm i style-forge.themes
 ```
-
-```bash
+== yarn
+```shell
 yarn add style-forge.themes
 ```
+== pnpm
+```shell
+pnpm add style-forge.themes
+```
+== bun
+```shell
+bun add style-forge.themes
+```
+:::
 
 ## Usage
 
-After installation, you can import the CSS file into your project:
+After installation, you can import the CSS file into your project or, if you are using Webpack or another module bundler:
 
+:::tabs key:import
+== CSS
 ```css
 @import "style-forge.themes";
 ```
-
-Or, if you are using Webpack or another module bundler:
-
+== JS
 ```js
 import 'style-forge.themes';
 ```
+:::
 
 ## Example
 There are three standard modes `dark / light / auto (system)`

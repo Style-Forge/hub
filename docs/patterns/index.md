@@ -39,26 +39,36 @@ head:
 
 ## Installation
 
-You can install the package via npm or yarn:
-
-```bash
-npm install style-forge.patterns
+:::tabs
+== npm
+```shell
+npm i style-forge.patterns
 ```
-
-```bash
+== yarn
+```shell
 yarn add style-forge.patterns
 ```
+== pnpm
+```shell
+pnpm add style-forge.patterns
+```
+== bun
+```shell
+bun add style-forge.patterns
+```
+:::
 
 ## Usage
 
-After installation, you can import the CSS file into your project:
+After installation, you can import the CSS file into your project or, if you are using Webpack or another module bundler:
 
+:::tabs key:import
+== CSS
 ```css
 @import "style-forge.patterns";
 ```
-
-Or, if you are using Webpack or another module bundler:
-
+== JS
 ```js
 import 'style-forge.patterns';
 ```
+:::

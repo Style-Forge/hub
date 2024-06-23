@@ -87,21 +87,34 @@ const step = (x, i = 9) => x * 100 / (i + 1);
 
 ## Installation
 
-You can install the package via npm or yarn:
-
-```bash
-npm install style-forge.colors
+:::tabs
+== npm
+```shell
+npm i style-forge.colors
 ```
-
-```bash
+== yarn
+```shell
 yarn add style-forge.colors
 ```
+== pnpm
+```shell
+pnpm add style-forge.colors
+```
+== bun
+```shell
+bun add style-forge.colors
+```
+:::
 
 ## Usage
 
-After installation, you can import the CSS file into your project:
+After installation, you can import the CSS file into your project or, if you are using Webpack or another module bundler:
 
-### `default` Web (16 colors) - 10 lightness gradient
+### Web (16 colors) - `default`
+
+Web - `default`
+- 16 - colors
+- 10 lightness gradient
 
 <div class="colors d:f:x wrap gap:0">
   <div
@@ -112,24 +125,28 @@ After installation, you can import the CSS file into your project:
   />
 </div>
 
+:::tabs key:import
+== CSS
 ```css
-/*
-Web - `default`
-- 16 - colors
-- 10 lightness gradient
-*/
 @import "style-forge.colors";
 ```
-Or, if you are using Webpack or another module bundler:
-
+== JS
 ```js
-// Web - `default`
-// - 16 - colors
-// - 10 lightness gradient
 import 'style-forge.colors';
 ```
+:::
 
-### 148 colors - (10/20) lightness gradient
+### All (148 colors) - `custom`
+
+All - `custom`
+- 16 - colors
+- [10 or 20] lightness gradient
+
+::: warning
+**It is recommended to use the package by default.**<br />
+If you decide to use another option [10 or 20] **lightness gradient**, you should choose the color and upload it separately.<br />
+Example: <a href="#choose-your-color">Choose your color</a>
+:::
 
 <div class="colors d:f:x wrap gap:0">
   <div
@@ -140,44 +157,35 @@ import 'style-forge.colors';
   />
 </div>
 
-::: warning
-**It is recommended to use the package by default.**<br />
-If you decide to use another option (10/20) **lightness gradient**, you should choose the color and upload it separately.<br />
-Example: <a href="#choose-your-color">Choose your color</a>
-:::
+10 lightness gradient
 
+:::tabs key:import
+== CSS
 ```css
-/*
-- 148 - colors
-- 10 lightness gradient
- */
 @import "style-forge.colors/10.css";
 ```
-
-```css
-/*
-- 148 - colors
-- 20 lightness gradient
-*/
-@import "style-forge.colors/20.css";
-```
-
-Or, if you are using Webpack or another module bundler:
-
+== JS
 ```js
-// - 148 - colors
-// - 10 lightness gradient
 import 'style-forge.colors/10.css';
 ```
+:::
 
+
+20 lightness gradient
+
+:::tabs key:import
+== CSS
+```css
+@import "style-forge.colors/20.css";
+```
+== JS
 ```js
-// - 148 - colors
-// - 20 lightness gradient
 import 'style-forge.colors/20.css';
 ```
+:::
 
 ## Choose your color
-You can select a single color with (10/20) lightness gradient
+You can select a single color with [10 or 20] lightness gradient
 
 <div class="d:f:y">
   <label class="sf-switch">
@@ -196,7 +204,7 @@ You can select a single color with (10/20) lightness gradient
 
   <div class="content-out d:f:y">
     <div>
-      <div class="txt:c">10 lightness</div>
+      <div class="txt:c">CSS classes <code>10 lightness</code></div>
     </div>
     <div class="d:f:x auto">
       <div class="d:f:y">
@@ -218,7 +226,7 @@ You can select a single color with (10/20) lightness gradient
 
   <div v-if="!activated" class="content-out d:f:y">
     <div>
-      <div class="txt:c">20 lightness</div>
+      <div class="txt:c">CSS classes <code>20 lightness</code></div>
     </div>
     <div class="d:f:x auto">
       <div class="d:f:y">
@@ -239,17 +247,32 @@ You can select a single color with (10/20) lightness gradient
   </div>
 </div>
 
+
+10 lightness gradient
+
+:::tabs key:import
+== CSS
 ```css
-/* LIGHTNESS_GRADIENT - 10 / 20 lightness gradient */
-@import "style-forge.colors/src/colors/LIGHTNESS_GRADIENT/COLOR_NAME.css";
+@import "style-forge.colors/src/colors/10/COLOR_NAME.css";
 ```
-
-Or, if you are using Webpack or another module bundler:
-
+== JS
 ```js
-// LIGHTNESS_GRADIENT - 10 / 20 lightness gradient
-import 'style-forge.colors/src/colors/LIGHTNESS_GRADIENT/COLOR_NAME.css';
+import 'style-forge.colors/src/colors/10/COLOR_NAME.css';
 ```
+:::
+
+20 lightness gradient
+
+:::tabs key:import
+== CSS
+```css
+@import "style-forge.colors/src/colors/20/COLOR_NAME.css";
+```
+== JS
+```js
+import 'style-forge.colors/src/colors/20/COLOR_NAME.css';
+```
+:::
 
 <style scoped>
 .colors > div {

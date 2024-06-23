@@ -39,29 +39,39 @@ head:
 
 ## Installation
 
-You can install the package via npm or yarn:
-
-```bash
-npm install style-forge.base
+:::tabs
+== npm
+```shell
+npm i style-forge.base
 ```
-
-```bash
+== yarn
+```shell
 yarn add style-forge.base
 ```
+== pnpm
+```shell
+pnpm add style-forge.base
+```
+== bun
+```shell
+bun add style-forge.base
+```
+:::
 
 ## Usage
 
-After installation, you can import the CSS file into your project:
+After installation, you can import the CSS file into your project or, if you are using Webpack or another module bundler:
 
+:::tabs key:import
+== CSS
 ```css
 @import "style-forge.base";
 ```
-
-Or, if you are using Webpack or another module bundler:
-
+== JS
 ```js
 import 'style-forge.base';
 ```
+:::
 
 ## Variables
 

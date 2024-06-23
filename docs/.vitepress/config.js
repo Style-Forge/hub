@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 
 export default defineConfig({
   title: "Style-Forge",
@@ -130,6 +131,12 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/sarmaged/style-forge' },
       { icon: 'npm', link: 'https://npmjs.com/package/style-forge' }
     ]
+  },
+
+  markdown: {
+    config(md) {
+      md.use(tabsMarkdownPlugin)
+    }
   },
 
   lastUpdated: true

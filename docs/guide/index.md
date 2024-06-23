@@ -1,29 +1,39 @@
-# Guide
+# Quick Start
 
 `Style-Forge` package is a comprehensive CSS framework designed for modern web development. It provides a wide range of utilities and components to streamline the process of building responsive, aesthetically pleasing websites. With features like customizable themes, utility classes, and support for modern CSS technologies like flexbox and grid, style-forge aims to enhance productivity and maintainability in frontend development.
 
 ## Installation
 
-You can install the package via npm or yarn:
-
-```bash
-npm install style-forge
+:::tabs
+== npm
+```shell
+npm i style-forge
 ```
-
-```bash
+== yarn
+```shell
 yarn add style-forge
 ```
+== pnpm
+```shell
+pnpm add style-forge
+```
+== bun
+```shell
+bun add style-forge
+```
+:::
 
 ## Usage
 
-After installation, you can import the CSS file into your project:
+After installation, you can import the CSS file into your project or, if you are using Webpack or another module bundler:
 
+:::tabs key:import
+== CSS
 ```css
 @import "style-forge";
 ```
-
-Or, if you are using Webpack or another module bundler:
-
+== JS
 ```js
 import 'style-forge';
 ```
+:::

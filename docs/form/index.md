@@ -39,29 +39,99 @@ head:
 
 ## Installation
 
-You can install the package via npm or yarn:
-
-```bash
-npm install style-forge.form
+:::tabs
+== npm
+```shell
+npm i style-forge.form
 ```
-
-```bash
+== yarn
+```shell
 yarn add style-forge.form
 ```
+== pnpm
+```shell
+pnpm add style-forge.form
+```
+== bun
+```shell
+bun add style-forge.form
+```
+:::
 
 ## Usage
 
-After installation, you can import the CSS file into your project:
+After installation, you can import the CSS file into your project or, if you are using Webpack or another module bundler:
 
+:::tabs key:import
+== CSS
 ```css
 @import "style-forge.form";
 ```
-
-Or, if you are using Webpack or another module bundler:
-
+== JS
 ```js
 import 'style-forge.form';
 ```
+:::
+
+## Custom
+:::tabs key:import
+== CSS
+```css
+/* Require */
+@import 'style-forge.form/src/var.css';
+@import 'style-forge.form/src/base.css';
+@import 'style-forge.form/src/global.css';
+@import 'style-forge.form/src/pseudo-classes.css';
+
+/* Inputs */
+@import 'style-forge.form/src/input.css';
+@import 'style-forge.form/src/button.css';
+@import 'style-forge.form/src/checkbox-radio.css';
+@import 'style-forge.form/src/select.css';
+@import 'style-forge.form/src/textarea.css';
+@import 'style-forge.form/src/color.css';
+@import 'style-forge.form/src/file.css';
+
+@import 'style-forge.form/src/time.css';
+
+/* Custom inputs */
+@import 'style-forge.form/src/switch.css';
+
+/* Loader */
+@import 'style-forge.form/src/loading.css';
+
+/* Validation */
+@import 'style-forge.form/src/validate.css';
+```
+== JS
+```js
+// Require
+import 'style-forge.form/src/var.css';
+import 'style-forge.form/src/base.css';
+import 'style-forge.form/src/global.css';
+import 'style-forge.form/src/pseudo-classes.css';
+
+// Inputs
+import 'style-forge.form/src/input.css';
+import 'style-forge.form/src/button.css';
+import 'style-forge.form/src/checkbox-radio.css';
+import 'style-forge.form/src/select.css';
+import 'style-forge.form/src/textarea.css';
+import 'style-forge.form/src/color.css';
+import 'style-forge.form/src/file.css';
+
+import 'style-forge.form/src/time.css';
+
+// Custom inputs
+import 'style-forge.form/src/switch.css';
+
+// Loader
+import 'style-forge.form/src/loading.css';
+
+// Validation
+import 'style-forge.form/src/validate.css';
+```
+:::
 
 ## Variables
 
