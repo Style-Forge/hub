@@ -93,7 +93,7 @@ export default defineConfig({
           {
             text: 'Quick Start',
             link: '/guide/'
-          }
+          },
         ]
       },
       {
@@ -106,6 +106,12 @@ export default defineConfig({
           {
             text: 'Helpers',
             link: '/helpers/',
+            items: [
+              {
+                text: 'Content position',
+                link: '/helpers/content-position',
+              },
+            ]
           },
           {
             text: 'Form',
@@ -133,8 +139,16 @@ export default defineConfig({
     ]
   },
 
+  vue: {
+    template: {
+      compilerOptions: {
+        whitespace: 'preserve'
+      }
+    }
+  },
+
   markdown: {
-    config(md) {
+    config: md => {
       md.use(tabsMarkdownPlugin)
     }
   },

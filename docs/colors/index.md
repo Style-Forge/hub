@@ -188,18 +188,19 @@ import 'style-forge.colors/20.css';
 You can select a single color with [10 or 20] lightness gradient
 
 <div class="d:f:y">
-  <label class="sf-switch">
-    <input v-model="activated" type="checkbox" /> <span>{{ activated ? 'Web ' + webColors.length : 'All ' + colors.length }} colors</span>
-  </label>
-
-  <div :class="['colors', 'select', 'hover', 'd:f:x', 'wrap', 'gap:0', { activated }]">
-    <div
-      v-for="color in colors"
-      :key="color"
-      :class="['sf-c-' + color, { web: webColors.includes(color) }]"
-      :title="color"
-      @click="onClick(color)"
-    ></div>
+  <div class="pos:s top z:1">
+    <label class="sf-switch">
+      <input v-model="activated" type="checkbox" /> <span>{{ activated ? 'Web ' + webColors.length : 'All ' + colors.length }} colors</span>
+    </label>
+    <div :class="['colors', 'select', 'hover', 'd:f:x', 'wrap', 'gap:0', { activated }]">
+      <div
+        v-for="color in colors"
+        :key="color"
+        :class="['sf-c-' + color, { web: webColors.includes(color) }]"
+        :title="color"
+        @click="onClick(color)"
+      ></div>
+    </div>
   </div>
 
   <div class="content-out d:f:y">
@@ -222,6 +223,17 @@ You can select a single color with [10 or 20] lightness gradient
         </div>
       </div>
     </div>
+
+:::tabs key:import
+== CSS
+<highlight lang="css">
+@import "style-forge.colors/src/colors/10/{{ selected }}.css";
+</highlight>
+== JS
+<highlight lang="js">
+import 'style-forge.colors/src/colors/10/{{ selected }}.css';
+</highlight>
+:::
   </div>
 
   <div v-if="!activated" class="content-out d:f:y">
@@ -244,35 +256,20 @@ You can select a single color with [10 or 20] lightness gradient
         </div>
       </div>
     </div>
+
+:::tabs key:import
+== CSS
+<highlight lang="css">
+@import "style-forge.colors/src/colors/20/{{ selected }}.css";
+</highlight>
+== JS
+<highlight lang="js">
+import 'style-forge.colors/src/colors/20/{{ selected }}.css';
+</highlight>
+:::
+
   </div>
 </div>
-
-
-10 lightness gradient
-
-:::tabs key:import
-== CSS
-```css
-@import "style-forge.colors/src/colors/10/COLOR_NAME.css";
-```
-== JS
-```js
-import 'style-forge.colors/src/colors/10/COLOR_NAME.css';
-```
-:::
-
-20 lightness gradient
-
-:::tabs key:import
-== CSS
-```css
-@import "style-forge.colors/src/colors/20/COLOR_NAME.css";
-```
-== JS
-```js
-import 'style-forge.colors/src/colors/20/COLOR_NAME.css';
-```
-:::
 
 <style scoped>
 .colors > div {
@@ -286,6 +283,15 @@ import 'style-forge.colors/src/colors/20/COLOR_NAME.css';
 .colors.activated > div:not(.web) {
   opacity: 0.1;
   pointer-events: none;
+}
+
+.pos\:s {
+  top: 64px;
+  background: var(--vp-c-bg);
+  padding-top: 1em;
+}
+.sf-switch + .colors {
+  margin-top: 1em;
 }
 
 .select:not(.activated) > div,

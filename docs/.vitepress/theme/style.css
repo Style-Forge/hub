@@ -9,3 +9,16 @@
   flex-flow: wrap row;
   gap: 0.5em;
 }
+
+.table td { white-space: nowrap }
+
+.s-shiki pre {
+  background: none !important;
+}
+
+.VPLocalNav button {
+  padding: 0;
+}
+.copy {
+  padding: inherit;
+}
