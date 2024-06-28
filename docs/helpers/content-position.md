@@ -85,7 +85,7 @@ const hasWrap = ref(false);
 const key = ref(positions[1].key);
 const option = ref(positions[1].options[2].value);
 const options = computed(() => positions.find(x => x.key === key.value).options);
-const objOption = computed(() => options.value.find(x => x.value === option.value));
+const objOption = computed(() => options.value.find(x => x.value === option.value) || options.value[0].value);
 
 const elmKey = ref(positions[3].key);
 const elmOption = ref(positions[3].options[2].value);

@@ -39,26 +39,25 @@ watch(() => slots.default(), async () => {
   updateTheme()
 })
 
-onMounted(updateTheme)
+const observer = new MutationObserver(updateTheme)
+observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] })
+
+onMounted(async () => {
+  highlighter = await createHighlighter({
+    themes,
+    langs,
+  })
+  updateTheme()
+})
 
 async function highlightCode(theme) {
   if (!vNodePre.value) return
 
-  if (!highlighter) {
-    highlighter = await createHighlighter({
-      langs,
-      themes,
-    })
-  }
-
-  highlightedCode.value = highlighter.codeToHtml(vNodePre.value.innerText.trim(), {
+  highlightedCode.value = highlighter.codeToHtml(vNodePre.value.textContent.trim(), {
     lang: props.lang,
     theme,
   })
 }
-
-const observer = new MutationObserver(updateTheme)
-observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] })
 </script>
 
 <style>
