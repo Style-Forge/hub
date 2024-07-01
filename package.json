@@ -1,6 +1,6 @@
 {
   "name": "style-forge",
-  "version": "2.6.36",
+  "version": "2.6.37",
   "description": "Style-Forge: CSS framework with themes, utilities, flexbox, and grid for creating responsive websites.",
   "type": "module",
   "main": "style-forge.css",
@@ -40,21 +40,21 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
-    "postcss": "^8.4.23",
+    "postcss": "^8.4.39",
     "postcss-combine-duplicated-selectors": "^10.0.3",
     "postcss-discard-comments": "^7.0.1",
     "postcss-import": "^16.1.0",
     "postcss-minify": "^1.1.0",
-    "shiki": "^1.9.1",
+    "shiki": "^1.10.0",
     "vitepress": "^1.2.3",
     "vitepress-plugin-tabs": "^0.5.0"
   },
   "dependencies": {
     "style-forge.base": "^5.0.7",
-    "style-forge.colors": "^1.0.6",
+    "style-forge.colors": "^1.0.7",
     "style-forge.form": "^3.1.0",
     "style-forge.helpers": "^1.0.157",
-    "style-forge.patterns": "^2.0.5",
+    "style-forge.patterns": "^2.0.6",
     "style-forge.themes": "^1.0.11"
   },
   "bugs": {
