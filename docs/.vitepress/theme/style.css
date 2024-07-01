@@ -22,3 +22,21 @@
 .copy {
   padding: inherit;
 }
+
+
+.height\:2 {
+  height: 500px;
+}
+.example {
+  position: relative;
+
+  border: 1px solid var(--vp-c-divider);
+
+  min-height: 100px;
+
+  padding: 1em;
+}
+.example > div {
+  border: 1px solid var(--vp-c-divider);
+  background: hsl(var(--sf-c-black-80) / .1);
+}

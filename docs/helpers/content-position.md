@@ -7,72 +7,72 @@ const positions =
   { 
     key: "align-content",
     options: [
-      { axis: "y", target: "c", suffix: "", class: "y\:c", value: "stretch" },
-      { axis: "y", target: "c", suffix: "b", class: "y\:c\:b", value: "baseline" },
-      { axis: "y", target: "c", suffix: "n", class: "y\:c\:n", value: "normal" },
-      { axis: "y", target: "c", suffix: "c", class: "y\:c\:c", value: "center" },
-      { axis: "y", target: "c", suffix: "e", class: "y\:c\:e", value: "end" },
-      { axis: "y", target: "c", suffix: "s", class: "y\:c\:s", value: "start" },
-      { axis: "y", target: "c", suffix: "sa", class: "y\:c\:sa", value: "space-around" },
-      { axis: "y", target: "c", suffix: "sb", class: "y\:c\:sb", value: "space-between" },
-      { axis: "y", target: "c", suffix: "se", class: "y\:c\:se", value: "space-evenly" },
+      { axis: "y", target: "c", suffix: "", class: "y:c", value: "stretch" },
+      { axis: "y", target: "c", suffix: "b", class: "y:c:b", value: "baseline" },
+      { axis: "y", target: "c", suffix: "n", class: "y:c:n", value: "normal" },
+      { axis: "y", target: "c", suffix: "c", class: "y:c:c", value: "center" },
+      { axis: "y", target: "c", suffix: "e", class: "y:c:e", value: "end" },
+      { axis: "y", target: "c", suffix: "s", class: "y:c:s", value: "start" },
+      { axis: "y", target: "c", suffix: "sa", class: "y:c:sa", value: "space-around" },
+      { axis: "y", target: "c", suffix: "sb", class: "y:c:sb", value: "space-between" },
+      { axis: "y", target: "c", suffix: "se", class: "y:c:se", value: "space-evenly" },
     ],
   },
   {
     key: "align-items",
     options: [
-      { axis: "y", target: "i", suffix: "", class: "y\:i", value: "stretch" },
-      { axis: "y", target: "i", suffix: "b", class: "y\:i\:b", value: "baseline" },
-      { axis: "y", target: "i", suffix: "c", class: "y\:i\:c", value: "center" },
-      { axis: "y", target: "i", suffix: "e", class: "y\:i\:e", value: "end" },
-      { axis: "y", target: "i", suffix: "s", class: "y\:i\:s", value: "start" },
+      { axis: "y", target: "i", suffix: "", class: "y:i", value: "stretch" },
+      { axis: "y", target: "i", suffix: "b", class: "y:i:b", value: "baseline" },
+      { axis: "y", target: "i", suffix: "c", class: "y:i:c", value: "center" },
+      { axis: "y", target: "i", suffix: "e", class: "y:i:e", value: "end" },
+      { axis: "y", target: "i", suffix: "s", class: "y:i:s", value: "start" },
     ],
   },
   {
     key: "align-self",
     options: [
-      { axis: "y", target: "s", suffix: "", class: "y\:s", value: "stretch" },
-      { axis: "y", target: "s", suffix: "a", class: "y\:s\:a", value: "auto" },
-      { axis: "y", target: "s", suffix: "n", class: "y\:s\:n", value: "normal" },
-      { axis: "y", target: "s", suffix: "b", class: "y\:s\:b", value: "baseline" },
-      { axis: "y", target: "s", suffix: "c", class: "y\:s\:c", value: "center" },
-      { axis: "y", target: "s", suffix: "e", class: "y\:s\:e", value: "end" },
-      { axis: "y", target: "s", suffix: "s", class: "y\:s\:s", value: "start" },
+      { axis: "y", target: "s", suffix: "", class: "y:s", value: "stretch" },
+      { axis: "y", target: "s", suffix: "a", class: "y:s:a", value: "auto" },
+      { axis: "y", target: "s", suffix: "n", class: "y:s:n", value: "normal" },
+      { axis: "y", target: "s", suffix: "b", class: "y:s:b", value: "baseline" },
+      { axis: "y", target: "s", suffix: "c", class: "y:s:c", value: "center" },
+      { axis: "y", target: "s", suffix: "e", class: "y:s:e", value: "end" },
+      { axis: "y", target: "s", suffix: "s", class: "y:s:s", value: "start" },
     ],
   },
   {
     key: "justify-content",
     options: [
-      { axis: "x", target: "c", suffix: "", class: "x\:c", value: "stretch" },
-      { axis: "x", target: "c", suffix: "n", class: "x\:c\:n", value: "normal" },
-      { axis: "x", target: "c", suffix: "c", class: "x\:c\:c", value: "center" },
-      { axis: "x", target: "c", suffix: "e", class: "x\:c\:e", value: "end" },
-      { axis: "x", target: "c", suffix: "s", class: "x\:c\:s", value: "start" },
-      { axis: "x", target: "c", suffix: "sa", class: "x\:c\:sa", value: "space-around" },
-      { axis: "x", target: "c", suffix: "sb", class: "x\:c\:sb", value: "space-between" },
-      { axis: "x", target: "c", suffix: "se", class: "x\:c\:se", value: "space-evenly" },
+      { axis: "x", target: "c", suffix: "", class: "x:c", value: "stretch" },
+      { axis: "x", target: "c", suffix: "n", class: "x:c:n", value: "normal" },
+      { axis: "x", target: "c", suffix: "c", class: "x:c:c", value: "center" },
+      { axis: "x", target: "c", suffix: "e", class: "x:c:e", value: "end" },
+      { axis: "x", target: "c", suffix: "s", class: "x:c:s", value: "start" },
+      { axis: "x", target: "c", suffix: "sa", class: "x:c:sa", value: "space-around" },
+      { axis: "x", target: "c", suffix: "sb", class: "x:c:sb", value: "space-between" },
+      { axis: "x", target: "c", suffix: "se", class: "x:c:se", value: "space-evenly" },
     ],
   },
   {
     key: "justify-items",
     options: [
-      { axis: "x", target: "i", suffix: "", class: "x\:i", value: "stretch" },
-      { axis: "x", target: "i", suffix: "b", class: "x\:i\:b", value: "baseline" },
-      { axis: "x", target: "i", suffix: "c", class: "x\:i\:c", value: "center" },
-      { axis: "x", target: "i", suffix: "e", class: "x\:i\:e", value: "end" },
-      { axis: "x", target: "i", suffix: "s", class: "x\:i\:s", value: "start" },
+      { axis: "x", target: "i", suffix: "", class: "x:i", value: "stretch" },
+      { axis: "x", target: "i", suffix: "b", class: "x:i:b", value: "baseline" },
+      { axis: "x", target: "i", suffix: "c", class: "x:i:c", value: "center" },
+      { axis: "x", target: "i", suffix: "e", class: "x:i:e", value: "end" },
+      { axis: "x", target: "i", suffix: "s", class: "x:i:s", value: "start" },
     ],
   },
   {
     key: "justify-self",
     options: [
-      { axis: "x", target: "s", suffix: "", class: "x\:s", value: "stretch" },
-      { axis: "x", target: "s", suffix: "a", class: "x\:s\:a", value: "auto" },
-      { axis: "x", target: "s", suffix: "n", class: "x\:s\:n", value: "normal" },
-      { axis: "x", target: "s", suffix: "b", class: "x\:s\:b", value: "baseline" },
-      { axis: "x", target: "s", suffix: "c", class: "x\:s\:c", value: "center" },
-      { axis: "x", target: "s", suffix: "e", class: "x\:s\:e", value: "end" },
-      { axis: "x", target: "s", suffix: "s", class: "x\:s\:s", value: "start" },
+      { axis: "x", target: "s", suffix: "", class: "x:s", value: "stretch" },
+      { axis: "x", target: "s", suffix: "a", class: "x:s:a", value: "auto" },
+      { axis: "x", target: "s", suffix: "n", class: "x:s:n", value: "normal" },
+      { axis: "x", target: "s", suffix: "b", class: "x:s:b", value: "baseline" },
+      { axis: "x", target: "s", suffix: "c", class: "x:s:c", value: "center" },
+      { axis: "x", target: "s", suffix: "e", class: "x:s:e", value: "end" },
+      { axis: "x", target: "s", suffix: "s", class: "x:s:s", value: "start" },
     ],
   },
 ];
@@ -211,6 +211,95 @@ The file `constent-position.css` contains a set of CSS classes for aligning elem
 <highlight lang="html">
 &lt;div class="{{ result }}"&gt;&lt;/div&gt;
 </highlight>
+
+## CSS classes
+
+<div class="d:f x:c:c wrap">
+<table>
+<thead>
+<tr><th>Class</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><code>y:c</code></td><td>stretch</td></tr>
+<tr><td><code>y:c:b</code></td><td>baseline</td></tr>
+<tr><td><code>y:c:n</code></td><td>normal</td></tr>
+<tr><td><code>y:c:c</code></td><td>center</td></tr>
+<tr><td><code>y:c:e</code></td><td>end</td></tr>
+<tr><td><code>y:c:s</code></td><td>start</td></tr>
+<tr><td><code>y:c:sa</code></td><td>space-around</td></tr>
+<tr><td><code>y:c:sb</code></td><td>space-between</td></tr>
+<tr><td><code>y:c:se</code></td><td>space-evenly</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th>Class</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><code>y:i</code></td><td>stretch</td></tr>
+<tr><td><code>y:i:b</code></td><td>baseline</td></tr>
+<tr><td><code>y:i:c</code></td><td>center</td></tr>
+<tr><td><code>y:i:e</code></td><td>end</td></tr>
+<tr><td><code>y:i:s</code></td><td>start</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th>Class</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><code>y:s</code></td><td>stretch</td></tr>
+<tr><td><code>y:s:a</code></td><td>auto</td></tr>
+<tr><td><code>y:s:n</code></td><td>normal</td></tr>
+<tr><td><code>y:s:b</code></td><td>baseline</td></tr>
+<tr><td><code>y:s:c</code></td><td>center</td></tr>
+<tr><td><code>y:s:e</code></td><td>end</td></tr>
+<tr><td><code>y:s:s</code></td><td>start</td></tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr><th>Class</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><code>x:c</code></td><td>stretch</td></tr>
+<tr><td><code>x:c:n</code></td><td>normal</td></tr>
+<tr><td><code>x:c:c</code></td><td>center</td></tr>
+<tr><td><code>x:c:e</code></td><td>end</td></tr>
+<tr><td><code>x:c:s</code></td><td>start</td></tr>
+<tr><td><code>x:c:sa</code></td><td>space-around</td></tr>
+<tr><td><code>x:c:sb</code></td><td>space-between</td></tr>
+<tr><td><code>x:c:se</code></td><td>space-evenly</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th>Class</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><code>x:i</code></td><td>stretch</td></tr>
+<tr><td><code>x:i:b</code></td><td>baseline</td></tr>
+<tr><td><code>x:i:c</code></td><td>center</td></tr>
+<tr><td><code>x:i:e</code></td><td>end</td></tr>
+<tr><td><code>x:i:s</code></td><td>start</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th>Class</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><code>x:s</code></td><td>stretch</td></tr>
+<tr><td><code>x:s:a</code></td><td>auto</td></tr>
+<tr><td><code>x:s:n</code></td><td>normal</td></tr>
+<tr><td><code>x:s:b</code></td><td>baseline</td></tr>
+<tr><td><code>x:s:c</code></td><td>center</td></tr>
+<tr><td><code>x:s:e</code></td><td>end</td></tr>
+<tr><td><code>x:s:s</code></td><td>start</td></tr>
+</tbody>
+</table>
+</div>
 
 <style scoped>
 .box {

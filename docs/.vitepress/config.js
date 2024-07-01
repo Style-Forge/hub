@@ -106,16 +106,100 @@ export default defineConfig({
           {
             text: 'Helpers',
             link: '/helpers/',
+            collapsed: true,
             items: [
               {
                 text: 'Content position',
                 link: '/helpers/content-position',
+              },
+              {
+                text: 'Display',
+                link: '/helpers/display',
+              },
+              {
+                text: 'Flex',
+                link: '/helpers/flex',
+              },
+              {
+                text: 'Grid',
+                link: '/helpers/grid',
+              },
+              {
+                text: 'Overflow',
+                link: '/helpers/ov',
+              },
+              {
+                text: 'Radius',
+                link: '/helpers/radius',
+              },
+              {
+                text: 'Shift',
+                link: '/helpers/shift',
+              },
+              {
+                text: 'Position',
+                link: '/helpers/position',
+              },
+              {
+                text: 'Size',
+                link: '/helpers/size',
+              },
+              {
+                text: 'Text',
+                link: '/helpers/text',
+              },
+              {
+                text: 'z-index',
+                link: '/helpers/z',
               },
             ]
           },
           {
             text: 'Form',
             link: '/form/',
+            collapsed: true,
+            items: [
+              {
+                text: 'Buttons',
+                link: '/form/button',
+              },
+              {
+                text: 'Inputs',
+                link: '/form/inputs',
+              },
+              {
+                text: 'checkbox',
+                link: '/form/checkbox',
+              },
+              {
+                text: 'radio',
+                link: '/form/radio',
+              },
+              {
+                text: 'select',
+                link: '/form/select',
+              },
+              {
+                text: 'textarea',
+                link: '/form/textarea',
+              },
+              {
+                text: 'file',
+                link: '/form/file',
+              },
+              {
+                text: 'color',
+                link: '/form/color',
+              },
+              {
+                text: 'switch',
+                link: '/form/switch',
+              },
+              {
+                text: 'validate',
+                link: '/form/validate',
+              },
+            ]
           },
           {
             text: 'Colors',

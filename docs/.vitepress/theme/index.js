@@ -3,6 +3,7 @@ import { h } from 'vue'
 import DefaultTheme from 'vitepress/theme'
 import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
 import highlight from '../components/highlight.vue'
+import actions from '../components/actions.vue'
 
 import './var.css'
 import './style.css'
@@ -13,8 +14,9 @@ export default {
   Layout: () => {
     return h(DefaultTheme.Layout, null, {})
   },
-  enhanceApp({ app, router, siteData }) {
+  enhanceApp({ app }) {
     app.component('highlight', highlight)
+    app.component('actions', actions)
     enhanceAppWithTabs(app);
   }
 }
