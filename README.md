@@ -2,8 +2,9 @@
 # Style-Forge
 
 ![npm](https://img.shields.io/npm/v/style-forge)
-![npm](https://img.shields.io/npm/dm/style-forge)
 ![license](https://img.shields.io/npm/l/style-forge)
+![npm](https://img.shields.io/npm/dm/style-forge)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/1610068bc1b5443cb47f92e967f1d554)](https://app.codacy.com/gh/Sarmaged/style-forge/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 ![build](https://github.com/Sarmaged/style-forge/actions/workflows/update.yml/badge.svg)
 
 `Style-Forge` package is a comprehensive CSS framework designed for modern web development. It provides a wide range of utilities and components to streamline the process of building responsive, aesthetically pleasing websites. With features like customizable themes, utility classes, and support for modern CSS technologies like flexbox and grid, style-forge aims to enhance productivity and maintainability in frontend development.
