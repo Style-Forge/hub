@@ -52,29 +52,17 @@ jobs:
       - name: Build project
         run: yarn build
 
-      - name: Check for changes
-        id: git-status
-        run: |
-          git add package.json yarn.lock style-forge.css
-          git diff --cached --exit-code || echo "Changes detected" > changes.txt
-          if [ -f changes.txt ]; then echo "changes=true" >> $GITHUB_ENV; else echo "changes=false" >> $GITHUB_ENV; fi
-        continue-on-error: true
-
-      - name: Commit changes
-        if: env.changes == 'true'
+      - name: Commit
         run: |
           git commit -m 'chore: update dependencies and increment version'
 
-      - name: Push changes
-        if: env.changes == 'true'
+      - name: Push
         run: git push origin main --tags
 
       - name: Set up NPM auth
-        if: env.changes == 'true'
         run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
 
       - name: Publish to npm
-        if: env.changes == 'true'
         run: yarn publish --non-interactive
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
