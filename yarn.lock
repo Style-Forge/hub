@@ -909,10 +909,10 @@ style-forge.base@^5.0.8:
   resolved "https://registry.yarnpkg.com/style-forge.base/-/style-forge.base-5.0.8.tgz#3caba3a5425a5b86170f6c23b06e6b9f40082f0a"
   integrity sha512-BIMEBXRAZrYuckNlHcRZDHmpMbolYd35uVKrZy8mG5yIBJhxw7dX8MBkDyBgv741M+6MRXQuCiIPUM6E6L9sPQ==
 
-style-forge.colors@^1.0.7:
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/style-forge.colors/-/style-forge.colors-1.0.7.tgz#15037948ff0a3d4df4b1d146390a7caefcf1652d"
-  integrity sha512-0mQVDCkOc2in+rm0kQ10WrlxALDIJLom8fukFyvEl5zFw1Lpeq6rG0Wc64XeBXJeoYWk6Z+jgR6YKM+qlBOQpA==
+style-forge.colors@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/style-forge.colors/-/style-forge.colors-1.0.8.tgz#3c3eb54cc0b4219343354ebc4577e8db675fa9ac"
+  integrity sha512-FzcDikDbYet5du5+H3wOfbdVXWTU7zYn+Nu7E5uaJmPVJppAozf/zchcLnsfssloBOWX+ReV2OdJACwQhK/JWQ==
 
 style-forge.form@^3.2.0:
   version "3.2.0"
