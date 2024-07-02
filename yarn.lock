@@ -924,10 +924,10 @@ style-forge.helpers@^1.1.0:
   resolved "https://registry.yarnpkg.com/style-forge.helpers/-/style-forge.helpers-1.1.0.tgz#2b794ba3a2901e95a0d456dffacce6e07a89996d"
   integrity sha512-P/Q7BN0MgRVgz8jjvTBafQuDYoYfm18mG3Ncp/3wTFr8gzAwOcBKTV6izEr8ZVQAZNrHtHSggLvwN2jSK59j/A==
 
-style-forge.patterns@^2.0.9:
-  version "2.0.9"
-  resolved "https://registry.yarnpkg.com/style-forge.patterns/-/style-forge.patterns-2.0.9.tgz#ef92024edf9b01b07933ac26048b3483147318db"
-  integrity sha512-3jOJTDsqh+ENMSlbPr7eeh4HUKOt4pGVISldvI2lCs3rcdr5AcdeVX5Y5qsU4qTFntDwoRUgKDEq2Ri0eFqUSw==
+style-forge.patterns@^2.0.10:
+  version "2.0.10"
+  resolved "https://registry.yarnpkg.com/style-forge.patterns/-/style-forge.patterns-2.0.10.tgz#28298757655b5e6946286c81b4ce79cfa4a2eeff"
+  integrity sha512-kh+NjC9ryc4Pf+AS5N6NpLGJL5c/+jotsBndLb6tv6EPCMi1B5OzyiT52tW7Gy0XkaTlRgIZ+J+rcb3WVaxIaQ==
 
 style-forge.themes@^1.1.0:
   version "1.1.0"
