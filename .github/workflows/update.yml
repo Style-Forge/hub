@@ -52,9 +52,11 @@ jobs:
       - name: Build project
         run: yarn build
 
+      - name: Git add
+        run: git add package.json yarn.lock style-forge.css
+
       - name: Commit
-        run: |
-          git commit -m 'chore: update dependencies and increment version'
+        run: git commit -m 'chore update dependencies and increment version'
 
       - name: Push
         run: git push origin main --tags
