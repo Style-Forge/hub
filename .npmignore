@@ -1,10 +1,8 @@
 !package.json
 !README.md
 !src/
-!dist/
 !*.css
 
 *
 
-docs/
-docs/.vitepress/
+docs/**/*
