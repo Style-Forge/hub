@@ -29,8 +29,9 @@ head:
 <div class="shields">
 
 ![npm](https://img.shields.io/npm/v/style-forge.patterns)
-![npm](https://img.shields.io/npm/dm/style-forge.patterns)
 ![license](https://img.shields.io/npm/l/style-forge.patterns)
+![npm](https://img.shields.io/npm/dm/style-forge.patterns)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/90fd8e204aef4dbc971fb93810fb89ec)](https://app.codacy.com/gh/Sarmaged/style-forge.patterns/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 ![build](https://github.com/Sarmaged/style-forge.patterns/actions/workflows/publish.yml/badge.svg)
 
 </div>
