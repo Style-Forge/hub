@@ -37,6 +37,20 @@
   padding: 1em;
 }
 .example > div {
+  font-size: var(--vp-code-font-size);
   border: 1px solid var(--vp-c-divider);
   background: hsl(var(--sf-c-black-80) / .1);
+  padding: 0.1em 0.3em;
 }
+
+.pos\:s {
+  top: 64px;
+  z-index: 10;
+  background: var(--vp-c-bg);
+
+  margin: 0;
+  padding: 2em 1em 0.5em;
+}
+.pos\:s h3 { margin: 0 }
+
+.vp-doc table.d\:t { display: table }

@@ -117,14 +117,6 @@ export default defineConfig({
                 link: '/helpers/display',
               },
               {
-                text: 'Flex',
-                link: '/helpers/flex',
-              },
-              {
-                text: 'Grid',
-                link: '/helpers/grid',
-              },
-              {
                 text: 'Overflow',
                 link: '/helpers/ov',
               },
