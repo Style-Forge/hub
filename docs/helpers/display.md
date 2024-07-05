@@ -510,10 +510,3 @@ Flexbox utilities provide powerful alignment and distribution capabilities, whil
 
 </div>
 </div>
-
-
-<style>
-.half > * {
-  max-width: 340px;
-}
-</style>

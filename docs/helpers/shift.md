@@ -30,8 +30,23 @@ const text = computed(() => {
 
 # Shift
 
-The shift utility classes help manage the alignment of an element within a flex and grid container. These classes allow 
-you to control the alignment properties easily.
+The shift utility classes help manage the alignment of an element within a flex and grid container. These classes 
+allow you to control the alignment properties easily.
+
+## CSS Classes
+
+<table class="d:t w">
+<thead>
+<tr><th>Class</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><b>shift</b></td><td>margin: auto</td></tr>
+<tr><td><b>top</b></td><td>margin-top: 0</td></tr>
+<tr><td><b>left</b></td><td>margin-left: 0</td></tr>
+<tr><td><b>right</b></td><td>margin-right: 0</td></tr>
+<tr><td><b>bottom</b></td><td>margin-bottom: 0</td></tr>
+</tbody>
+</table>
 
 <div class="d:f:y">
 
@@ -84,21 +99,4 @@ you to control the alignment properties easily.
 &lt;/div&gt;
 </highlight>
 
-</div>
-
-## Classes
-
-<div class="d:f">
-<table class="d:t w">
-<thead>
-<tr><th>Class</th><th>Description</th></tr>
-</thead>
-<tbody>
-<tr><td><b>shift</b></td><td>margin: auto</td></tr>
-<tr><td><b>top</b></td><td>margin-top: 0</td></tr>
-<tr><td><b>left</b></td><td>margin-left: 0</td></tr>
-<tr><td><b>right</b></td><td>margin-right: 0</td></tr>
-<tr><td><b>bottom</b></td><td>margin-bottom: 0</td></tr>
-</tbody>
-</table>
 </div>

@@ -54,3 +54,7 @@
 .pos\:s h3 { margin: 0 }
 
 .vp-doc table.d\:t { display: table }
+
+:where(.d\:f, .d\:f\:x, .d\:f\:y, .d\:g, .d\:g\:x, .d\:g\:y).half > * {
+  max-width: 340px;
+}
