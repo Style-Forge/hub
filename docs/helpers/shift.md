@@ -30,7 +30,8 @@ const text = computed(() => {
 
 # Shift
 
-The shift utility classes help manage the alignment of an element within a flex container. These classes allow you to control the alignment properties easily.
+The shift utility classes help manage the alignment of an element within a flex and grid container. These classes allow 
+you to control the alignment properties easily.
 
 <div class="d:f:y">
 
