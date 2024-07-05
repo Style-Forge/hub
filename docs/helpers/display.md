@@ -77,7 +77,7 @@ Flexbox utilities provide powerful alignment and distribution capabilities, whil
 <tr><td><b>auto</b></td><td>flex: auto</td></tr>
 <tr><td><b>wrap</b></td><td>flex-flow: wrap</td></tr>
 <tr><td><b>none</b></td><td>flex: none</td></tr>
-<tr><td><b>reverse</b></td><td>lex-flow: reverse</td></tr>
+<tr><td><b>reverse</b></td><td>flex-flow: reverse</td></tr>
 </tbody>
 </table>
 
