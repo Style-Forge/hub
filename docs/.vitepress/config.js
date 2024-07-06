@@ -117,6 +117,10 @@ export default defineConfig({
                 link: '/helpers/display',
               },
               {
+                text: 'Opacity',
+                link: '/helpers/op',
+              },
+              {
                 text: 'Overflow',
                 link: '/helpers/ov',
               },
