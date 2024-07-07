@@ -59,7 +59,7 @@ Flexbox utilities provide powerful alignment and distribution capabilities, whil
 <div class="d:f:x auto wrap half">
 <div class="d:f:y">
 
-<div class="pos:s top">
+<div class="pos:s t">
 
 ### Flex
 
@@ -319,7 +319,7 @@ Flexbox utilities provide powerful alignment and distribution capabilities, whil
 </div>
 <div class="d:f:y">
 
-<div class="pos:s top">
+<div class="pos:s t">
 
 ### Grid
 

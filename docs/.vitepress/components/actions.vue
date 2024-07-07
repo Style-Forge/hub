@@ -30,7 +30,7 @@ watch(disabled, x => {
 </script>
 
 <template>
-  <div class="actions d:f wrap pos:s top z:1">
+  <div class="actions d:f wrap pos:s t z:1">
     <label v-if="showLoading" class="sf-checkbox">
       <input type="checkbox" v-model="loading"> <span>Loading</span>
     </label>
@@ -41,10 +41,6 @@ watch(disabled, x => {
 </template>
 
 <style scoped>
-.actions {
-  /*top: 60px*/
-}
-
 .pos\:s {
   top: 64px;
   background: var(--vp-c-bg);

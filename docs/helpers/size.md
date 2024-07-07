@@ -1,13 +1,61 @@
 
-# Size Utilities
+# Size
 
 The size utility classes help manage the width and height of an element. These classes allow you to control the size properties easily.
 
-## Width Classes
+## CSS Classes
 
-### .w
+<div class="d:f:x auto wrap half">
+<div class="d:f:y">
 
-The `.w` class sets the width to 100%.
+<table class="d:t w">
+<thead>
+<tr><th>Class</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><b>w</b></td><td>width: 100%</td></tr>
+<tr><td><b>w:0</b></td><td>width: 0</td></tr>
+<tr><td><b>w:auto</b></td><td>width: auto</td></tr>
+<tr><td><b>min</b></td><td>min-width: 0</td></tr>
+<tr><td><b>min:100</b></td><td>min-width: 100%</td></tr>
+<tr><td><b>max</b></td><td>max-width: none</td></tr>
+<tr><td><b>max:0</b></td><td>max-width: 0</td></tr>
+<tr><td><b>max:100</b></td><td>max-width: 100%</td></tr>
+</tbody>
+</table>
+
+</div>
+<div class="d:f:y">
+
+<table class="d:t w">
+<thead>
+<tr><th>Class</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><b>h</b></td><td>height: 100%</td></tr>
+<tr><td><b>h:0</b></td><td>height: 0</td></tr>
+<tr><td><b>h:auto</b></td><td>height: auto</td></tr>
+<tr><td><b>min</b></td><td>min-height: 0</td></tr>
+<tr><td><b>min:100</b></td><td>min-height: 100%</td></tr>
+<tr><td><b>max</b></td><td>max-height: none</td></tr>
+<tr><td><b>max:0</b></td><td>max-height: 0</td></tr>
+<tr><td><b>max:100</b></td><td>max-height: 100%</td></tr>
+</tbody>
+</table>
+
+</div>
+</div>
+
+## Width / Height - Utilities
+
+<div class="d:f:x auto wrap half">
+<div class="d:f:y">
+
+<div class="pos:s t">
+
+### Width
+
+</div>
 
 ```html
 <div class="w">
@@ -15,13 +63,13 @@ The `.w` class sets the width to 100%.
 </div>
 ```
 
-<div class="example w">
-  100% Width
+<div class="example">
+  <div class="w whs:nw">
+    100% Width
+  </div>
 </div>
 
-### .w:0
-
-The `.w:0` class sets the width to 0.
+#### w:0
 
 ```html
 <div class="w:0">
@@ -29,13 +77,13 @@ The `.w:0` class sets the width to 0.
 </div>
 ```
 
-<div class="example w:0">
-  0 Width
+<div class="example">
+  <div class="w:0 whs:nw">
+    0 Width
+  </div>
 </div>
 
-### .w:a
-
-The `.w:a` class sets the width to `auto`.
+#### w:a
 
 ```html
 <div class="w:a">
@@ -43,13 +91,13 @@ The `.w:a` class sets the width to `auto`.
 </div>
 ```
 
-<div class="example w:a">
-  Auto Width
+<div class="example">
+  <div class="w:a whs:nw">
+    Auto Width
+  </div>
 </div>
 
-### .w.min
-
-The `.w.min` class sets the min-width to 0.
+#### min
 
 ```html
 <div class="w min">
@@ -57,13 +105,13 @@ The `.w.min` class sets the min-width to 0.
 </div>
 ```
 
-<div class="example w min">
-  Min Width 0
+<div class="example">
+  <div class="w min whs:nw">
+    Min Width 0
+  </div>
 </div>
 
-### .w.min:100
-
-The `.w.min:100` class sets the min-width to 100%.
+#### min:100
 
 ```html
 <div class="w min:100">
@@ -71,13 +119,13 @@ The `.w.min:100` class sets the min-width to 100%.
 </div>
 ```
 
-<div class="example w min:100">
-  Min Width 100%
+<div class="example">
+  <div class="w min:100 whs:nw">
+    Min Width 100%
+  </div>
 </div>
 
-### .w.max
-
-The `.w.max` class sets the max-width to none.
+#### max
 
 ```html
 <div class="w max">
@@ -85,13 +133,13 @@ The `.w.max` class sets the max-width to none.
 </div>
 ```
 
-<div class="example w max">
-  Max Width None
+<div class="example">
+  <div class="w max whs:nw">
+    Max Width None
+  </div>
 </div>
 
-### .w.max:0
-
-The `.w.max:0` class sets the max-width to 0.
+#### max:0
 
 ```html
 <div class="w max:0">
@@ -99,13 +147,13 @@ The `.w.max:0` class sets the max-width to 0.
 </div>
 ```
 
-<div class="example w max:0">
-  Max Width 0
+<div class="example">
+  <div class="w max:0 whs:nw">
+    Max Width 0
+  </div>
 </div>
 
-### .w.max:100
-
-The `.w.max:100` class sets the max-width to 100%.
+#### max:100
 
 ```html
 <div class="w max:100">
@@ -113,15 +161,20 @@ The `.w.max:100` class sets the max-width to 100%.
 </div>
 ```
 
-<div class="example w max:100">
-  Max Width 100%
+<div class="example">
+  <div class="w max:100 whs:nw">
+    Max Width 100%
+  </div>
 </div>
 
-## Height Classes
+</div>
+<div class="d:f:y">
 
-### .h
+<div class="pos:s t">
 
-The `.h` class sets the height to 100%.
+### Height
+
+</div>
 
 ```html
 <div class="h">
@@ -129,13 +182,13 @@ The `.h` class sets the height to 100%.
 </div>
 ```
 
-<div class="example h">
-  100% Height
+<div class="example">
+  <div class="h whs:nw">
+    100% Height
+  </div>
 </div>
 
-### .h:0
-
-The `.h:0` class sets the height to 0.
+#### h:0
 
 ```html
 <div class="h:0">
@@ -143,13 +196,13 @@ The `.h:0` class sets the height to 0.
 </div>
 ```
 
-<div class="example h:0">
-  0 Height
+<div class="example">
+  <div class="h:0 whs:nw">
+    0 Height
+  </div>
 </div>
 
-### .h:a
-
-The `.h:a` class sets the height to `auto`.
+#### h:a
 
 ```html
 <div class="h:a">
@@ -157,13 +210,13 @@ The `.h:a` class sets the height to `auto`.
 </div>
 ```
 
-<div class="example h:a">
-  Auto Height
+<div class="example">
+  <div class="h:a whs:nw">
+    Auto Height
+  </div>
 </div>
 
-### .h.min
-
-The `.h.min` class sets the min-height to 0.
+<br />
 
 ```html
 <div class="h min">
@@ -171,13 +224,13 @@ The `.h.min` class sets the min-height to 0.
 </div>
 ```
 
-<div class="example h min">
-  Min Height 0
+<div class="example">
+  <div class="h min whs:nw">
+    Min Height 0
+  </div>
 </div>
 
-### .h.min:100
-
-The `.h.min:100` class sets the min-height to 100%.
+<br />
 
 ```html
 <div class="h min:100">
@@ -185,13 +238,13 @@ The `.h.min:100` class sets the min-height to 100%.
 </div>
 ```
 
-<div class="example h min:100">
-  Min Height 100%
+<div class="example">
+  <div class="h min:100 whs:nw">
+    Min Height 100%
+  </div>
 </div>
 
-### .h.max
-
-The `.h.max` class sets the max-height to none.
+<br />
 
 ```html
 <div class="h max">
@@ -199,13 +252,13 @@ The `.h.max` class sets the max-height to none.
 </div>
 ```
 
-<div class="example h max">
-  Max Height None
+<div class="example">
+  <div class="h max whs:nw">
+    Max Height None
+  </div>
 </div>
 
-### .h.max:0
-
-The `.h.max:0` class sets the max-height to 0.
+<br />
 
 ```html
 <div class="h max:0">
@@ -213,13 +266,13 @@ The `.h.max:0` class sets the max-height to 0.
 </div>
 ```
 
-<div class="example h max:0">
-  Max Height 0
+<div class="example">
+  <div class="h max:0 whs:nw">
+    Max Height 0
+  </div>
 </div>
 
-### .h.max:100
-
-The `.h.max:100` class sets the max-height to 100%.
+<br />
 
 ```html
 <div class="h max:100">
@@ -227,6 +280,11 @@ The `.h.max:100` class sets the max-height to 100%.
 </div>
 ```
 
-<div class="example h max:100">
-  Max Height 100%
+<div class="example">
+  <div class="h max:100 whs:nw">
+    Max Height 100%
+  </div>
+</div>
+
+</div>
 </div>

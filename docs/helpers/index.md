@@ -79,6 +79,23 @@ import 'style-forge.helpers';
 ```css
 :root {
   --sf-gap: 0.5em;
+
   --sf-radius: 0.5em;
+  --sf-radius-v1: 1em;
+  --sf-radius-v2: 1.25em;
+  --sf-radius-v3: 1.5em;
+  --sf-radius-v4: 2em;
+  --sf-radius-v5: 2.5em;
+  --sf-radius-v6: 3em;
+
+  --sf-h1: 3rem;
+  --sf-h2: 2.5rem;
+  --sf-h3: 2rem;
+  --sf-h4: 1.5rem;
+  --sf-h5: 1.25rem;
+  --sf-h6: 1rem;
+
+  --sf-fz-normal: 1rem;
+  --sf-fz-small: 0.75rem;
 }
 ```

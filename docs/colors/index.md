@@ -189,7 +189,7 @@ import 'style-forge.colors/20.css';
 You can select a single color with [10 or 20] lightness gradient
 
 <div class="d:f:y">
-  <div class="pos:s top z:1">
+  <div class="pos:s t z:1">
     <label class="sf-switch">
       <input v-model="activated" type="checkbox" /> <span>{{ activated ? 'Web ' + webColors.length : 'All ' + colors.length }} colors</span>
     </label>

@@ -81,7 +81,7 @@ The `ov:v` class sets the overflow property to `visible`, allowing the content t
 <div class="d:f:x auto wrap half">
 <div class="d:f:y">
 
-<div class="pos:s top">
+<div class="pos:s t">
 
 ### X
 
@@ -149,7 +149,7 @@ The `ov:x:v` class sets the overflow-x property to `visible`.
 </div>
 
 <div class="d:f:y">
-<div class="pos:s top">
+<div class="pos:s t">
 
 ### Y
 

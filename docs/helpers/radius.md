@@ -1,3 +1,4 @@
+
 # Border Radius
 
 The border radius utility classes help manage the roundness of the corners of an element. These classes allow you to control the border-radius property easily.
@@ -25,7 +26,9 @@ The border radius utility classes help manage the roundness of the corners of an
 </table>
 
 ```html
-<div class="radius">Content that radius...</div>
+<div class="radius">
+  Content that radius...
+</div>
 ```
 
 <div class="example d:f wrap">

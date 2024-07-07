@@ -52,7 +52,7 @@ There are three additional classes: `sf-description`, `sf-invalid`, and `sf-vali
 
 ## Input with Pattern
 
-<input :class="ldgInput" placeholder="Pattern Input" pattern="\w{3,16}" :disabled="disabled" />
+<input :class="ldgInput" placeholder="Pattern Input /\w{3,16}/" pattern="\w{3,16}" :disabled="disabled" />
 <div class="sf-description">Text description</div>
 <div class="sf-invalid">❌ Text error</div>
 

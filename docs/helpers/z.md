@@ -1,188 +1,83 @@
+<script setup>
+import { ref, computed } from 'vue';
 
-# Z-Index Utilities
+const arr = ref(['-1', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10']);
+const Z = ref('');
+
+const posZ = computed(() => {
+  if (Z.value === '' || Z.value === null) return 'z:auto';
+  return 'z:' + Z.value;
+});
+
+function offset(i) {
+  if (!Number.isNaN(+i) || typeof i === 'number') {
+    return {
+      top: i * 30 + 'px',
+      left: i * 10 + 'px'
+    };
+  }
+}
+</script>
+
+# Z-Index
 
 The z-index utility classes help manage the stacking order of elements. These classes allow you to control the z-index property easily.
 
-## Z-Index Classes
+## CSS Classes
 
-### .z
+<table class="d:t w">
+<thead>
+<tr><th>Class</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><b>z</b></td><td>z-index: auto</td></tr>
+<tr><td><b>z:-1</b></td><td>z-index: -10</td></tr>
+<tr><td><b>z:0</b></td><td>z-index: 0</td></tr>
+<tr><td><b>z:1</b></td><td>z-index: 10</td></tr>
+<tr><td><b>z:2</b></td><td>z-index: 20</td></tr>
+<tr><td>...</td><td>...</td></tr>
+<tr><td><b>z:10</b></td><td>z-index: 100</td></tr>
+</tbody>
+</table>
 
-The `.z` class sets the z-index to `auto`.
-
-```html
-<div class="z">
-  Z-Index Auto
-</div>
-```
-
-<div class="example z">
-  Z-Index Auto
-</div>
-
-### .z:-1
-
-The `.z:-1` class sets the z-index to -10.
-
-```html
-<div class="z:-1">
-  Z-Index -10
-</div>
-```
-
-<div class="example z:-1">
-  Z-Index -10
+<div class="d:f y:i:c">
+  <span class="whs:nw">Z-index:</span>
+  <input class="sf-input" v-model.number="Z" min="-1" max="10" maxlength="2" type="number" placeholder="Z" />
 </div>
 
-### .z:0
 
-The `.z:0` class sets the z-index to 0.
+<highlight lang="html">
+&lt;div class="{{ posZ }}"&gt;
+  Z-Index {{ posZ }}
+&lt;/div&gt;
+</highlight>
 
-```html
-<div class="z:0">
-  Z-Index 0
-</div>
-```
-
-<div class="example z:0">
-  Z-Index 0
-</div>
-
-### .z:1
-
-The `.z:1` class sets the z-index to 10.
-
-```html
-<div class="z:1">
-  Z-Index 10
-</div>
-```
-
-<div class="example z:1">
-  Z-Index 10
+<div class="example__z">
+  <div class="pos:r list">
+    <div v-for="i in arr" :class="['pos:a', 'sf-c-black:95', 'z:' + i]" key="i" :style="offset(i)" 
+@mouseenter="Z = i" @click="Z = i">{{ i }}</div>
+    <div :class="['pos:a', 'sf-c-blue:20:dark', 'sf-c-blue:90', posZ]" :style="offset(Z)">{{ posZ }}</div>
+  </div>
 </div>
 
-### .z:2
+<style scoped>
+.example__z {
+  border: 1px solid var(--vp-c-divider);
 
-The `.z:2` class sets the z-index to 20.
+  padding: 60px 0 40px 40px;
+}
 
-```html
-<div class="z:2">
-  Z-Index 20
-</div>
-```
+.list {
+  height: 400px;
+}
 
-<div class="example z:2">
-  Z-Index 20
-</div>
+.list > div {
+  --size: 100px;
+  width: var(--size);
+  height: var(--size);
 
-### .z:3
-
-The `.z:3` class sets the z-index to 30.
-
-```html
-<div class="z:3">
-  Z-Index 30
-</div>
-```
-
-<div class="example z:3">
-  Z-Index 30
-</div>
-
-### .z:4
-
-The `.z:4` class sets the z-index to 40.
-
-```html
-<div class="z:4">
-  Z-Index 40
-</div>
-```
-
-<div class="example z:4">
-  Z-Index 40
-</div>
-
-### .z:5
-
-The `.z:5` class sets the z-index to 50.
-
-```html
-<div class="z:5">
-  Z-Index 50
-</div>
-```
-
-<div class="example z:5">
-  Z-Index 50
-</div>
-
-### .z:6
-
-The `.z:6` class sets the z-index to 60.
-
-```html
-<div class="z:6">
-  Z-Index 60
-</div>
-```
-
-<div class="example z:6">
-  Z-Index 60
-</div>
-
-### .z:7
-
-The `.z:7` class sets the z-index to 70.
-
-```html
-<div class="z:7">
-  Z-Index 70
-</div>
-```
-
-<div class="example z:7">
-  Z-Index 70
-</div>
-
-### .z:8
-
-The `.z:8` class sets the z-index to 80.
-
-```html
-<div class="z:8">
-  Z-Index 80
-</div>
-```
-
-<div class="example z:8">
-  Z-Index 80
-</div>
-
-### .z:9
-
-The `.z:9` class sets the z-index to 90.
-
-```html
-<div class="z:9">
-  Z-Index 90
-</div>
-```
-
-<div class="example z:9">
-  Z-Index 90
-</div>
-
-### .z:10
-
-The `.z:10` class sets the z-index to 100.
-
-```html
-<div class="z:10">
-  Z-Index 100
-</div>
-```
-
-<div class="example z:10">
-  Z-Index 100
-</div>
+  font-size: var(--vp-code-font-size);
+  border: 1px solid var(--vp-c-divider);
+  padding: 0.1em 0.3em;
+}
+</style>

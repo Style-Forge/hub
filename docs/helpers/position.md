@@ -27,10 +27,36 @@ The position utility classes help manage the positioning of an element. These cl
 <tr><th>Class</th><th>Description</th></tr>
 </thead>
 <tbody>
-<tr><td><b>top</b></td><td>top: 0</td></tr>
-<tr><td><b>left</b></td><td>left: 0</td></tr>
-<tr><td><b>right</b></td><td>right: 0</td></tr>
-<tr><td><b>bottom</b></td><td>bottom: 0</td></tr>
+<tr><td><b>t</b></td><td>top: 0</td></tr>
+<tr><td><b>l</b></td><td>left: 0</td></tr>
+<tr><td><b>r</b></td><td>right: 0</td></tr>
+<tr><td><b>b</b></td><td>bottom: 0</td></tr>
+</tbody>
+</table>
+
+<table class="d:t w">
+<thead>
+<tr><th colspan="2">Position class (auto)</th></tr>
+<tr><th>Class</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><b>t:a</b></td><td>top: auto</td></tr>
+<tr><td><b>l:a</b></td><td>left: auto</td></tr>
+<tr><td><b>r:a</b></td><td>right: auto</td></tr>
+<tr><td><b>b:a</b></td><td>bottom: auto</td></tr>
+</tbody>
+</table>
+
+<table class="d:t w">
+<thead>
+<tr><th colspan="2">Position class (inherit)</th></tr>
+<tr><th>Class</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><b>t:i</b></td><td>top: inherit</td></tr>
+<tr><td><b>l:i</b></td><td>left: inherit</td></tr>
+<tr><td><b>r:i</b></td><td>right: inherit</td></tr>
+<tr><td><b>b:i</b></td><td>bottom: inherit</td></tr>
 </tbody>
 </table>
 
@@ -89,7 +115,7 @@ The `pos:s` class sets the position property to `sticky`.
 
 <div class="ov" style="height: 100px">
   <div class="example" style="width: 1000px; height: 1000px">
-    <div class="pos:s top" style="width: 150px">
+    <div class="pos:s t" style="width: 150px">
       Sticky Position
     </div>
   </div>

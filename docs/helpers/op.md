@@ -21,7 +21,9 @@ The opacity utility classes provide a simple way to control the transparency of 
 These classes can be used to quickly adjust the opacity of elements.
 
 ```html
-<div class="op">Content that opacity...</div>
+<div class="op">
+  Content that opacity...
+</div>
 ```
 
 <div class="example d:f">

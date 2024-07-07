@@ -10,22 +10,12 @@ const pos = reactive({
 
 const classes = computed(() => {
   const arr = ['shift'];
-  if (pos.top) arr.push('top');
-  if (pos.left) arr.push('left');
-  if (pos.right) arr.push('right');
-  if (pos.bottom) arr.push('bottom');
-  return arr
-})
-
-const text = computed(() => {
-  const arr = ['Aligned Element'];
-  if (pos.top) arr.unshift('top');
-  if (pos.left) arr.unshift('left');
-  if (pos.right) arr.unshift('right');
-  if (pos.bottom) arr.unshift('bottom');
-  return arr
-})
-
+  if (pos.top) arr.push('t');
+  if (pos.left) arr.push('l');
+  if (pos.right) arr.push('r');
+  if (pos.bottom) arr.push('b');
+  return arr.join(':')
+});
 </script>
 
 # Shift
@@ -41,16 +31,21 @@ allow you to control the alignment properties easily.
 </thead>
 <tbody>
 <tr><td><b>shift</b></td><td>margin: auto</td></tr>
-<tr><td><b>top</b></td><td>margin-top: 0</td></tr>
-<tr><td><b>left</b></td><td>margin-left: 0</td></tr>
-<tr><td><b>right</b></td><td>margin-right: 0</td></tr>
-<tr><td><b>bottom</b></td><td>margin-bottom: 0</td></tr>
+<tr><td><b>shift:t</b></td><td>top</td></tr>
+<tr><td><b>shift:l</b></td><td>left</td></tr>
+<tr><td><b>shift:r</b></td><td>right</td></tr>
+<tr><td><b>shift:b</b></td><td>bottom</td></tr>
+<tr><td><b>shift:t:l:r:b</b></td><td>margin: 0</td></tr>
 </tbody>
 </table>
 
+::: info
+All combinations of `:t, :l, :r,` and `:b` are **possible**, and the order (e.g., `:t:l` or `:l:t`) does not matter.
+:::
+
 <div class="d:f:y">
 
-<div class="pos:s top">
+<div class="pos:s t">
   <div class="d:f wrap">
     <label class="sf-switch">
       <input v-model="pos.top" type="checkbox" /> <span>Top</span>
@@ -66,7 +61,10 @@ allow you to control the alignment properties easily.
     </label>
   </div>
 </div>
-  
+
+<div class="d:f:x auto wrap half">
+<div class="d:f:y">
+
 ## Flex
 
   <div class="example d:f wrap">
@@ -75,13 +73,8 @@ allow you to control the alignment properties easily.
     </div>
   </div>
 
-<highlight lang="html">
-&lt;div class="example d:f"&gt;
-  &lt;div class="{{ classes.join(' ') }}"&gt;
-    Aligned Element (flex)
-  &lt;/div&gt;
-&lt;/div&gt;
-</highlight>
+</div>
+<div class="d:f:y">
 
 ## Grid
 
@@ -90,12 +83,12 @@ allow you to control the alignment properties easily.
       Aligned Element (grid)
     </div>
   </div>
+</div>
+</div>
 
 <highlight lang="html">
-&lt;div class="example d:g"&gt;
-  &lt;div class="{{ classes.join(' ') }}"&gt;
-    Aligned Element (grid)
-  &lt;/div&gt;
+&lt;div class="{{ classes }}"&gt;
+  Aligned Element
 &lt;/div&gt;
 </highlight>
 

@@ -1,8 +1,8 @@
-@import "style-forge.helpers";
-@import "style-forge.form";
-@import "style-forge.themes";
-@import "style-forge.patterns";
-@import "style-forge.colors/20.css";
+@import 'style-forge.helpers';
+@import 'style-forge.form';
+@import 'style-forge.themes';
+@import 'style-forge.patterns';
+@import 'style-forge.colors/20.css';
 
 .shields > p {
   display: flex;
@@ -37,10 +37,12 @@
   padding: 1em;
 }
 .example > div {
-  font-size: var(--vp-code-font-size);
   border: 1px solid var(--vp-c-divider);
   background: hsl(var(--sf-c-black-80) / .1);
   padding: 0.1em 0.3em;
+}
+:where(.example) > div {
+  font-size: var(--vp-code-font-size);
 }
 
 .d\:f\:y > .pos\:s {
