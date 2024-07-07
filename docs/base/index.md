@@ -92,7 +92,7 @@ import 'style-forge.base';
   --sf-h5: 1.25rem;
   --sf-h6: 1rem;
 
-  --sf-txt-small: 0.75rem;
+  --sf-fz-small: 0.75rem;
 
   --sf-disabled: 0.4; /* opacity */
 
