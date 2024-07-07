@@ -198,8 +198,8 @@ The file `constent-position.css` contains a set of CSS classes for aligning elem
   </div>
   
   <div class="wrapper pos:r">
-    <div class="pos:a top left axisX">{{ objOption.class }}</div>
-    <div class="pos:a bottom right axisY">{{ elmObjOption.class }}</div>
+    <div class="pos:a t l axisX">{{ objOption.class }}</div>
+    <div class="pos:a b r axisY">{{ elmObjOption.class }}</div>
     <div :class="['d:' + hasDisplay, 'box', objOption.class, elmObjOption.class, { wrap: hasWrap }]">
       <div :class="['sf-c-black:85']" />
       <div :class="['sf-c-black:85']" />
