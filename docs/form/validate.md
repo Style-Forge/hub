@@ -155,7 +155,7 @@ There are three additional classes: `sf-description`, `sf-invalid`, and `sf-vali
 
 ## Auth form validate
 
-Здесь показан пример, что `form` можно задать класс `validates` и кнопка `type="submit"` будет не активна до тех пор, пока все условия не будут удовлетворены
+Here is an example showing that a `form` can be assigned the class `validates`, and the `type="submit"` button will be inactive until all conditions are met.
 
 <form class="d:f validates" @submit.prevent>
   <fieldset class="d:f:y shift">
