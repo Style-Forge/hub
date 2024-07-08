@@ -24,54 +24,6 @@ head:
       content: "Style-Forge.Colors: customizable color palettes for consistent, visually appealing web designs."
 ---
 
-<script setup>
-import { ref } from 'vue';
-
-const activated = ref(false);
-const selected = ref('aliceblue');
-
-const webColors = [
-  'aqua', 'black', 'blue', 'fuchsia', 'gray', 'green', 'lime', 'maroon', 'navy',
-  'olive', 'purple', 'red', 'silver', 'teal', 'white', 'yellow'
-];
-
-const colors = [
-  'aliceblue', 'antiquewhite', 'aqua', 'aquamarine', 'azure',
-  'beige', 'bisque', 'black', 'blanchedalmond', 'blue',
-  'blueviolet', 'brown', 'burlywood', 'cadetblue', 'chartreuse',
-  'chocolate', 'coral', 'cornflowerblue', 'cornsilk', 'crimson',
-  'cyan', 'darkblue', 'darkcyan', 'darkgoldenrod', 'darkgray',
-  'darkgrey', 'darkgreen', 'darkkhaki', 'darkmagenta', 'darkolivegreen',
-  'darkorange', 'darkorchid', 'darkred', 'darksalmon', 'darkseagreen',
-  'darkslateblue', 'darkslategray', 'darkslategrey', 'darkturquoise', 'darkviolet',
-  'deeppink', 'deepskyblue', 'dimgray', 'dimgrey', 'dodgerblue',
-  'firebrick', 'floralwhite', 'forestgreen', 'fuchsia', 'gainsboro',
-  'ghostwhite', 'gold', 'goldenrod', 'gray', 'grey',
-  'green', 'greenyellow', 'honeydew', 'hotpink', 'indianred',
-  'indigo', 'ivory', 'khaki', 'lavender', 'lavenderblush',
-  'lawngreen', 'lemonchiffon', 'lightblue', 'lightcoral', 'lightcyan',
-  'lightgoldenrodyellow', 'lightgray', 'lightgrey', 'lightgreen', 'lightpink',
-  'lightsalmon', 'lightseagreen', 'lightskyblue', 'lightslategray', 'lightslategrey',
-  'lightsteelblue', 'lightyellow', 'lime', 'limegreen', 'linen',
-  'magenta', 'maroon', 'mediumaquamarine', 'mediumblue', 'mediumorchid',
-  'mediumpurple', 'mediumseagreen', 'mediumslateblue', 'mediumspringgreen', 'mediumturquoise',
-  'mediumvioletred', 'midnightblue', 'mintcream', 'mistyrose', 'moccasin',
-  'navajowhite', 'navy', 'oldlace', 'olive', 'olivedrab',
-  'orange', 'orangered', 'orchid', 'palegoldenrod', 'palegreen',
-  'paleturquoise', 'palevioletred', 'papayawhip', 'peachpuff', 'peru',
-  'pink', 'plum', 'powderblue', 'purple', 'rebeccapurple',
-  'red', 'rosybrown', 'royalblue', 'saddlebrown', 'salmon',
-  'sandybrown', 'seagreen', 'seashell', 'sienna', 'silver',
-  'skyblue', 'slateblue', 'slategray', 'slategrey', 'snow',
-  'springgreen', 'steelblue', 'tan', 'teal', 'thistle',
-  'tomato', 'turquoise', 'violet', 'wheat', 'white',
-  'whitesmoke', 'yellow', 'yellowgreen'
-];
-
-const onClick = color => selected.value = color;
-const step = (x, i = 9) => x * 100 / (i + 1);
-</script>
-
 # Style-Forge.Colors
 
 <div class="shields">
@@ -277,6 +229,21 @@ import 'style-forge.colors/src/colors/20/{{ selected }}.css';
 You can change the color in the dark theme to another color by using classes that are applied only in the dark theme. 
 This allows you to set different colors for light and dark themes.
 
+<label class="sf-switch">
+<input :checked="isDark" type="checkbox" @click="hasDark" /> <span>Theme: {{ isDark ? 'dark' : 'light' }}</span>
+</label>
+
+<div class="d:f">
+  <button class="VPSwitch VPSwitchAppearance" type="button" role="switch" title="Switch to light theme" aria-checked="true">
+    <span class="check">
+      <span class="icon">
+        <span class="vpi-sun sun"></span>
+        <span class="vpi-moon moon"></span>
+      </span>
+    </span>
+  </button>
+</div>
+
 <div class="example d:f even">
   <div :class="['sf-c-blue:90', 'ta:c', 'y:c:c']">original</div>
   <div :class="['sf-c-red:20:dark', 'sf-c-blue:90', 'ta:c', 'y:c:c']">red:20:dark</div>
@@ -311,6 +278,68 @@ In this example:
 :::
 
 This way, you can set different colors for light and dark themes, with the dark theme color overriding the default when necessary.
+
+<script setup>
+import { ref, onMounted, onBeforeUnmount } from 'vue';
+
+const activated = ref(false);
+const selected = ref('aliceblue');
+
+const webColors = [
+  'aqua', 'black', 'blue', 'fuchsia', 'gray', 'green', 'lime', 'maroon', 'navy',
+  'olive', 'purple', 'red', 'silver', 'teal', 'white', 'yellow'
+];
+
+const colors = [
+  'aliceblue', 'antiquewhite', 'aqua', 'aquamarine', 'azure',
+  'beige', 'bisque', 'black', 'blanchedalmond', 'blue',
+  'blueviolet', 'brown', 'burlywood', 'cadetblue', 'chartreuse',
+  'chocolate', 'coral', 'cornflowerblue', 'cornsilk', 'crimson',
+  'cyan', 'darkblue', 'darkcyan', 'darkgoldenrod', 'darkgray',
+  'darkgrey', 'darkgreen', 'darkkhaki', 'darkmagenta', 'darkolivegreen',
+  'darkorange', 'darkorchid', 'darkred', 'darksalmon', 'darkseagreen',
+  'darkslateblue', 'darkslategray', 'darkslategrey', 'darkturquoise', 'darkviolet',
+  'deeppink', 'deepskyblue', 'dimgray', 'dimgrey', 'dodgerblue',
+  'firebrick', 'floralwhite', 'forestgreen', 'fuchsia', 'gainsboro',
+  'ghostwhite', 'gold', 'goldenrod', 'gray', 'grey',
+  'green', 'greenyellow', 'honeydew', 'hotpink', 'indianred',
+  'indigo', 'ivory', 'khaki', 'lavender', 'lavenderblush',
+  'lawngreen', 'lemonchiffon', 'lightblue', 'lightcoral', 'lightcyan',
+  'lightgoldenrodyellow', 'lightgray', 'lightgrey', 'lightgreen', 'lightpink',
+  'lightsalmon', 'lightseagreen', 'lightskyblue', 'lightslategray', 'lightslategrey',
+  'lightsteelblue', 'lightyellow', 'lime', 'limegreen', 'linen',
+  'magenta', 'maroon', 'mediumaquamarine', 'mediumblue', 'mediumorchid',
+  'mediumpurple', 'mediumseagreen', 'mediumslateblue', 'mediumspringgreen', 'mediumturquoise',
+  'mediumvioletred', 'midnightblue', 'mintcream', 'mistyrose', 'moccasin',
+  'navajowhite', 'navy', 'oldlace', 'olive', 'olivedrab',
+  'orange', 'orangered', 'orchid', 'palegoldenrod', 'palegreen',
+  'paleturquoise', 'palevioletred', 'papayawhip', 'peachpuff', 'peru',
+  'pink', 'plum', 'powderblue', 'purple', 'rebeccapurple',
+  'red', 'rosybrown', 'royalblue', 'saddlebrown', 'salmon',
+  'sandybrown', 'seagreen', 'seashell', 'sienna', 'silver',
+  'skyblue', 'slateblue', 'slategray', 'slategrey', 'snow',
+  'springgreen', 'steelblue', 'tan', 'teal', 'thistle',
+  'tomato', 'turquoise', 'violet', 'wheat', 'white',
+  'whitesmoke', 'yellow', 'yellowgreen'
+];
+
+const isDark = ref(false);
+
+const setDark = () => isDark.value = document.documentElement.classList.contains('dark');
+
+const observer = new MutationObserver(setDark);
+observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+
+onMounted(setDark);
+onBeforeUnmount(() => observer.disconnect());
+
+const hasDark = () => {
+  localStorage['vitepress-theme-appearance'] = !isDark.value ? 'auto' : 'light';
+  document.documentElement.classList.toggle('dark');
+};
+const onClick = color => selected.value = color;
+const step = (x, i = 9) => x * 100 / (i + 1);
+</script>
 
 <style scoped>
 .colors > div {
