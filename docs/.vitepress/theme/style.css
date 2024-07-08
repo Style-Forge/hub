@@ -38,11 +38,11 @@
 }
 .example > div {
   border: 1px solid var(--vp-c-divider);
-  background: hsl(var(--sf-c-black-80) / .1);
   padding: 0.1em 0.3em;
 }
 :where(.example) > div {
   font-size: var(--vp-code-font-size);
+  background: hsl(var(--sf-c-black-80) / .1);
 }
 
 .d\:f\:y > .pos\:s {

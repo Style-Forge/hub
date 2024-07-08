@@ -113,14 +113,14 @@ Flexbox utilities provide powerful alignment and distribution capabilities, whil
 #### X even
 
 <div class="example d:f even">
-  <div>Auto 1</div>
-  <div>Auto 2</div>
+  <div>Item 1</div>
+  <div>Item 2</div>
 </div>
 
 ```html
 <div class="d:f even">
-  <div>Auto 1</div>
-  <div>Auto 2</div>
+  <div>Item 1</div>
+  <div>Item 2</div>
 </div>
 ```
 
@@ -154,8 +154,8 @@ Flexbox utilities provide powerful alignment and distribution capabilities, whil
 </div>
 
 <div class="example d:f:y even">
-  <div>Auto 1</div>
-  <div>Auto 2</div>
+  <div>Even 1</div>
+  <div>Even 2</div>
 </div>
 </div>
 
@@ -192,15 +192,15 @@ Flexbox utilities provide powerful alignment and distribution capabilities, whil
 
 <div class="example d:f even">
   <div class="flex:none">None</div>
-  <div>Auto 1</div>
-  <div>Auto 2</div>
+  <div>Even 1</div>
+  <div>Even 2</div>
 </div>
 
 ```html
 <div class="d:f even">
   <div class="flex:none">None</div>
-  <div>Auto 1</div>
-  <div>Auto 2</div>
+  <div>Even 1</div>
+  <div>Even 2</div>
 </div>
 ```
 
@@ -237,16 +237,16 @@ Flexbox utilities provide powerful alignment and distribution capabilities, whil
 #### grow
 
 <div class="example d:f">
-  <div class="grow:0">Grow 0</div>
-  <div class="grow:1">Grow 1</div>
-  <div class="grow:2">Grow 2</div>
+  <div class="grow:0">Item 1</div>
+  <div class="grow:1">Item 2</div>
+  <div class="grow:2">Item 3</div>
 </div>
 
 ```html
 <div class="d:f">
-  <div class="grow:0">Grow 0</div>
-  <div class="grow:1">Grow 1</div>
-  <div class="grow:2">Grow 2</div>
+  <div class="grow:0">Item 1</div>
+  <div class="grow:1">Item 2</div>
+  <div class="grow:2">Item 3</div>
 </div>
 ```
 
@@ -267,16 +267,16 @@ Flexbox utilities provide powerful alignment and distribution capabilities, whil
 #### shrink
 
 <div class="example d:f">
-  <div class="shrink:0">Shrink 0</div>
-  <div class="shrink:1">Shrink 1</div>
-  <div class="shrink:2">Shrink 2</div>
+  <div class="shrink:0">Item 1</div>
+  <div class="shrink:1">Item 2</div>
+  <div class="shrink:2">Item 3</div>
 </div>
 
 ```html
 <div class="d:f">
-  <div class="shrink:0">Shrink 0</div>
-  <div class="shrink:1">Shrink 1</div>
-  <div class="shrink:2">Shrink 2</div>
+  <div class="shrink:0">Item 1</div>
+  <div class="shrink:1">Item 2</div>
+  <div class="shrink:2">Item 3</div>
 </div>
 ```
 
@@ -434,8 +434,8 @@ Flexbox utilities provide powerful alignment and distribution capabilities, whil
 </div>
 
 <div class="example d:g:y even">
-  <div>Auto 1</div>
-  <div>Auto 2</div>
+  <div>Even 1</div>
+  <div>Even 2</div>
 </div>
 </div>
 

@@ -277,10 +277,27 @@ import 'style-forge.colors/src/colors/20/{{ selected }}.css';
 You can change the color in the dark theme to another color by using classes that are applied only in the dark theme. 
 This allows you to set different colors for light and dark themes.
 
-<div class="example__c d:f y:i:c x:c:c even">
+<div class="example d:f even">
   <div :class="['sf-c-blue:90', 'ta:c', 'y:c:c']">original</div>
   <div :class="['sf-c-red:20:dark', 'sf-c-blue:90', 'ta:c', 'y:c:c']">red:20:dark</div>
 </div>
+
+```html
+<div class="sf-c-blue:90 sf-c-red:20:dark">example</div>
+```
+
+#### Example:
+
+<table>
+<thead>
+<tr><th>1</th><th>2</th><th>3</th><th>addon</th></tr>
+</thead>
+<tbody>
+<tr><td><code>sf-c-</code></td><td><code>COLOR_NAME</code></td><td><code>LIGHTNESS</code></td><td><code>dark</code></td></tr>
+</tbody>
+</table>
+
+<code>sf-c-COLOR_NAME:LIGHTNESS:dark</code>
 
 In this example:
 
@@ -356,18 +373,5 @@ This way, you can set different colors for light and dark themes, with the dark 
 .content-out + .content-out {
   padding-top: 1em;
   border-top: 1px solid;
-}
-
-.example__c {
-  border: 1px solid var(--vp-c-divider);
-
-  min-height: 100px;
-
-  padding: 1em;
-}
-.example__c > div {
-  --size: 100px;
-  width: var(--size);
-  height: var(--size);
 }
 </style>
