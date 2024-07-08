@@ -208,7 +208,7 @@ You can select a single color with [10 or 20] lightness gradient
     <div>
       <div class="txt:c">CSS classes <code>10 lightness</code></div>
     </div>
-    <div class="d:f:x auto">
+    <div class="d:f:x even">
       <div class="d:f:y">
         <div class="txt:c">background</div>
         <div>
@@ -241,7 +241,7 @@ import 'style-forge.colors/src/colors/10/{{ selected }}.css';
     <div>
       <div class="txt:c">CSS classes <code>20 lightness</code></div>
     </div>
-    <div class="d:f:x auto">
+    <div class="d:f:x even">
       <div class="d:f:y">
         <div class="txt:c">background</div>
         <div>
@@ -271,6 +271,29 @@ import 'style-forge.colors/src/colors/20/{{ selected }}.css';
 
   </div>
 </div>
+
+## Change dark color
+
+You can change the color in the dark theme to another color by using classes that are applied only in the dark theme. 
+This allows you to set different colors for light and dark themes.
+
+<div class="example__c d:f y:i:c x:c:c even">
+  <div :class="['sf-c-blue:90', 'ta:c', 'y:c:c']">original</div>
+  <div :class="['sf-c-red:20:dark', 'sf-c-blue:90', 'ta:c', 'y:c:c']">red:20:dark</div>
+</div>
+
+In this example:
+
+*	The first `div` with the class `sf-c-blue:90` displays the original color used in both light and dark themes.
+*	The second `div` uses two classes: `sf-c-red:20:dark` and `sf-c-blue:90`. This means that in the light theme, the 
+   color from `sf-c-blue:90` will be applied, and in the dark theme, the color will change to `sf-c-red:20`.
+
+::: info Description
+* Class sf-c-blue:90 sets the color that will be applied to both light and dark themes.
+* Class sf-c-red:20:dark overrides the sf-c-blue:90 color and sets a different color only in the dark theme.
+:::
+
+This way, you can set different colors for light and dark themes, with the dark theme color overriding the default when necessary.
 
 <style scoped>
 .colors > div {
@@ -333,5 +356,18 @@ import 'style-forge.colors/src/colors/20/{{ selected }}.css';
 .content-out + .content-out {
   padding-top: 1em;
   border-top: 1px solid;
+}
+
+.example__c {
+  border: 1px solid var(--vp-c-divider);
+
+  min-height: 100px;
+
+  padding: 1em;
+}
+.example__c > div {
+  --size: 100px;
+  width: var(--size);
+  height: var(--size);
 }
 </style>
