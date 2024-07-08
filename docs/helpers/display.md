@@ -74,9 +74,10 @@ Flexbox utilities provide powerful alignment and distribution capabilities, whil
 <tr><td><b>gap:0</b></td><td>flex without gap</td></tr>
 <tr><td><b>d:f:x</b></td><td>flex (row) with gap</td></tr>
 <tr><td><b>d:f:y</b></td><td>flex (column) with gap</td></tr>
+<tr><td><b>even</b></td><td>flex: 1</td></tr>
+<tr><td><b>none</b></td><td>flex: 0</td></tr>
 <tr><td><b>auto</b></td><td>flex: auto</td></tr>
 <tr><td><b>wrap</b></td><td>flex-flow: wrap</td></tr>
-<tr><td><b>none</b></td><td>flex: none</td></tr>
 <tr><td><b>reverse</b></td><td>flex-flow: reverse</td></tr>
 </tbody>
 </table>
@@ -109,15 +110,15 @@ Flexbox utilities provide powerful alignment and distribution capabilities, whil
 </div>
 ```
 
-#### X auto
+#### X even
 
-<div class="example d:f auto">
+<div class="example d:f even">
   <div>Auto 1</div>
   <div>Auto 2</div>
 </div>
 
 ```html
-<div class="d:f auto">
+<div class="d:f even">
   <div>Auto 1</div>
   <div>Auto 2</div>
 </div>
@@ -137,10 +138,10 @@ Flexbox utilities provide powerful alignment and distribution capabilities, whil
 </div>
 ```
 
-#### Y auto
+#### Y even
 
-<div class="d:f auto">
-<div class="example d:f:y auto">
+<div class="d:f even">
+<div class="example d:f:y">
   <div>Item 1</div>
   <div>Item 2</div>
   <div>Item 3</div>
@@ -152,14 +153,14 @@ Flexbox utilities provide powerful alignment and distribution capabilities, whil
   <div>Item 2</div>
 </div>
 
-<div class="example d:f:y auto">
+<div class="example d:f:y even">
   <div>Auto 1</div>
   <div>Auto 2</div>
 </div>
 </div>
 
 ```html
-<div class="d:f:y auto">
+<div class="d:f:y even">
   <div>Item 1</div>
   <div>Item 2</div>
 </div>
@@ -189,15 +190,29 @@ Flexbox utilities provide powerful alignment and distribution capabilities, whil
 
 #### none
 
-<div class="example d:f auto">
+<div class="example d:f even">
   <div class="flex:none">None</div>
   <div>Auto 1</div>
   <div>Auto 2</div>
 </div>
 
 ```html
-<div class="d:f auto">
+<div class="d:f even">
   <div class="flex:none">None</div>
+  <div>Auto 1</div>
+  <div>Auto 2</div>
+</div>
+```
+
+#### auto
+
+<div class="example d:f auto">
+  <div>Auto 1</div>
+  <div>Auto 2</div>
+</div>
+
+```html
+<div class="d:f auto">
   <div>Auto 1</div>
   <div>Auto 2</div>
 </div>
@@ -334,13 +349,15 @@ Flexbox utilities provide powerful alignment and distribution capabilities, whil
 <tr><td><b>gap:0</b></td><td>grid without gap</td></tr>
 <tr><td><b>d:g:x</b></td><td>grid (column flow) with gap</td></tr>
 <tr><td><b>d:g:y</b></td><td>grid (row flow) with gap</td></tr>
-<tr><td><b>auto</b></td><td>grid-auto: 1fr</td></tr>
+<tr><td><b>even</b></td><td>grid-auto: 1fr</td></tr>
 <tr><td><b>wrap</b></td><td>grid-auto-flow: dense</td></tr>
+<tr><td>&nbsp;</td><td></td></tr>
 <tr><td>&nbsp;</td><td></td></tr>
 <tr><td>&nbsp;</td><td></td></tr>
 </tbody>
 </table>
 
+<br />
 <br />
 
 <div class="example d:g">
@@ -356,6 +373,7 @@ Flexbox utilities provide powerful alignment and distribution capabilities, whil
 ```
 
 <br />
+<br />
 
 <div class="example d:g gap:0">
   <div>Item 1</div>
@@ -370,19 +388,21 @@ Flexbox utilities provide powerful alignment and distribution capabilities, whil
 ```
 
 <br />
+<br />
 
-<div class="example d:g auto">
+<div class="example d:g even">
   <div>Item 1</div>
   <div>Item 2</div>
 </div>
 
 ```html
-<div class="d:g auto">
+<div class="d:g even">
   <div>Item 1</div>
   <div>Item 2</div>
 </div>
 ```
 
+<br />
 <br />
 
 <div class="example d:g:y">
@@ -398,6 +418,7 @@ Flexbox utilities provide powerful alignment and distribution capabilities, whil
 ```
 
 <br />
+<br />
 
 <div class="d:g auto">
 <div class="example d:g:y">
@@ -412,19 +433,20 @@ Flexbox utilities provide powerful alignment and distribution capabilities, whil
   <div>Item 2</div>
 </div>
 
-<div class="example d:g:y auto">
+<div class="example d:g:y even">
   <div>Auto 1</div>
   <div>Auto 2</div>
 </div>
 </div>
 
 ```html
-<div class="d:g:y auto">
+<div class="d:g:y even">
   <div>Item 1</div>
   <div>Item 2</div>
 </div>
 ```
 
+<br />
 <br />
 
 <div class="example d:g wrap">
