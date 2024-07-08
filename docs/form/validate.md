@@ -1,18 +1,3 @@
-<script setup>
-import { ref, computed } from 'vue';
-
-const loading = ref(false);
-const disabled = ref(false);
-
-const isLoading = computed(() => loading.value ? 'sf-loading' : null);
-const isDisabled = computed(() => disabled.value ? ' disabled' : null);
-
-const ldgInput = computed(() => ['sf-input', 'validates', isLoading.value].filter(x => x).join(' '));
-const ldgInputError = computed(() => ['sf-input', 'error', isLoading.value].filter(x => x).join(' '));
-const ldgSelect = computed(() => ['sf-select', 'validates', isLoading.value].filter(x => x).join(' '));
-const ldgTextarea = computed(() => ['sf-textarea', 'validates', isLoading.value].filter(x => x).join(' '));
-const ldgButton = computed(() => ['sf-button', isLoading.value].filter(x => x).join(' '));
-</script>
 
 # Validate
 
@@ -206,3 +191,21 @@ Here is an example showing that a `form` can be assigned the class `validates`, 
 ## Conclusion
 
 Using these examples, you can create forms with input elements that have validation. All elements are styled using the `sf-input` class for a consistent look and feel.
+
+<script setup>
+import { ref, computed } from 'vue';
+
+import 'style-forge.form';
+
+const loading = ref(false);
+const disabled = ref(false);
+
+const isLoading = computed(() => loading.value ? 'sf-loading' : null);
+const isDisabled = computed(() => disabled.value ? ' disabled' : null);
+
+const ldgInput = computed(() => ['sf-input', 'validates', isLoading.value].filter(x => x).join(' '));
+const ldgInputError = computed(() => ['sf-input', 'error', isLoading.value].filter(x => x).join(' '));
+const ldgSelect = computed(() => ['sf-select', 'validates', isLoading.value].filter(x => x).join(' '));
+const ldgTextarea = computed(() => ['sf-textarea', 'validates', isLoading.value].filter(x => x).join(' '));
+const ldgButton = computed(() => ['sf-button', isLoading.value].filter(x => x).join(' '));
+</script>

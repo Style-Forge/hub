@@ -1,16 +1,3 @@
-<script setup>
-import { ref, computed } from 'vue';
-
-const loading = ref(false);
-const disabled = ref(false);
-
-const isLoading = computed(() => loading.value ? 'sf-loading' : null);
-const isDisabled = computed(() => disabled.value ? ' disabled' : null);
-
-const sClasses = computed(() => {
-  return ['sf-select', isLoading.value].filter(x => x).join(' ')
-});
-</script>
 
 # Select
 
@@ -58,3 +45,27 @@ This section presents the select element that can be used in HTML forms. Each ex
 ## Conclusion
 
 Using this example, you can create forms with select elements. All elements are styled using the `sf-select` class for a consistent look and feel.
+
+<script setup>
+import { ref, computed } from 'vue';
+
+import 'style-forge.form/src/var.css';
+import 'style-forge.form/src/base.css';
+import 'style-forge.form/src/global.css';
+import 'style-forge.form/src/pseudo-classes.css';
+
+import 'style-forge.form/src/loading.css';
+import 'style-forge.form/src/checkbox-radio.css';
+
+import 'style-forge.form/src/select.css';
+
+const loading = ref(false);
+const disabled = ref(false);
+
+const isLoading = computed(() => loading.value ? 'sf-loading' : null);
+const isDisabled = computed(() => disabled.value ? ' disabled' : null);
+
+const sClasses = computed(() => {
+  return ['sf-select', isLoading.value].filter(x => x).join(' ')
+});
+</script>

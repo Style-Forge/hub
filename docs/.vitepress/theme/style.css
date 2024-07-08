@@ -1,8 +1,4 @@
 @import 'style-forge.helpers';
-@import 'style-forge.form';
-@import 'style-forge.themes';
-@import 'style-forge.patterns';
-@import 'style-forge.colors/20.css';
 
 .shields > p {
   display: flex;

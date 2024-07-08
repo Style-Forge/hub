@@ -1,22 +1,3 @@
-<script setup>
-import { reactive, computed } from 'vue';
-
-const pos = reactive({
-  top: false,
-  left: false,
-  right: false,
-  bottom: false,
-});
-
-const classes = computed(() => {
-  const arr = ['shift'];
-  if (pos.top) arr.push('t');
-  if (pos.left) arr.push('l');
-  if (pos.right) arr.push('r');
-  if (pos.bottom) arr.push('b');
-  return arr.join(':')
-});
-</script>
 
 # Shift
 
@@ -93,3 +74,30 @@ All combinations of `:t, :l, :r,` and `:b` are **possible**, and the order (e.g.
 </highlight>
 
 </div>
+
+<script setup>
+import { reactive, computed } from 'vue';
+
+import 'style-forge.form/src/var.css';
+import 'style-forge.form/src/base.css';
+import 'style-forge.form/src/global.css';
+import 'style-forge.form/src/pseudo-classes.css';
+
+import 'style-forge.form/src/switch.css';
+
+const pos = reactive({
+  top: false,
+  left: false,
+  right: false,
+  bottom: false,
+});
+
+const classes = computed(() => {
+  const arr = ['shift'];
+  if (pos.top) arr.push('t');
+  if (pos.left) arr.push('l');
+  if (pos.right) arr.push('r');
+  if (pos.bottom) arr.push('b');
+  return arr.join(':')
+});
+</script>

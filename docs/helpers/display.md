@@ -1,3 +1,4 @@
+
 # Display
 
 This section provides a comprehensive guide to the display utility classes. These utilities allow for precise control over the display property of HTML elements, facilitating various layout and visibility adjustments essential for modern web development. Each utility class corresponds to a specific CSS display property, enabling developers to quickly apply the desired styles without writing custom CSS.

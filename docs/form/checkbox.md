@@ -1,9 +1,3 @@
-<script setup>
-import { ref, computed } from 'vue';
-const checked = ref(true);
-const disabled = ref(false);
-const isDisabled = computed(() => disabled.value ? ' disabled' : null);
-</script>
 
 # Checkbox
 
@@ -29,3 +23,19 @@ his section showcases different types of checkbox elements that can be incorpora
 ## Conclusion
 
 Using these examples, you can create forms with checkbox elements. All elements are styled using the `sf-checkbox` class for a consistent look and feel.
+
+<script setup>
+import { ref, computed } from 'vue';
+
+import 'style-forge.form/src/var.css';
+import 'style-forge.form/src/base.css';
+import 'style-forge.form/src/global.css';
+import 'style-forge.form/src/pseudo-classes.css';
+
+import 'style-forge.form/src/loading.css';
+import 'style-forge.form/src/checkbox-radio.css';
+
+const checked = ref(true);
+const disabled = ref(false);
+const isDisabled = computed(() => disabled.value ? ' disabled' : null);
+</script>

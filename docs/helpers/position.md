@@ -1,5 +1,5 @@
 
-# Position Utilities
+# Position
 
 The position utility classes help manage the positioning of an element. These classes allow you to control the position properties easily.
 

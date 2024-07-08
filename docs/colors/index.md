@@ -282,6 +282,15 @@ This way, you can set different colors for light and dark themes, with the dark 
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue';
 
+import 'style-forge.form/src/var.css';
+import 'style-forge.form/src/base.css';
+import 'style-forge.form/src/global.css';
+import 'style-forge.form/src/pseudo-classes.css';
+
+import 'style-forge.form/src/switch.css';
+
+import 'style-forge.colors/20.css';
+
 const activated = ref(false);
 const selected = ref('aliceblue');
 

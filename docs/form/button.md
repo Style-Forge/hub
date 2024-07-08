@@ -1,16 +1,3 @@
-<script setup>
-import { ref, computed } from 'vue';
-
-const loading = ref(false);
-const disabled = ref(false);
-
-const isLoading = computed(() => loading.value ? 'sf-loading' : null);
-const isDisabled = computed(() => disabled.value ? ' disabled' : null);
-
-const sClasses = computed(() => {
-  return ['sf-button', isLoading.value].filter(x => x).join(' ')
-});
-</script>
 
 # Buttons
 
@@ -53,3 +40,27 @@ This section presents various types of button elements that can be used in HTML 
 ## Conclusion
 
 Using these examples, you can create a variety of forms with different types of button elements to meet your requirements. All elements are styled using the `sf-button` class for a consistent look and feel.
+
+<script setup>
+import { ref, computed } from 'vue';
+
+import 'style-forge.form/src/var.css';
+import 'style-forge.form/src/base.css';
+import 'style-forge.form/src/global.css';
+import 'style-forge.form/src/pseudo-classes.css';
+
+import 'style-forge.form/src/loading.css';
+import 'style-forge.form/src/checkbox-radio.css';
+
+import 'style-forge.form/src/button.css';
+
+const loading = ref(false);
+const disabled = ref(false);
+
+const isLoading = computed(() => loading.value ? 'sf-loading' : null);
+const isDisabled = computed(() => disabled.value ? ' disabled' : null);
+
+const sClasses = computed(() => {
+  return ['sf-button', isLoading.value].filter(x => x).join(' ')
+});
+</script>

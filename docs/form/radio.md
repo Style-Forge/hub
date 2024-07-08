@@ -1,8 +1,3 @@
-<script setup>
-import { ref, computed } from 'vue';
-const disabled = ref(false);
-const isDisabled = computed(() => disabled.value ? ' disabled' : null);
-</script>
 
 # Radio
 
@@ -33,3 +28,18 @@ This section showcases different types of radio elements that can be used in HTM
 ## Conclusion
 
 Using these examples, you can create forms with radio elements. All elements are styled using the `sf-radio` class for a consistent look and feel.
+
+<script setup>
+import { ref, computed } from 'vue';
+
+import 'style-forge.form/src/var.css';
+import 'style-forge.form/src/base.css';
+import 'style-forge.form/src/global.css';
+import 'style-forge.form/src/pseudo-classes.css';
+
+import 'style-forge.form/src/loading.css';
+import 'style-forge.form/src/checkbox-radio.css';
+
+const disabled = ref(false);
+const isDisabled = computed(() => disabled.value ? ' disabled' : null);
+</script>

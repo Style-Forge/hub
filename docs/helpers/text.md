@@ -1,5 +1,5 @@
 
-# Text Utilities
+# Text
 
 The text utility classes help manage the font properties and text alignment of an element. These classes allow you to control the text properties easily.
 

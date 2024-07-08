@@ -1,9 +1,3 @@
-<script setup>
-import { ref, computed } from 'vue';
-const checked = ref(true);
-const disabled = ref(false);
-const isDisabled = computed(() => disabled.value ? ' disabled' : null);
-</script>
 
 # Switch
 
@@ -66,3 +60,21 @@ This section presents the switch element that can be used in HTML forms. Each ex
 ## Conclusion
 
 Using this example, you can create forms with switch elements. All elements are styled using the `sf-switch` class for a consistent look and feel.
+
+<script setup>
+import { ref, computed } from 'vue';
+
+import 'style-forge.form/src/var.css';
+import 'style-forge.form/src/base.css';
+import 'style-forge.form/src/global.css';
+import 'style-forge.form/src/pseudo-classes.css';
+
+import 'style-forge.form/src/loading.css';
+import 'style-forge.form/src/checkbox-radio.css';
+
+import 'style-forge.form/src/switch.css';
+
+const checked = ref(true);
+const disabled = ref(false);
+const isDisabled = computed(() => disabled.value ? ' disabled' : null);
+</script>

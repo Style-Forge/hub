@@ -1,23 +1,3 @@
-<script setup>
-import { ref, computed } from 'vue';
-
-const arr = ref(['-1', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10']);
-const Z = ref('');
-
-const posZ = computed(() => {
-  if (Z.value === '' || Z.value === null) return 'z:auto';
-  return 'z:' + Z.value;
-});
-
-function offset(i) {
-  if (!Number.isNaN(+i) || typeof i === 'number') {
-    return {
-      top: i * 30 + 'px',
-      left: i * 10 + 'px'
-    };
-  }
-}
-</script>
 
 # Z-Index
 
@@ -59,6 +39,37 @@ The z-index utility classes help manage the stacking order of elements. These cl
     <div :class="['pos:a', 'sf-c-blue:20:dark', 'sf-c-blue:90', posZ]" :style="offset(Z)">{{ posZ }}</div>
   </div>
 </div>
+
+<script setup>
+import { ref, computed } from 'vue';
+
+import 'style-forge.form/src/var.css';
+import 'style-forge.form/src/base.css';
+import 'style-forge.form/src/global.css';
+import 'style-forge.form/src/pseudo-classes.css';
+
+import 'style-forge.form/src/input.css';
+
+import 'style-forge.colors/src/colors/20/black.css';
+import 'style-forge.colors/src/colors/20/blue.css';
+
+const arr = ref(['-1', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10']);
+const Z = ref('');
+
+const posZ = computed(() => {
+  if (Z.value === '' || Z.value === null) return 'z:auto';
+  return 'z:' + Z.value;
+});
+
+function offset(i) {
+  if (!Number.isNaN(+i) || typeof i === 'number') {
+    return {
+      top: i * 30 + 'px',
+      left: i * 10 + 'px'
+    };
+  }
+}
+</script>
 
 <style scoped>
 .example__z {

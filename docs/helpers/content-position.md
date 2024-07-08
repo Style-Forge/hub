@@ -1,5 +1,206 @@
+
+# Content-position
+
+The file `constent-position.css` contains a set of CSS classes for aligning elements within a container. These classes manage the alignment of content, items, and individual elements along both the main axis (horizontal) and the cross axis (vertical) in a flexbox or grid layout.
+
+<table class="table">
+  <tbody>
+    <tr><td rowspan="4">default - stretch</td><td></td><td><strong>X</strong> - justify</td><td><strong>Y</strong> - align</td></tr>
+    <tr><td>content</td><td>x:c</td><td>y:c</td></tr>
+    <tr><td>items</td><td>x:i</td><td>y:i</td></tr>
+    <tr><td>self</td><td>x:s</td><td>y:s</td></tr>
+  </tbody>
+</table>
+
+## Order and Explanation
+
+<div class="tables d:f wrap">
+  <table class="table">
+    <thead>
+      <tr>
+        <th colspan="2">1</th>
+        <th colspan="2">2</th>
+        <th colspan="2">3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>x</td><td>axis X</td><td>c</td><td>content</td><td>b</td><td>baseline</td></tr>
+      <tr><td>y</td><td>axis Y</td><td>i</td><td>items</td><td>n</td><td>normal</td></tr>
+      <tr><td></td><td></td><td>s</td><td>self</td><td>c</td><td>center</td></tr>
+      <tr><td></td><td></td><td></td><td></td><td>e</td><td>end</td></tr>
+      <tr><td></td><td></td><td></td><td></td><td>s</td><td>start</td></tr>
+      <tr><td></td><td></td><td></td><td></td><td>sa</td><td>space-around</td></tr>
+      <tr><td></td><td></td><td></td><td></td><td>sb</td><td>space-between</td></tr>
+      <tr><td></td><td></td><td></td><td></td><td>se</td><td>space-evenly</td></tr>
+    </tbody>
+  </table>
+  <table class="table">
+    <thead>
+      <tr>
+        <th colspan="2">Example</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td><code>&lt;div class="x:c:b"&gt;&lt;/div&gt;</code></td></tr>
+      <tr><td><code>&lt;div class="y:i:n"&gt;&lt;/div&gt;</code></td></tr>
+    </tbody>
+  </table>
+</div>
+
+## Example
+
+<div class="d:f:y">
+  <label class="sf-switch">
+    <input v-model="hasWrap" type="checkbox" /> <span>Wrap</span>
+  </label>
+  <div class="d:f y:i:c">
+    <div>
+      Display
+    </div>
+    <select class="sf-select" v-model="hasDisplay">
+      <option v-for="item in displays" :value="item" :key="item">{{ getDisplayText(item) }}</option>
+    </select>
+  </div>
+  <div class="d:f y:i:c">
+    <div>
+      Align
+    </div>
+    <select class="sf-select" v-model="key" @change="onChange(key, option)">
+      <option v-for="item in positions.slice(0, 3)" :value="item.key" :key="item.key">{{ item.key }}</option>
+    </select>
+    <select class="sf-select" v-model="option">
+      <option v-for="item in options" :value="item.value" :key="item.value">{{ item.value }}</option>
+    </select>
+  </div>
+  <div class="d:f y:i:c">
+    <div>
+      Justify
+    </div>
+    <select class="sf-select" v-model="elmKey" @change="onChange(elmKey, elmOption)">
+      <option v-for="item in positions.slice(3)" :value="item.key" :key="item.key">{{ item.key }}</option>
+    </select>
+    <select class="sf-select" v-model="elmOption">
+      <option v-for="item in elmOptions" :value="item.value" :key="item.value">{{ item.value }}</option>
+    </select>
+  </div>
+  
+  <div class="wrapper pos:r">
+    <div class="pos:a t l axisX">{{ objOption.class }}</div>
+    <div class="pos:a b r axisY">{{ elmObjOption.class }}</div>
+    <div :class="['d:' + hasDisplay, 'box', objOption.class, elmObjOption.class, { wrap: hasWrap }]">
+      <div :class="['sf-c-black:95']" />
+      <div :class="['sf-c-black:95']" />
+      <div :class="['sf-c-black:95']" />
+    </div>
+  </div>
+</div>
+
+<highlight lang="html">
+&lt;div class="{{ result }}"&gt;&lt;/div&gt;
+</highlight>
+
+## CSS classes
+
+<div class="d:f x:c:c wrap">
+<table>
+<thead>
+<tr><th>Class</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><code>y:c</code></td><td>stretch</td></tr>
+<tr><td><code>y:c:b</code></td><td>baseline</td></tr>
+<tr><td><code>y:c:n</code></td><td>normal</td></tr>
+<tr><td><code>y:c:c</code></td><td>center</td></tr>
+<tr><td><code>y:c:e</code></td><td>end</td></tr>
+<tr><td><code>y:c:s</code></td><td>start</td></tr>
+<tr><td><code>y:c:sa</code></td><td>space-around</td></tr>
+<tr><td><code>y:c:sb</code></td><td>space-between</td></tr>
+<tr><td><code>y:c:se</code></td><td>space-evenly</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th>Class</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><code>y:i</code></td><td>stretch</td></tr>
+<tr><td><code>y:i:b</code></td><td>baseline</td></tr>
+<tr><td><code>y:i:c</code></td><td>center</td></tr>
+<tr><td><code>y:i:e</code></td><td>end</td></tr>
+<tr><td><code>y:i:s</code></td><td>start</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th>Class</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><code>y:s</code></td><td>stretch</td></tr>
+<tr><td><code>y:s:a</code></td><td>auto</td></tr>
+<tr><td><code>y:s:n</code></td><td>normal</td></tr>
+<tr><td><code>y:s:b</code></td><td>baseline</td></tr>
+<tr><td><code>y:s:c</code></td><td>center</td></tr>
+<tr><td><code>y:s:e</code></td><td>end</td></tr>
+<tr><td><code>y:s:s</code></td><td>start</td></tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr><th>Class</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><code>x:c</code></td><td>stretch</td></tr>
+<tr><td><code>x:c:n</code></td><td>normal</td></tr>
+<tr><td><code>x:c:c</code></td><td>center</td></tr>
+<tr><td><code>x:c:e</code></td><td>end</td></tr>
+<tr><td><code>x:c:s</code></td><td>start</td></tr>
+<tr><td><code>x:c:sa</code></td><td>space-around</td></tr>
+<tr><td><code>x:c:sb</code></td><td>space-between</td></tr>
+<tr><td><code>x:c:se</code></td><td>space-evenly</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th>Class</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><code>x:i</code></td><td>stretch</td></tr>
+<tr><td><code>x:i:b</code></td><td>baseline</td></tr>
+<tr><td><code>x:i:c</code></td><td>center</td></tr>
+<tr><td><code>x:i:e</code></td><td>end</td></tr>
+<tr><td><code>x:i:s</code></td><td>start</td></tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr><th>Class</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><code>x:s</code></td><td>stretch</td></tr>
+<tr><td><code>x:s:a</code></td><td>auto</td></tr>
+<tr><td><code>x:s:n</code></td><td>normal</td></tr>
+<tr><td><code>x:s:b</code></td><td>baseline</td></tr>
+<tr><td><code>x:s:c</code></td><td>center</td></tr>
+<tr><td><code>x:s:e</code></td><td>end</td></tr>
+<tr><td><code>x:s:s</code></td><td>start</td></tr>
+</tbody>
+</table>
+</div>
+
 <script setup>
 import { ref, computed } from 'vue'; 
+
+import 'style-forge.form/src/var.css';
+import 'style-forge.form/src/base.css';
+import 'style-forge.form/src/global.css';
+import 'style-forge.form/src/pseudo-classes.css';
+
+import 'style-forge.form/src/switch.css';
+import 'style-forge.form/src/select.css';
+
+import 'style-forge.colors/src/colors/20/black.css';
+
 const $class = ref(null);
 
 const positions = 
@@ -111,195 +312,6 @@ function onChange(k, o) {
   mod.value = opts[0].value;
 }
 </script>
-
-# Content-position
-
-The file `constent-position.css` contains a set of CSS classes for aligning elements within a container. These classes manage the alignment of content, items, and individual elements along both the main axis (horizontal) and the cross axis (vertical) in a flexbox or grid layout.
-
-<table class="table">
-  <tbody>
-    <tr><td rowspan="4">default - stretch</td><td></td><td><strong>X</strong> - justify</td><td><strong>Y</strong> - align</td></tr>
-    <tr><td>content</td><td>x:c</td><td>y:c</td></tr>
-    <tr><td>items</td><td>x:i</td><td>y:i</td></tr>
-    <tr><td>self</td><td>x:s</td><td>y:s</td></tr>
-  </tbody>
-</table>
-
-## Order and Explanation
-
-<div class="tables d:f wrap">
-  <table class="table">
-    <thead>
-      <tr>
-        <th colspan="2">1</th>
-        <th colspan="2">2</th>
-        <th colspan="2">3</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr><td>x</td><td>axis X</td><td>c</td><td>content</td><td>b</td><td>baseline</td></tr>
-      <tr><td>y</td><td>axis Y</td><td>i</td><td>items</td><td>n</td><td>normal</td></tr>
-      <tr><td></td><td></td><td>s</td><td>self</td><td>c</td><td>center</td></tr>
-      <tr><td></td><td></td><td></td><td></td><td>e</td><td>end</td></tr>
-      <tr><td></td><td></td><td></td><td></td><td>s</td><td>start</td></tr>
-      <tr><td></td><td></td><td></td><td></td><td>sa</td><td>space-around</td></tr>
-      <tr><td></td><td></td><td></td><td></td><td>sb</td><td>space-between</td></tr>
-      <tr><td></td><td></td><td></td><td></td><td>se</td><td>space-evenly</td></tr>
-    </tbody>
-  </table>
-  <table class="table">
-    <thead>
-      <tr>
-        <th colspan="2">Example</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr><td><code>&lt;div class="x:c:b"&gt;&lt;/div&gt;</code></td></tr>
-      <tr><td><code>&lt;div class="y:i:n"&gt;&lt;/div&gt;</code></td></tr>
-    </tbody>
-  </table>
-</div>
-
-## Example
-
-<div class="d:f:y">
-  <label class="sf-switch">
-    <input v-model="hasWrap" type="checkbox" /> <span>Wrap</span>
-  </label>
-  <div class="d:f y:i:c">
-    <div>
-      Display
-    </div>
-    <select class="sf-select" v-model="hasDisplay">
-      <option v-for="item in displays" :value="item" :key="item">{{ getDisplayText(item) }}</option>
-    </select>
-  </div>
-  <div class="d:f y:i:c">
-    <div>
-      Align
-    </div>
-    <select class="sf-select" v-model="key" @change="onChange(key, option)">
-      <option v-for="item in positions.slice(0, 3)" :value="item.key" :key="item.key">{{ item.key }}</option>
-    </select>
-    <select class="sf-select" v-model="option">
-      <option v-for="item in options" :value="item.value" :key="item.value">{{ item.value }}</option>
-    </select>
-  </div>
-  <div class="d:f y:i:c">
-    <div>
-      Justify
-    </div>
-    <select class="sf-select" v-model="elmKey" @change="onChange(elmKey, elmOption)">
-      <option v-for="item in positions.slice(3)" :value="item.key" :key="item.key">{{ item.key }}</option>
-    </select>
-    <select class="sf-select" v-model="elmOption">
-      <option v-for="item in elmOptions" :value="item.value" :key="item.value">{{ item.value }}</option>
-    </select>
-  </div>
-  
-  <div class="wrapper pos:r">
-    <div class="pos:a t l axisX">{{ objOption.class }}</div>
-    <div class="pos:a b r axisY">{{ elmObjOption.class }}</div>
-    <div :class="['d:' + hasDisplay, 'box', objOption.class, elmObjOption.class, { wrap: hasWrap }]">
-      <div :class="['sf-c-black:85']" />
-      <div :class="['sf-c-black:85']" />
-      <div :class="['sf-c-black:85']" />
-    </div>
-  </div>
-</div>
-
-<highlight lang="html">
-&lt;div class="{{ result }}"&gt;&lt;/div&gt;
-</highlight>
-
-## CSS classes
-
-<div class="d:f x:c:c wrap">
-<table>
-<thead>
-<tr><th>Class</th><th>Description</th></tr>
-</thead>
-<tbody>
-<tr><td><code>y:c</code></td><td>stretch</td></tr>
-<tr><td><code>y:c:b</code></td><td>baseline</td></tr>
-<tr><td><code>y:c:n</code></td><td>normal</td></tr>
-<tr><td><code>y:c:c</code></td><td>center</td></tr>
-<tr><td><code>y:c:e</code></td><td>end</td></tr>
-<tr><td><code>y:c:s</code></td><td>start</td></tr>
-<tr><td><code>y:c:sa</code></td><td>space-around</td></tr>
-<tr><td><code>y:c:sb</code></td><td>space-between</td></tr>
-<tr><td><code>y:c:se</code></td><td>space-evenly</td></tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr><th>Class</th><th>Description</th></tr>
-</thead>
-<tbody>
-<tr><td><code>y:i</code></td><td>stretch</td></tr>
-<tr><td><code>y:i:b</code></td><td>baseline</td></tr>
-<tr><td><code>y:i:c</code></td><td>center</td></tr>
-<tr><td><code>y:i:e</code></td><td>end</td></tr>
-<tr><td><code>y:i:s</code></td><td>start</td></tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr><th>Class</th><th>Description</th></tr>
-</thead>
-<tbody>
-<tr><td><code>y:s</code></td><td>stretch</td></tr>
-<tr><td><code>y:s:a</code></td><td>auto</td></tr>
-<tr><td><code>y:s:n</code></td><td>normal</td></tr>
-<tr><td><code>y:s:b</code></td><td>baseline</td></tr>
-<tr><td><code>y:s:c</code></td><td>center</td></tr>
-<tr><td><code>y:s:e</code></td><td>end</td></tr>
-<tr><td><code>y:s:s</code></td><td>start</td></tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr><th>Class</th><th>Description</th></tr>
-</thead>
-<tbody>
-<tr><td><code>x:c</code></td><td>stretch</td></tr>
-<tr><td><code>x:c:n</code></td><td>normal</td></tr>
-<tr><td><code>x:c:c</code></td><td>center</td></tr>
-<tr><td><code>x:c:e</code></td><td>end</td></tr>
-<tr><td><code>x:c:s</code></td><td>start</td></tr>
-<tr><td><code>x:c:sa</code></td><td>space-around</td></tr>
-<tr><td><code>x:c:sb</code></td><td>space-between</td></tr>
-<tr><td><code>x:c:se</code></td><td>space-evenly</td></tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr><th>Class</th><th>Description</th></tr>
-</thead>
-<tbody>
-<tr><td><code>x:i</code></td><td>stretch</td></tr>
-<tr><td><code>x:i:b</code></td><td>baseline</td></tr>
-<tr><td><code>x:i:c</code></td><td>center</td></tr>
-<tr><td><code>x:i:e</code></td><td>end</td></tr>
-<tr><td><code>x:i:s</code></td><td>start</td></tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr><th>Class</th><th>Description</th></tr>
-</thead>
-<tbody>
-<tr><td><code>x:s</code></td><td>stretch</td></tr>
-<tr><td><code>x:s:a</code></td><td>auto</td></tr>
-<tr><td><code>x:s:n</code></td><td>normal</td></tr>
-<tr><td><code>x:s:b</code></td><td>baseline</td></tr>
-<tr><td><code>x:s:c</code></td><td>center</td></tr>
-<tr><td><code>x:s:e</code></td><td>end</td></tr>
-<tr><td><code>x:s:s</code></td><td>start</td></tr>
-</tbody>
-</table>
-</div>
 
 <style scoped>
 .box {
