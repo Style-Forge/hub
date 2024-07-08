@@ -145,7 +145,7 @@ export default defineConfig({
                 link: '/helpers/text',
               },
               {
-                text: 'z-index',
+                text: 'Z-Index',
                 link: '/helpers/z',
               },
             ]
@@ -164,35 +164,35 @@ export default defineConfig({
                 link: '/form/inputs',
               },
               {
-                text: 'checkbox',
+                text: 'Checkbox',
                 link: '/form/checkbox',
               },
               {
-                text: 'radio',
+                text: 'Radio',
                 link: '/form/radio',
               },
               {
-                text: 'select',
+                text: 'Select',
                 link: '/form/select',
               },
               {
-                text: 'textarea',
+                text: 'Textarea',
                 link: '/form/textarea',
               },
               {
-                text: 'file',
+                text: 'File',
                 link: '/form/file',
               },
               {
-                text: 'color',
+                text: 'Color',
                 link: '/form/color',
               },
               {
-                text: 'switch',
+                text: 'Switch',
                 link: '/form/switch',
               },
               {
-                text: 'validate',
+                text: 'Validate',
                 link: '/form/validate',
               },
             ]
