@@ -279,6 +279,28 @@ In this example:
 
 This way, you can set different colors for light and dark themes, with the dark theme color overriding the default when necessary.
 
+## Tree
+
+```plaintext
+style-forge.colors/
+├── src/
+│   ├── colors
+│   │   ├── 10
+│   │   │   ├── aliceblue.css
+│   │   │   ├── ...
+│   │   │   └── yellowgreen.css
+│   │   └── 20
+│   │       ├── aliceblue.css
+│   │       ├── ...
+│   │       └── yellowgreen.css
+│   ├── 10.css
+│   ├── 20.css
+│   └── web.css
+├── 10.css
+├── 20.css
+└── colors.css - It is dafault (web.css)
+```
+
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue';
 

@@ -74,7 +74,7 @@ import 'style-forge.form';
 ```
 :::
 
-## Custom
+## Customization
 :::tabs key:import
 == CSS
 ```css

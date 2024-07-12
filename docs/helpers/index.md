@@ -74,6 +74,48 @@ import 'style-forge.helpers';
 ```
 :::
 
+## Customization
+:::tabs key:import
+== CSS
+```css
+@import 'style-forge.helpers/src/var.css';
+
+@import 'style-forge.helpers/src/constent-position.css';
+@import 'style-forge.helpers/src/display.css';
+@import 'style-forge.helpers/src/flex.css';
+@import 'style-forge.helpers/src/gap.css';
+@import 'style-forge.helpers/src/grid.css';
+@import 'style-forge.helpers/src/op.css';
+@import 'style-forge.helpers/src/order.css';
+@import 'style-forge.helpers/src/ov.css';
+@import 'style-forge.helpers/src/position.css';
+@import 'style-forge.helpers/src/radius.css';
+@import 'style-forge.helpers/src/shift.css';
+@import 'style-forge.helpers/src/size.css';
+@import 'style-forge.helpers/src/text.css';
+@import 'style-forge.helpers/src/z.css';
+```
+== JS
+```js
+import 'style-forge.helpers/src/var.css';
+
+import 'style-forge.helpers/src/constent-position.css';
+import 'style-forge.helpers/src/display.css';
+import 'style-forge.helpers/src/flex.css';
+import 'style-forge.helpers/src/gap.css';
+import 'style-forge.helpers/src/grid.css';
+import 'style-forge.helpers/src/op.css';
+import 'style-forge.helpers/src/order.css';
+import 'style-forge.helpers/src/ov.css';
+import 'style-forge.helpers/src/position.css';
+import 'style-forge.helpers/src/radius.css';
+import 'style-forge.helpers/src/shift.css';
+import 'style-forge.helpers/src/size.css';
+import 'style-forge.helpers/src/text.css';
+import 'style-forge.helpers/src/z.css';
+```
+:::
+
 ## Variables
 
 ```css

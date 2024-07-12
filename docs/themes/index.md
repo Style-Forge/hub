@@ -79,10 +79,25 @@ There are three standard modes `dark / light / auto (system)`
 
 `auto` - this is the system color theme selection
 
+:::tabs
+== data-theme
 ```html
-  <html ... data-theme="auto">
-  or
-  <html ... data-theme="dark">
-  or
-  <html ... data-theme="light">
+  <html data-theme="auto">
 ```
+```html
+  <html data-theme="light">
+```
+```html
+  <html data-theme="dark">
+```
+== class
+```html
+  <html class="auto">
+```
+```html
+  <html class="light">
+```
+```html
+  <html class="dark">
+```
+:::
