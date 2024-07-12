@@ -80,10 +80,12 @@ import 'style-forge.base';
 
 ```css
 :root {
-  --sf-base-ff: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-  --sf-base-fw: 400;
-  --sf-base-fz: 1rem;
-  --sf-base-lh: 0.8;
+  --sf-ff: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 
+  'Segoe UI Symbol'; /* font-family */
+
+  --sf-fw: 400; /* font-weight */
+
+  --sf-lh: 0.8;  /* line-height */
 
   --sf-h1: 3rem;
   --sf-h2: 2.5rem;
@@ -92,6 +94,7 @@ import 'style-forge.base';
   --sf-h5: 1.25rem;
   --sf-h6: 1rem;
 
+  --sf-fz: 1rem; /* font-size */
   --sf-fz-small: 0.75rem;
 
   --sf-disabled: 0.4; /* opacity */
