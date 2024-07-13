@@ -122,7 +122,7 @@ import 'style-forge.helpers/src/z.css';
 :root {
   --sf-gap: 0.5em;
 
-  --sf-lh: 0.8; /* font-weight */
+  --sf-lh: 0.8; /* line-height */
 
   --sf-radius: 0.5em; /* border-radius */
   --sf-radius-v1: 1em;
@@ -141,5 +141,7 @@ import 'style-forge.helpers/src/z.css';
 
   --sf-fz: 1rem; /* font-size */
   --sf-fz-small: 0.75rem;
+
+  --sf-fw: 400; /* font-weight */
 }
 ```

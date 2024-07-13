@@ -28,7 +28,7 @@ The `.ff:sans` class sets the font family to a sans-serif typeface.
 <div class="d:f:x y:i:c x:c:c auto wrap half">
 
 <div class="example w">
-  <div class="ff:sans">
+  <div class="ff:sans fz:h4 fw">
     Sans-Serif Font
   </div>
 </div>
@@ -48,7 +48,7 @@ The `.ff:serif` class sets the font family to a serif typeface.
 <div class="d:f:x y:i:c x:c:c auto wrap half">
 
 <div class="example w">
-  <div class="ff:serif">
+  <div class="ff:serif fz:h4 fw">
     Serif Font
   </div>
 </div>
@@ -68,7 +68,7 @@ The `.ff:monospace` class sets the font family to a monospace typeface.
 <div class="d:f:x y:i:c x:c:c auto wrap half">
 
 <div class="example w">
-  <div class="ff:monospace">
+  <div class="ff:monospace fz:h4 fw">
     Monospace Font
   </div>
 </div>
@@ -88,7 +88,7 @@ The `.ff:cursive` class sets the font family to a cursive typeface.
 <div class="d:f:x y:i:c x:c:c auto wrap half">
 
 <div class="example w">
-  <div class="ff:cursive">
+  <div class="ff:cursive fz:h4 fw">
     Cursive Font
   </div>
 </div>
@@ -108,7 +108,7 @@ The `.ff:fantasy` class sets the font family to a fantasy typeface.
 <div class="d:f:x y:i:c x:c:c auto wrap half">
 
 <div class="example w">
-  <div class="ff:fantasy">
+  <div class="ff:fantasy fz:h4 fw">
     Fantasy Font
   </div>
 </div>
@@ -128,7 +128,7 @@ The `.ff:emoji` class sets the font family to an emoji typeface.
 <div class="d:f:x y:i:c x:c:c auto wrap half">
 
 <div class="example w">
-  <div class="ff:emoji">
+  <div class="ff:emoji fz:h4 fw">
     Emoji Font
   </div>
 </div>
@@ -148,7 +148,7 @@ The `.ff:math` class sets the font family to a math typeface.
 <div class="d:f:x y:i:c x:c:c auto wrap half">
 
 <div class="example w">
-  <div class="ff:math">
+  <div class="ff:math fz:h4 fw">
     Math Font
   </div>
 </div>
@@ -168,7 +168,7 @@ The `.ff:fangsong` class sets the font family to a fangsong typeface.
 <div class="d:f:x y:i:c x:c:c auto wrap half">
 
 <div class="example w">
-  <div class="ff:fangsong">
+  <div class="ff:fangsong fz:h4 fw">
     Fangsong Font
   </div>
 </div>
@@ -188,6 +188,8 @@ The `.ff:fangsong` class sets the font family to a fangsong typeface.
 <tr><th>Class</th><th>Description</th></tr>
 </thead>
 <tbody>
+<tr><td><b>fw</b></td><td>font-weight: <b>var(--sf-fw)</b> <code>400</code></td></tr>
+<tr><td><b>fw:i</b></td><td>font-weight: inherit</td></tr>
 <tr><td><b>fw:1</b></td><td>font-weight: 100</td></tr>
 <tr><td><b>fw:2</b></td><td>font-weight: 200</td></tr>
 <tr><td><b>fw:3</b></td><td>font-weight: 300</td></tr>
@@ -504,15 +506,78 @@ These classes set the font weight using named values.
 <tr><th>Class</th><th>Description</th></tr>
 </thead>
 <tbody>
-<tr><td><b>fz:h1</b></td><td>font-size: var(--sf-h1) <code>3rem</code></td></tr>
-<tr><td><b>fz:h2</b></td><td>font-size: var(--sf-h2) <code>2.5rem</code></td></tr>
-<tr><td><b>fz:h3</b></td><td>font-size: var(--sf-h3) <code>2rem</code></td></tr>
-<tr><td><b>fz:h4</b></td><td>font-size: var(--sf-h4) <code>1.5rem</code></td></tr>
-<tr><td><b>fz:h5</b></td><td>font-size: var(--sf-h5) <code>1.25rem</code></td></tr>
-<tr><td><b>fz:h6</b></td><td>font-size: var(--sf-h6) <code>1rem</code></td></tr>
-<tr><td><b>fz:i</b></td><td>font-size: inherit</td></tr>
-<tr><td><b>fz:n</b></td><td>font-size: var(--sf-fz-normal) <code>1rem</code></td></tr>
-<tr><td><b>fz:s</b></td><td>font-size: var(--sf-fz-small) <code>0.75rem</code></td></tr>
+<tr><td><b>fz:h1</b></td><td>
+
+
+```yaml
+font-size: var(--sf-h1); # 3rem
+font-weight: 700;
+```
+
+</td></tr>
+<tr><td><b>fz:h2</b></td><td>
+
+```yaml
+font-size: var(--sf-h2); # 2.5rem
+font-weight: 700;
+```
+
+</td></tr>
+<tr><td><b>fz:h3</b></td><td>
+
+```yaml
+font-size: var(--sf-h3); # 2rem
+font-weight: 600;
+```
+
+</td></tr>
+<tr><td><b>fz:h4</b></td><td>
+
+```yaml
+font-size: var(--sf-h4); # 1.5rem
+font-weight: 600;
+```
+
+</td></tr>
+<tr><td><b>fz:h5</b></td><td>
+
+```yaml
+font-size: var(--sf-h5); # 1.25rem
+font-weight: 500;
+```
+
+</td></tr>
+<tr><td><b>fz:h6</b></td><td>
+
+```yaml
+font-size: var(--sf-h6); # 1rem
+font-weight: 500;
+```
+
+</td></tr>
+<tr><td><b>fz:i</b></td><td>
+
+```yaml
+font-size: inherit;
+```
+
+</td></tr>
+<tr><td><b>fz</b></td><td>
+
+```yaml
+font-size: var(--sf-fz); # 1rem
+font-weight: 400;
+```
+
+</td></tr>
+<tr><td><b>fz:s</b></td><td>
+
+```yaml
+font-size: var(--sf-fz-small); # 0.75rem
+font-weight: 300;
+```
+
+</td></tr>
 </tbody>
 </table>
 
@@ -624,13 +689,13 @@ These classes set the font weight using named values.
 <div class="d:f:x y:i:c x:c:c auto wrap half">
 
 <div class="example w">
-  <div class="fz:n">
+  <div class="fz">
     Normal
   </div>
 </div>
 
 ```html
-<div class="fz:n">
+<div class="fz">
   Normal
 </div>
 ```
@@ -845,6 +910,50 @@ These classes set the font weight using named values.
 ```html
 <div class="whs:pw">
   pre-wrap
+</div>
+```
+
+</div>
+
+## Line-height
+
+<table class="d:t w">
+<thead>
+<tr><th>Class</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><b>lh</b></td><td>line-height: <b>var(--sf-lh)</b> <code>0.8</code></td></tr>
+<tr><td><b>lh:n</b></td><td>line-height: normal</td></tr>
+</tbody>
+</table>
+
+<div class="d:f:x y:i:c x:c:c auto wrap half">
+
+<div class="example w">
+  <div class="lh">
+    line-height
+  </div>
+</div>
+
+```html
+<div class="lh">
+  line-height
+</div>
+```
+
+</div>
+
+<div class="d:f:x y:i:c x:c:c auto wrap half">
+
+<div class="example w">
+  <div class="lh:n">
+    line-height (normal)
+  </div>
+</div>
+
+```html
+<div class="lh:n">
+  line-height (normal)
 </div>
 ```
 

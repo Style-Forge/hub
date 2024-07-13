@@ -140,8 +140,9 @@ import 'style-forge.form/src/validate.css';
 :root {
   --sf-gap: 0.5em;
 
-  --sf-disabled: 0.4;
-  --sf-txt-small: 0.75rem;
+  --sf-disabled: 0.4; /* opacity */
+
+  --sf-fz-small: 0.75rem;
 
   --sf-form-radius: 0.5em;
 
