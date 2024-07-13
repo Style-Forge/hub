@@ -934,10 +934,10 @@ style-forge.form@^3.3.0:
   resolved "https://registry.yarnpkg.com/style-forge.form/-/style-forge.form-3.3.0.tgz#d057049fa21d78c87df1da7371e0e999c7b1f876"
   integrity sha512-oB0FQYEVR2pIFDnZyl228/xhPAMabHifi1/g9v3Qgs57mJUWkWIp08YepMiSw47+V3rik3x6tFZ2aNJszbgIPQ==
 
-style-forge.helpers@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/style-forge.helpers/-/style-forge.helpers-2.2.0.tgz#39514d62da62ae05eb200084ff65fb8edb38ca22"
-  integrity sha512-HPWkxLCA3pPbr9S0kDQaGDifnzXjB2O7+HjDTYY6Rj7BQcBnqMwfuvCsaz93bOAinDEw0OlhJoHYL45lJPg9pg==
+style-forge.helpers@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/style-forge.helpers/-/style-forge.helpers-2.2.1.tgz#a6c42ed6a5417122b07c44788ccecfb303bcd0bd"
+  integrity sha512-414C5BWsJ0O5yYc7yf0VHk7AHoZG7pkfajjbCdXDhKQa9jnVWr0lue2iJeunvsWCoFxsjbgH0A6UB1a32Kg3TA==
 
 style-forge.patterns@^2.0.12:
   version "2.0.12"
