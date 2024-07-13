@@ -31,7 +31,7 @@ After installation, you can import the CSS file into your project or, if you are
 :::tabs key:import
 == CSS
 ```css
-@import "style-forge";
+@import 'style-forge';
 ```
 == JS
 ```js

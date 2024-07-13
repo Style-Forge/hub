@@ -81,7 +81,7 @@ Web - `default`
 :::tabs key:import
 == CSS
 ```css
-@import "style-forge.colors";
+@import 'style-forge.colors';
 ```
 == JS
 ```js
@@ -115,7 +115,7 @@ Example: <a href="#choose-your-color">Choose your color</a>
 :::tabs key:import
 == CSS
 ```css
-@import "style-forge.colors/10.css";
+@import 'style-forge.colors/10.css';
 ```
 == JS
 ```js
@@ -129,7 +129,7 @@ import 'style-forge.colors/10.css';
 :::tabs key:import
 == CSS
 ```css
-@import "style-forge.colors/20.css";
+@import 'style-forge.colors/20.css';
 ```
 == JS
 ```js
@@ -180,7 +180,7 @@ You can select a single color with [10 or 20] lightness gradient
 :::tabs key:import
 == CSS
 <highlight lang="css">
-@import "style-forge.colors/src/colors/10/{{ selected }}.css";
+@import 'style-forge.colors/src/colors/10/{{ selected }}.css';
 </highlight>
 == JS
 <highlight lang="js">
@@ -213,7 +213,7 @@ import 'style-forge.colors/src/colors/10/{{ selected }}.css';
 :::tabs key:import
 == CSS
 <highlight lang="css">
-@import "style-forge.colors/src/colors/20/{{ selected }}.css";
+@import 'style-forge.colors/src/colors/20/{{ selected }}.css';
 </highlight>
 == JS
 <highlight lang="js">

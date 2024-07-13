@@ -66,7 +66,7 @@ After installation, you can import the CSS file into your project or, if you are
 :::tabs key:import
 == CSS
 ```css
-@import "style-forge.helpers";
+@import 'style-forge.helpers';
 ```
 == JS
 ```js
@@ -124,7 +124,8 @@ import 'style-forge.helpers/src/z.css';
 
   --sf-lh: 0.8; /* line-height */
 
-  --sf-radius: 0.5em; /* border-radius */
+  /* border-radius */
+  --sf-radius: 0.5em;
   --sf-radius-v1: 1em;
   --sf-radius-v2: 1.25em;
   --sf-radius-v3: 1.5em;
@@ -132,6 +133,7 @@ import 'style-forge.helpers/src/z.css';
   --sf-radius-v5: 2.5em;
   --sf-radius-v6: 3em;
 
+  /* font-size header */
   --sf-h1: 3rem;
   --sf-h2: 2.5rem;
   --sf-h3: 2rem;
@@ -139,9 +141,22 @@ import 'style-forge.helpers/src/z.css';
   --sf-h5: 1.25rem;
   --sf-h6: 1rem;
 
-  --sf-fz: 1rem; /* font-size */
+  /* font-weight header */
+  --sf-fw-h1: 700;
+  --sf-fw-h2: 700;
+  --sf-fw-h3: 700;
+  --sf-fw-h4: 600;
+  --sf-fw-h5: 600;
+  --sf-fw-h6: 600;
+
+  /* font-size */
+  --sf-fz: 1rem;
+  --sf-fz-bold: 1rem;
   --sf-fz-small: 0.75rem;
 
-  --sf-fw: 400; /* font-weight */
+  /* font-weight */
+  --sf-fw: 400;
+  --sf-fw-bold: 600;
+  --sf-fw-small: 300;
 }
 ```

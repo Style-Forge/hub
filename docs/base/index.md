@@ -66,7 +66,7 @@ After installation, you can import the CSS file into your project or, if you are
 :::tabs key:import
 == CSS
 ```css
-@import "style-forge.base";
+@import 'style-forge.base';
 ```
 == JS
 ```js
@@ -83,10 +83,9 @@ import 'style-forge.base';
   --sf-ff: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 
   'Segoe UI Symbol'; /* font-family */
 
-  --sf-fw: 400; /* font-weight */
-
   --sf-lh: 0.8;  /* line-height */
 
+  /* font-size header */
   --sf-h1: 3rem;
   --sf-h2: 2.5rem;
   --sf-h3: 2rem;
@@ -94,8 +93,23 @@ import 'style-forge.base';
   --sf-h5: 1.25rem;
   --sf-h6: 1rem;
 
-  --sf-fz: 1rem; /* font-size */
+  /* font-weight header */
+  --sf-fw-h1: 700;
+  --sf-fw-h2: 700;
+  --sf-fw-h3: 700;
+  --sf-fw-h4: 600;
+  --sf-fw-h5: 600;
+  --sf-fw-h6: 600;
+
+  /* font-size */
+  --sf-fz: 1rem;
+  --sf-fz-bold: 1rem;
   --sf-fz-small: 0.75rem;
+
+  /* font-weight */
+  --sf-fw: 400;
+  --sf-fw-bold: 600;
+  --sf-fw-small: 300;
 
   --sf-disabled: 0.4; /* opacity */
 

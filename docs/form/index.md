@@ -66,7 +66,7 @@ After installation, you can import the CSS file into your project or, if you are
 :::tabs key:import
 == CSS
 ```css
-@import "style-forge.form";
+@import 'style-forge.form';
 ```
 == JS
 ```js
@@ -136,13 +136,15 @@ import 'style-forge.form/src/validate.css';
 
 ## Variables
 
+`--sf-c` - these are colors in HSL
+
 ```css
 :root {
   --sf-gap: 0.5em;
 
   --sf-disabled: 0.4; /* opacity */
 
-  --sf-fz-small: 0.75rem;
+  --sf-fz-small: 0.75rem; /* font-size */
 
   --sf-form-radius: 0.5em;
 
@@ -152,7 +154,7 @@ import 'style-forge.form/src/validate.css';
   /* switch */
   --sf-form-switch-size: 1em;
 
-  /* global */
+  /* colors */
   --sf-form-c-white: 0 0% 100%;
   --sf-form-c-info: 200 100% 60%;
   --sf-form-c-error: 0 100% 60%;
@@ -164,7 +166,7 @@ import 'style-forge.form/src/validate.css';
   --sf-form-c-loading: 0 0% 10%;
   --sf-form-c-txt: 0 0% 10%;
 
-  /* global dark theme */
+  /* colors dark theme */
   --sf-form-dark-c-white: 0 0% 100%;
   --sf-form-dark-c-info: 219 79% 66%;
   --sf-form-dark-c-error: 0 100% 65%;
