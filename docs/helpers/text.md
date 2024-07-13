@@ -905,6 +905,7 @@ font-weight: <b>300</b>;
 <tbody>
 <tr><td><b>lh</b></td><td>line-height: <b>var(--sf-lh)</b> <code>0.8</code></td></tr>
 <tr><td><b>lh:n</b></td><td>line-height: normal</td></tr>
+<tr><td><b>lh:t</b></td><td>line-height: <b>var(--sf-lh-txt)</b> <code>1.5</code></td></tr>
 </tbody>
 </table>
 
@@ -935,6 +936,22 @@ font-weight: <b>300</b>;
 ```html
 <div class="lh:n">
   line-height (normal)
+</div>
+```
+
+</div>
+
+<div class="d:f:x y:i:c x:c:c auto wrap half">
+
+<div class="example w">
+  <div class="lh:t">
+    line-height (text)
+  </div>
+</div>
+
+```html
+<div class="lh:t">
+  line-height (text)
 </div>
 ```
 

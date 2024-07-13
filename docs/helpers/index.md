@@ -122,7 +122,9 @@ import 'style-forge.helpers/src/z.css';
 :root {
   --sf-gap: 0.5em;
 
-  --sf-lh: 0.8; /* line-height */
+  /* line-height */
+  --sf-lh: 0.8;
+  --sf-lh-txt: 1.5;
 
   /* border-radius */
   --sf-radius: 0.5em;

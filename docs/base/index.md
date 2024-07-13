@@ -83,7 +83,9 @@ import 'style-forge.base';
   --sf-ff: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 
   'Segoe UI Symbol'; /* font-family */
 
-  --sf-lh: 0.8;  /* line-height */
+  /* line-height */
+  --sf-lh: 0.8;
+  --sf-lh-txt: 1.5;
 
   /* font-size header */
   --sf-h1: 3rem;
