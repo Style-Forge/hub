@@ -1,6 +1,6 @@
 {
   "name": "style-forge",
-  "version": "3.6.1",
+  "version": "3.7.0",
   "description": "Style-Forge: CSS framework with themes, utilities, flexbox, and grid for creating responsive websites.",
   "type": "module",
   "main": "style-forge.css",
@@ -50,10 +50,10 @@
     "vitepress-plugin-tabs": "^0.5.0"
   },
   "dependencies": {
-    "style-forge.base": "^5.2.0",
+    "style-forge.base": "^5.3.0",
     "style-forge.colors": "^1.2.0",
     "style-forge.form": "^3.3.0",
-    "style-forge.helpers": "^2.2.1",
+    "style-forge.helpers": "^2.3.0",
     "style-forge.patterns": "^2.0.12",
     "style-forge.themes": "^1.1.1"
   },
