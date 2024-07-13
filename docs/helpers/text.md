@@ -190,6 +190,80 @@ The `.ff:fangsong` class sets the font family to a fangsong typeface.
 <tbody>
 <tr><td><b>fw</b></td><td>font-weight: <b>var(--sf-fw)</b> <code>400</code></td></tr>
 <tr><td><b>fw:i</b></td><td>font-weight: inherit</td></tr>
+<tr><td><b>fw:b</b></td><td>font-weight: <b>var(--sf-fw-bold)</b> <code>600</code></td></tr>
+<tr><td><b>fw:s</b></td><td>font-weight: <b>var(--sf-fw-small)</b> <code>300</code></td></tr>
+</tbody>
+</table>
+
+<div class="d:f:x y:i:c x:c:c auto wrap half">
+
+<div class="example w">
+  <div class="fw">
+    Font Weight 400
+  </div>
+</div>
+
+```html
+<div class="fw">
+  Font Weight 400
+</div>
+```
+
+</div>
+
+<div class="d:f:x y:i:c x:c:c auto wrap half">
+
+<div class="example w">
+  <div class="fw:i">
+    Font Weight inherit
+  </div>
+</div>
+
+```html
+<div class="fw:i">
+  Font Weight inherit
+</div>
+```
+
+</div>
+
+<div class="d:f:x y:i:c x:c:c auto wrap half">
+
+<div class="example w">
+  <div class="fw:b">
+    Font Weight bold (600)
+  </div>
+</div>
+
+```html
+<div class="fw:b">
+  Font Weight bold (600)
+</div>
+```
+
+</div>
+
+<div class="d:f:x y:i:c x:c:c auto wrap half">
+
+<div class="example w">
+  <div class="fw:s">
+    Font Weight small (300)
+  </div>
+</div>
+
+```html
+<div class="fw:s">
+  Font Weight small (300)
+</div>
+```
+
+</div>
+
+<table class="d:t w">
+<thead>
+<tr><th>Class</th><th>Description</th></tr>
+</thead>
+<tbody>
 <tr><td><b>fw:1</b></td><td>font-weight: 100</td></tr>
 <tr><td><b>fw:2</b></td><td>font-weight: 200</td></tr>
 <tr><td><b>fw:3</b></td><td>font-weight: 300</td></tr>
@@ -345,6 +419,10 @@ These classes set the font weight from 100 to 900.
 ### Named Font Weight Classes
 
 These classes set the font weight using named values.
+
+::: info
+These classes are static / not change
+:::
 
 <table class="d:t w">
 <thead>
@@ -903,9 +981,31 @@ font-weight: <b>300</b>;
 <tr><th>Class</th><th>Description</th></tr>
 </thead>
 <tbody>
-<tr><td><b>lh</b></td><td>line-height: <b>var(--sf-lh)</b> <code>0.8</code></td></tr>
-<tr><td><b>lh:n</b></td><td>line-height: normal</td></tr>
-<tr><td><b>lh:t</b></td><td>line-height: <b>var(--sf-lh-txt)</b> <code>1.5</code></td></tr>
+<tr><td><b>lh</b></td><td>
+line-height: <b>var(--sf-lh)</b> <code>0.8</code><br />
+<div class="op:70 fz:s lh:i">tags: <code>All</code></div>
+</td></tr>
+<tr><td><b>lh:1</b></td><td>
+line-height: 1<br />
+<div class="op:70 fz:s lh:i">tags: <code>None</code></div>
+</td></tr>
+<tr><td><b>lh:i</b></td><td>
+line-height: inherit<br />
+<div class="op:70 fz:s lh:i">tags: <code>None</code></div>
+</td></tr>
+<tr><td><b>lh:n</b></td><td>
+line-height: normal<br />
+<div class="op:70 fz:s lh:i">tags: <code>None</code></div>
+</td></tr>
+<tr><td><b>lh:t</b></td><td>
+line-height: <b>var(--sf-lh-txt)</b> <code>1.5</code><br />
+<div class="op:70 fz:s lh:i">
+  tags: <code>address</code>, <code>blockquote</code>, <code>dd</code>, 
+  <code>dt</code>, 
+  <code>li</code>, 
+  <code>p</code>
+</div>
+</td></tr>
 </tbody>
 </table>
 
@@ -920,6 +1020,38 @@ font-weight: <b>300</b>;
 ```html
 <div class="lh">
   line-height
+</div>
+```
+
+</div>
+
+<div class="d:f:x y:i:c x:c:c auto wrap half">
+
+<div class="example w">
+  <div class="lh:1">
+    line-height: 1
+  </div>
+</div>
+
+```html
+<div class="lh:1">
+  line-height: 1
+</div>
+```
+
+</div>
+
+<div class="d:f:x y:i:c x:c:c auto wrap half">
+
+<div class="example w">
+  <div class="lh:i">
+    line-height (inherit)
+  </div>
+</div>
+
+```html
+<div class="lh:i">
+  line-height (inherit)
 </div>
 ```
 
