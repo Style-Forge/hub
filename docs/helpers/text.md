@@ -508,74 +508,55 @@ These classes set the font weight using named values.
 <tbody>
 <tr><td><b>fz:h1</b></td><td>
 
-
-```yaml
-font-size: var(--sf-h1); # 3rem
-font-weight: 700;
-```
+font-size: <b>var(--sf-h1)</b>; <code>3rem</code><br />
+font-weight: <b>700</b>;
 
 </td></tr>
 <tr><td><b>fz:h2</b></td><td>
 
-```yaml
-font-size: var(--sf-h2); # 2.5rem
-font-weight: 700;
-```
+font-size: <b>var(--sf-h2)</b>; <code>2.5rem</code><br />
+font-weight: <b>700</b>;
 
 </td></tr>
 <tr><td><b>fz:h3</b></td><td>
 
-```yaml
-font-size: var(--sf-h3); # 2rem
-font-weight: 600;
-```
+font-size: <b>var(--sf-h3)</b>; <code>2rem</code><br />
+font-weight: <b>600</b>;
 
 </td></tr>
 <tr><td><b>fz:h4</b></td><td>
 
-```yaml
-font-size: var(--sf-h4); # 1.5rem
-font-weight: 600;
-```
+font-size: <b>var(--sf-h4)</b>; <code>1.5rem</code><br />
+font-weight: <b>600</b>;
 
 </td></tr>
 <tr><td><b>fz:h5</b></td><td>
 
-```yaml
-font-size: var(--sf-h5); # 1.25rem
-font-weight: 500;
-```
+font-size: <b>var(--sf-h5)</b>; <code>1.25rem</code><br />
+font-weight: <b>500</b>;
 
 </td></tr>
 <tr><td><b>fz:h6</b></td><td>
 
-```yaml
-font-size: var(--sf-h6); # 1rem
-font-weight: 500;
-```
+font-size: <b>var(--sf-h6)</b>; <code>1rem</code><br />
+font-weight: <b>500</b>;
 
 </td></tr>
 <tr><td><b>fz:i</b></td><td>
 
-```yaml
-font-size: inherit;
-```
+font-size: <b>inherit</b>;
 
 </td></tr>
 <tr><td><b>fz</b></td><td>
 
-```yaml
-font-size: var(--sf-fz); # 1rem
-font-weight: 400;
-```
+font-size: <b>var(--sf-fz)</b>; <code>1rem</code><br />
+font-weight: <b>400</b>;
 
 </td></tr>
 <tr><td><b>fz:s</b></td><td>
 
-```yaml
-font-size: var(--sf-fz-small); # 0.75rem
-font-weight: 300;
-```
+font-size: var(--sf-fz-small); <code>0.75rem</code><br />
+font-weight: <b>300</b>;
 
 </td></tr>
 </tbody>
