@@ -39,8 +39,10 @@ watch(() => slots.default(), async () => {
   updateTheme()
 })
 
-const observer = new MutationObserver(updateTheme)
-observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] })
+if (typeof MutationObserver !== 'undefined') {
+  const observer = new MutationObserver(updateTheme)
+  observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] })
+}
 
 onMounted(async () => {
   highlighter = await createHighlighter({
