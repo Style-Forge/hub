@@ -1,3 +1,28 @@
+---
+title: Z-Index
+titleTemplate: Style-Forge.Helpers
+description: "Z-Index | Style-Forge.Helpers: versatile component for easy management of z-index properties in web apps."
+
+head:
+  - - meta
+    - name: keywords
+      content: style-forge, z-index, css z-index, styling, web development, frontend, z-index properties, responsive
+  - - meta
+    - property: og:title
+      content: "Z-Index | Style-Forge.Helpers"
+  - - meta
+    - property: og:description
+      content: "Z-Index | Style-Forge.Helpers: versatile component for easy management of z-index properties in web apps."
+  - - meta
+    - property: og:url
+      content: https://style-forge.dev/helpers/z-index.html
+  - - meta
+    - name: twitter:title
+      content: "Z-Index | Style-Forge.Helpers"
+  - - meta
+    - name: twitter:description
+      content: "Z-Index | Style-Forge.Helpers: versatile component for easy management of z-index properties in web apps."
+---
 
 # Z-Index
 

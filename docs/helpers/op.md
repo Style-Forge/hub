@@ -1,3 +1,28 @@
+---
+title: Opacity
+titleTemplate: Style-Forge.Helpers
+description: "Opacity | Style-Forge.Helpers: versatile component for easy management of opacity properties in web apps."
+
+head:
+  - - meta
+    - name: keywords
+      content: style-forge, opacity, css opacity, styling, web development, frontend, opacity properties, responsive
+  - - meta
+    - property: og:title
+      content: "Opacity | Style-Forge.Helpers"
+  - - meta
+    - property: og:description
+      content: "Opacity | Style-Forge.Helpers: versatile component for easy management of opacity properties in web apps."
+  - - meta
+    - property: og:url
+      content: https://style-forge.dev/helpers/opacity.html
+  - - meta
+    - name: twitter:title
+      content: "Opacity | Style-Forge.Helpers"
+  - - meta
+    - name: twitter:description
+      content: "Opacity | Style-Forge.Helpers: versatile component for easy management of opacity properties in web apps."
+---
 
 # Opacity
 

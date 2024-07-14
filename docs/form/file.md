@@ -1,3 +1,28 @@
+---
+title: File
+titleTemplate: Style-Forge.Form
+description: "File | Style-Forge.Form: versatile component for easy creation, styling, and handling of file inputs in web apps."
+
+head:
+  - - meta
+    - name: keywords
+      content: style-forge, file, input, upload, styling, web development, frontend, file elements, file styles, responsive
+  - - meta
+    - property: og:title
+      content: "File | Style-Forge.Form"
+  - - meta
+    - property: og:description
+      content: "File | Style-Forge.Form: versatile component for easy creation, styling, and handling of file inputs in web apps."
+  - - meta
+    - property: og:url
+      content: https://style-forge.dev/form/file.html
+  - - meta
+    - name: twitter:title
+      content: "File | Style-Forge.Form"
+  - - meta
+    - name: twitter:description
+      content: "File | Style-Forge.Form: versatile component for easy creation, styling, and handling of file inputs in web apps."
+---
 
 # File
 

@@ -1,3 +1,28 @@
+---
+title: Inputs
+titleTemplate: Style-Forge.Form
+description: "Inputs | Style-Forge.Form: versatile components for easy creation, styling, and validation of various input elements in web apps."
+
+head:
+  - - meta
+    - name: keywords
+      content: style-forge, inputs, input elements, validate, styling, web development, frontend, input styles, responsive
+  - - meta
+    - property: og:title
+      content: "Inputs | Style-Forge.Form"
+  - - meta
+    - property: og:description
+      content: "Inputs | Style-Forge.Form: versatile components for easy creation, styling, and validation of various input elements in web apps."
+  - - meta
+    - property: og:url
+      content: https://style-forge.dev/form/inputs.html
+  - - meta
+    - name: twitter:title
+      content: "Inputs | Style-Forge.Form"
+  - - meta
+    - name: twitter:description
+      content: "Inputs | Style-Forge.Form: versatile components for easy creation, styling, and validation of various input elements in web apps."
+---
 
 # Inputs
 

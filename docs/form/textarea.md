@@ -1,3 +1,28 @@
+---
+title: Textarea
+titleTemplate: Style-Forge.Form
+description: "Textarea | Style-Forge.Form: versatile component for easy creation, styling, and handling of text areas in web apps."
+
+head:
+  - - meta
+    - name: keywords
+      content: style-forge, textarea, input, text area, styling, web development, frontend, textarea elements, textarea styles, responsive
+  - - meta
+    - property: og:title
+      content: "Textarea | Style-Forge.Form"
+  - - meta
+    - property: og:description
+      content: "Textarea | Style-Forge.Form: versatile component for easy creation, styling, and handling of text areas in web apps."
+  - - meta
+    - property: og:url
+      content: https://style-forge.dev/form/textarea.html
+  - - meta
+    - name: twitter:title
+      content: "Textarea | Style-Forge.Form"
+  - - meta
+    - name: twitter:description
+      content: "Textarea | Style-Forge.Form: versatile component for easy creation, styling, and handling of text areas in web apps."
+---
 
 # Textarea
 

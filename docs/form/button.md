@@ -1,3 +1,28 @@
+---
+title: Button
+titleTemplate: Style-Forge.Form
+description: "Button | Style-Forge.Form: versatile component for easy creation, styling, and interaction handling of buttons in web apps."
+
+head:
+  - - meta
+    - name: keywords
+      content: style-forge, button, input, styling, web development, frontend, button elements, button styles, responsive
+  - - meta
+    - property: og:title
+      content: "Button | Style-Forge.Form"
+  - - meta
+    - property: og:description
+      content: "Button | Style-Forge.Form: versatile component for easy creation, styling, and interaction handling of buttons in web apps."
+  - - meta
+    - property: og:url
+      content: https://style-forge.dev/form/button.html
+  - - meta
+    - name: twitter:title
+      content: "Button | Style-Forge.Form"
+  - - meta
+    - name: twitter:description
+      content: "Button | Style-Forge.Form: versatile component for easy creation, styling, and interaction handling of buttons in web apps."
+---
 
 # Buttons
 

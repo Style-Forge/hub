@@ -1,3 +1,28 @@
+---
+title: Color
+titleTemplate: Style-Forge.Form
+description: "Color | Style-Forge.Form: versatile tool for easy color selection, styling, and application in web apps."
+
+head:
+  - - meta
+    - name: keywords
+      content: style-forge, color, input, styling, web development, frontend, color selection, color styles, responsive
+  - - meta
+    - property: og:title
+      content: "Color | Style-Forge.Form"
+  - - meta
+    - property: og:description
+      content: "Color | Style-Forge.Form: versatile tool for easy color selection, styling, and application in web apps."
+  - - meta
+    - property: og:url
+      content: https://style-forge.dev/form/color.html
+  - - meta
+    - name: twitter:title
+      content: "Color | Style-Forge.Form"
+  - - meta
+    - name: twitter:description
+      content: "Color | Style-Forge.Form: versatile tool for easy color selection, styling, and application in web apps."
+---
 
 # Color
 

@@ -1,3 +1,28 @@
+---
+title: Radio
+titleTemplate: Style-Forge.Form
+description: "Radio | Style-Forge.Form: versatile component for easy creation, styling, and management of radio buttons in web apps."
+
+head:
+  - - meta
+    - name: keywords
+      content: style-forge, radio, input, validate, styling, web development, frontend, radio elements, radio styles, responsive
+  - - meta
+    - property: og:title
+      content: "Radio | Style-Forge.Form"
+  - - meta
+    - property: og:description
+      content: "Radio | Style-Forge.Form: versatile component for easy creation, styling, and management of radio buttons in web apps."
+  - - meta
+    - property: og:url
+      content: https://style-forge.dev/form/radio.html
+  - - meta
+    - name: twitter:title
+      content: "Radio | Style-Forge.Form"
+  - - meta
+    - name: twitter:description
+      content: "Radio | Style-Forge.Form: versatile component for easy creation, styling, and management of radio buttons in web apps."
+---
 
 # Radio
 

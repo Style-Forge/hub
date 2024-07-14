@@ -1,3 +1,28 @@
+---
+title: Overflow
+titleTemplate: Style-Forge.Helpers
+description: "Overflow | Style-Forge.Helpers: versatile component for easy management of overflow properties in web apps."
+
+head:
+  - - meta
+    - name: keywords
+      content: style-forge, overflow, css overflow, styling, web development, frontend, overflow properties, responsive
+  - - meta
+    - property: og:title
+      content: "Overflow | Style-Forge.Helpers"
+  - - meta
+    - property: og:description
+      content: "Overflow | Style-Forge.Helpers: versatile component for easy management of overflow properties in web apps."
+  - - meta
+    - property: og:url
+      content: https://style-forge.dev/helpers/overflow.html
+  - - meta
+    - name: twitter:title
+      content: "Overflow | Style-Forge.Helpers"
+  - - meta
+    - name: twitter:description
+      content: "Overflow | Style-Forge.Helpers: versatile component for easy management of overflow properties in web apps."
+---
 
 # Overflow
 

@@ -1,3 +1,28 @@
+---
+title: Position
+titleTemplate: Style-Forge.Helpers
+description: "Position | Style-Forge.Helpers: versatile component for easy management of element positioning in web apps."
+
+head:
+  - - meta
+    - name: keywords
+      content: style-forge, position, element positioning, css positioning, styling, web development, frontend, responsive
+  - - meta
+    - property: og:title
+      content: "Position | Style-Forge.Helpers"
+  - - meta
+    - property: og:description
+      content: "Position | Style-Forge.Helpers: versatile component for easy management of element positioning in web apps."
+  - - meta
+    - property: og:url
+      content: https://style-forge.dev/helpers/position.html
+  - - meta
+    - name: twitter:title
+      content: "Position | Style-Forge.Helpers"
+  - - meta
+    - name: twitter:description
+      content: "Position | Style-Forge.Helpers: versatile component for easy management of element positioning in web apps."
+---
 
 # Position
 

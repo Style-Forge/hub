@@ -1,3 +1,28 @@
+---
+title: Text
+titleTemplate: Style-Forge.Helpers
+description: "Text | Style-Forge.Helpers: versatile component for easy management of text styles and properties in web apps."
+
+head:
+  - - meta
+    - name: keywords
+      content: style-forge, text, text styles, css text, styling, web development, frontend, text properties, responsive
+  - - meta
+    - property: og:title
+      content: "Text | Style-Forge.Helpers"
+  - - meta
+    - property: og:description
+      content: "Text | Style-Forge.Helpers: versatile component for easy management of text styles and properties in web apps."
+  - - meta
+    - property: og:url
+      content: https://style-forge.dev/helpers/text.html
+  - - meta
+    - name: twitter:title
+      content: "Text | Style-Forge.Helpers"
+  - - meta
+    - name: twitter:description
+      content: "Text | Style-Forge.Helpers: versatile component for easy management of text styles and properties in web apps."
+---
 
 # Text
 

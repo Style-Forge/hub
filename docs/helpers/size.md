@@ -1,3 +1,28 @@
+---
+title: Size
+titleTemplate: Style-Forge.Helpers
+description: "Size | Style-Forge.Helpers: versatile component for easy management of element sizes in web apps."
+
+head:
+  - - meta
+    - name: keywords
+      content: style-forge, size, element size, css size, styling, web development, frontend, responsive
+  - - meta
+    - property: og:title
+      content: "Size | Style-Forge.Helpers"
+  - - meta
+    - property: og:description
+      content: "Size | Style-Forge.Helpers: versatile component for easy management of element sizes in web apps."
+  - - meta
+    - property: og:url
+      content: https://style-forge.dev/helpers/size.html
+  - - meta
+    - name: twitter:title
+      content: "Size | Style-Forge.Helpers"
+  - - meta
+    - name: twitter:description
+      content: "Size | Style-Forge.Helpers: versatile component for easy management of element sizes in web apps."
+---
 
 # Size
 

@@ -1,3 +1,28 @@
+---
+title: Content-position
+titleTemplate: Style-Forge.Helpers
+description: "Content-position | Style-Forge.Helpers: versatile component for easy management of content positioning in web apps."
+
+head:
+  - - meta
+    - name: keywords
+      content: style-forge, content position, element positioning, css positioning, styling, web development, frontend, responsive
+  - - meta
+    - property: og:title
+      content: "Content-position | Style-Forge.Helpers"
+  - - meta
+    - property: og:description
+      content: "Content-position | Style-Forge.Helpers: versatile component for easy management of content positioning in web apps."
+  - - meta
+    - property: og:url
+      content: https://style-forge.dev/helpers/content-position.html
+  - - meta
+    - name: twitter:title
+      content: "Content-position | Style-Forge.Helpers"
+  - - meta
+    - name: twitter:description
+      content: "Content-position | Style-Forge.Helpers: versatile component for easy management of content positioning in web apps."
+---
 
 # Content-position
 

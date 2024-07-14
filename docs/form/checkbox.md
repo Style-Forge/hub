@@ -1,3 +1,28 @@
+---
+title: Checkbox
+titleTemplate: Style-Forge.Form
+description: "Checkbox | Style-Forge.Form: versatile component for easy creation, styling, and state management of checkboxes in web apps."
+
+head:
+  - - meta
+    - name: keywords
+      content: style-forge, checkbox, input, validate, styling, web development, frontend, checkbox elements, checkbox styles, responsive
+  - - meta
+    - property: og:title
+      content: "Checkbox | Style-Forge.Form"
+  - - meta
+    - property: og:description
+      content: "Checkbox | Style-Forge.Form: versatile component for easy creation, styling, and state management of checkboxes in web apps."
+  - - meta
+    - property: og:url
+      content: https://style-forge.dev/form/checkbox.html
+  - - meta
+    - name: twitter:title
+      content: "Checkbox | Style-Forge.Form"
+  - - meta
+    - name: twitter:description
+      content: "Checkbox | Style-Forge.Form: versatile component for easy creation, styling, and state management of checkboxes in web apps."
+---
 
 # Checkbox
 
