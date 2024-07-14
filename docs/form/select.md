@@ -4,24 +4,24 @@ titleTemplate: Style-Forge.Form
 description: "Select | Style-Forge.Form: versatile component for easy creation, styling, and handling of dropdown selects in web apps."
 
 head:
-- - meta
-- name: keywords
-  content: style-forge, select, dropdown, input, styling, web development, frontend, select elements, select styles, responsive
-- - meta
-- property: og:title
-  content: "Select | Style-Forge.Form"
-- - meta
-- property: og:description
-  content: "Select | Style-Forge.Form: versatile component for easy creation, styling, and handling of dropdown selects in web apps."
-- - meta
-- property: og:url
-  content: https://style-forge.dev/form/select.html
-- - meta
-- name: twitter:title
-  content: "Select | Style-Forge.Form"
-- - meta
-- name: twitter:description
-  content: "Select | Style-Forge.Form: versatile component for easy creation, styling, and handling of dropdown selects in web apps."
+  - - meta
+    - name: keywords
+      content: style-forge, select, dropdown, input, styling, web development, frontend, select elements, select styles, responsive
+  - - meta
+    - property: og:title
+      content: "Select | Style-Forge.Form"
+  - - meta
+    - property: og:description
+      content: "Select | Style-Forge.Form: versatile component for easy creation, styling, and handling of dropdown selects in web apps."
+  - - meta
+    - property: og:url
+      content: https://style-forge.dev/form/select.html
+  - - meta
+    - name: twitter:title
+      content: "Select | Style-Forge.Form"
+  - - meta
+    - name: twitter:description
+      content: "Select | Style-Forge.Form: versatile component for easy creation, styling, and handling of dropdown selects in web apps."
 ---
 
 # Select

@@ -227,6 +227,12 @@ export default defineConfig({
     }
   },
 
+  vite: {
+    build: {
+      chunkSizeWarningLimit: 1000,
+    }
+  },
+
   markdown: {
     config: md => {
       md.use(tabsMarkdownPlugin)
