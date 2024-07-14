@@ -1,7 +1,7 @@
 ---
 title: Switch
 titleTemplate: Style-Forge.Form
-description: "Switch | Style-Forge.Form: versatile component for easy creation, styling, and state management of switch toggles in web apps."
+description: "Versatile component for easy creation, styling, and state management of switch toggles in web apps."
 
 head:
   - - meta
@@ -12,7 +12,7 @@ head:
       content: "Switch | Style-Forge.Form"
   - - meta
     - property: og:description
-      content: "Switch | Style-Forge.Form: versatile component for easy creation, styling, and state management of switch toggles in web apps."
+      content: "Versatile component for easy creation, styling, and state management of switch toggles in web apps."
   - - meta
     - property: og:url
       content: https://style-forge.dev/form/switch.html
@@ -21,7 +21,7 @@ head:
       content: "Switch | Style-Forge.Form"
   - - meta
     - name: twitter:description
-      content: "Switch | Style-Forge.Form: versatile component for easy creation, styling, and state management of switch toggles in web apps."
+      content: "Versatile component for easy creation, styling, and state management of switch toggles in web apps."
 ---
 
 # Switch

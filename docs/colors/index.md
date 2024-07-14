@@ -1,7 +1,7 @@
 ---
 title: Style-Forge.Colors
 titleTemplate: false
-description: "Style-Forge.Colors: customizable color palettes for consistent, visually appealing web designs."
+description: "Customizable color palettes for consistent, visually appealing web designs."
 
 head:
   - - meta
@@ -12,7 +12,7 @@ head:
       content: Style-Forge.Colors
   - - meta
     - property: og:description
-      content: "Style-Forge.Colors: customizable color palettes for consistent, visually appealing web designs."
+      content: "Customizable color palettes for consistent, visually appealing web designs."
   - - meta
     - property: og:url
       content: https://style-forge.dev/colors/
@@ -21,7 +21,7 @@ head:
       content: Style-Forge.Colors
   - - meta
     - name: twitter:description
-      content: "Style-Forge.Colors: customizable color palettes for consistent, visually appealing web designs."
+      content: "Customizable color palettes for consistent, visually appealing web designs."
 ---
 
 # Style-Forge.Colors

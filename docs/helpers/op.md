@@ -1,7 +1,7 @@
 ---
 title: Opacity
 titleTemplate: Style-Forge.Helpers
-description: "Opacity | Style-Forge.Helpers: versatile component for easy management of opacity properties in web apps."
+description: "Versatile component for easy management of opacity properties in web apps."
 
 head:
   - - meta
@@ -12,7 +12,7 @@ head:
       content: "Opacity | Style-Forge.Helpers"
   - - meta
     - property: og:description
-      content: "Opacity | Style-Forge.Helpers: versatile component for easy management of opacity properties in web apps."
+      content: "Versatile component for easy management of opacity properties in web apps."
   - - meta
     - property: og:url
       content: https://style-forge.dev/helpers/opacity.html
@@ -21,7 +21,7 @@ head:
       content: "Opacity | Style-Forge.Helpers"
   - - meta
     - name: twitter:description
-      content: "Opacity | Style-Forge.Helpers: versatile component for easy management of opacity properties in web apps."
+      content: "Versatile component for easy management of opacity properties in web apps."
 ---
 
 # Opacity

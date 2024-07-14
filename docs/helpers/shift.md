@@ -1,7 +1,7 @@
 ---
 title: Shift
 titleTemplate: Style-Forge.Helpers
-description: "Shift | Style-Forge.Helpers: versatile component for easy management of element shifting in web apps."
+description: "Versatile component for easy management of element shifting in web apps."
 
 head:
   - - meta
@@ -12,7 +12,7 @@ head:
       content: "Shift | Style-Forge.Helpers"
   - - meta
     - property: og:description
-      content: "Shift | Style-Forge.Helpers: versatile component for easy management of element shifting in web apps."
+      content: "Versatile component for easy management of element shifting in web apps."
   - - meta
     - property: og:url
       content: https://style-forge.dev/helpers/shift.html
@@ -21,7 +21,7 @@ head:
       content: "Shift | Style-Forge.Helpers"
   - - meta
     - name: twitter:description
-      content: "Shift | Style-Forge.Helpers: versatile component for easy management of element shifting in web apps."
+      content: "Versatile component for easy management of element shifting in web apps."
 ---
 
 # Shift

@@ -1,3 +1,26 @@
+---
+description: "Comprehensive guide for quickly getting started with Style-Forge in web apps."
+
+head:
+  - - meta
+    - name: keywords
+      content: style-forge, quick start, guide, web development, frontend, responsive, setup, installation, configuration
+  - - meta
+    - property: og:title
+      content: "Quick Start | Style-Forge"
+  - - meta
+    - property: og:description
+      content: "Comprehensive guide for quickly getting started with Style-Forge in web apps."
+  - - meta
+    - property: og:url
+      content: https://style-forge.dev/guide/
+  - - meta
+    - name: twitter:title
+      content: "Quick Start | Style-Forge"
+  - - meta
+    - name: twitter:description
+      content: "Comprehensive guide for quickly getting started with Style-Forge in web apps."
+---
 
 # Quick Start
 

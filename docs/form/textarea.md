@@ -1,7 +1,7 @@
 ---
 title: Textarea
 titleTemplate: Style-Forge.Form
-description: "Textarea | Style-Forge.Form: versatile component for easy creation, styling, and handling of text areas in web apps."
+description: "Versatile component for easy creation, styling, and handling of text areas in web apps."
 
 head:
   - - meta
@@ -12,7 +12,7 @@ head:
       content: "Textarea | Style-Forge.Form"
   - - meta
     - property: og:description
-      content: "Textarea | Style-Forge.Form: versatile component for easy creation, styling, and handling of text areas in web apps."
+      content: "Versatile component for easy creation, styling, and handling of text areas in web apps."
   - - meta
     - property: og:url
       content: https://style-forge.dev/form/textarea.html
@@ -21,7 +21,7 @@ head:
       content: "Textarea | Style-Forge.Form"
   - - meta
     - name: twitter:description
-      content: "Textarea | Style-Forge.Form: versatile component for easy creation, styling, and handling of text areas in web apps."
+      content: "Versatile component for easy creation, styling, and handling of text areas in web apps."
 ---
 
 # Textarea

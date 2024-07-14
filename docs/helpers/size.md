@@ -1,7 +1,7 @@
 ---
 title: Size
 titleTemplate: Style-Forge.Helpers
-description: "Size | Style-Forge.Helpers: versatile component for easy management of element sizes in web apps."
+description: "Versatile component for easy management of element sizes in web apps."
 
 head:
   - - meta
@@ -12,7 +12,7 @@ head:
       content: "Size | Style-Forge.Helpers"
   - - meta
     - property: og:description
-      content: "Size | Style-Forge.Helpers: versatile component for easy management of element sizes in web apps."
+      content: "Versatile component for easy management of element sizes in web apps."
   - - meta
     - property: og:url
       content: https://style-forge.dev/helpers/size.html
@@ -21,7 +21,7 @@ head:
       content: "Size | Style-Forge.Helpers"
   - - meta
     - name: twitter:description
-      content: "Size | Style-Forge.Helpers: versatile component for easy management of element sizes in web apps."
+      content: "Versatile component for easy management of element sizes in web apps."
 ---
 
 # Size

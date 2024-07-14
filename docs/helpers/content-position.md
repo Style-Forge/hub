@@ -1,7 +1,7 @@
 ---
 title: Content-position
 titleTemplate: Style-Forge.Helpers
-description: "Content-position | Style-Forge.Helpers: versatile component for easy management of content positioning in web apps."
+description: "Versatile component for easy management of content positioning in web apps."
 
 head:
   - - meta
@@ -12,7 +12,7 @@ head:
       content: "Content-position | Style-Forge.Helpers"
   - - meta
     - property: og:description
-      content: "Content-position | Style-Forge.Helpers: versatile component for easy management of content positioning in web apps."
+      content: "Versatile component for easy management of content positioning in web apps."
   - - meta
     - property: og:url
       content: https://style-forge.dev/helpers/content-position.html
@@ -21,7 +21,7 @@ head:
       content: "Content-position | Style-Forge.Helpers"
   - - meta
     - name: twitter:description
-      content: "Content-position | Style-Forge.Helpers: versatile component for easy management of content positioning in web apps."
+      content: "Versatile component for easy management of content positioning in web apps."
 ---
 
 # Content-position

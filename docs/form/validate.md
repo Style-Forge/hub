@@ -1,7 +1,7 @@
 ---
 title: Validate
 titleTemplate: Style-Forge.Form
-description: "Validate | Style-Forge.Form: versatile component for easy creation, styling, and handling of 
+description: "Versatile component for easy creation, styling, and handling of 
 validation processes in web apps."
 
 head:
@@ -13,7 +13,7 @@ head:
       content: "Validate | Style-Forge.Form"
   - - meta
     - property: og:description
-      content: "Validate | Style-Forge.Form: versatile component for easy creation, styling, and handling of validation processes in web apps."
+      content: "Versatile component for easy creation, styling, and handling of validation processes in web apps."
   - - meta
     - property: og:url
       content: https://style-forge.dev/form/validate.html
@@ -22,7 +22,7 @@ head:
       content: "Validate | Style-Forge.Form"
   - - meta
     - name: twitter:description
-      content: "Validate | Style-Forge.Form: versatile component for easy creation, styling, and handling of validation processes in web apps."
+      content: "Versatile component for easy creation, styling, and handling of validation processes in web apps."
 ---
 
 # Validate

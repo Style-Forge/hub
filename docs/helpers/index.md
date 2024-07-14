@@ -1,7 +1,7 @@
 ---
 title: Style-Forge.Helpers
 titleTemplate: false
-description: "Style-Forge.Helpers: essential CSS helper classes for spacing, alignment, visibility, and more in web development."
+description: "Essential CSS helper classes for spacing, alignment, visibility, and more in web development."
 
 head:
   - - meta
@@ -12,7 +12,7 @@ head:
       content: Style-Forge.Helpers
   - - meta
     - property: og:description
-      content: "Style-Forge.Helpers: essential CSS helper classes for spacing, alignment, visibility, and more in web development."
+      content: "Essential CSS helper classes for spacing, alignment, visibility, and more in web development."
   - - meta
     - property: og:url
       content: https://style-forge.dev/helpers/
@@ -21,7 +21,7 @@ head:
       content: Style-Forge.Helpers
   - - meta
     - name: twitter:description
-      content: "Style-Forge.Helpers: essential CSS helper classes for spacing, alignment, visibility, and more in web development."
+      content: "Essential CSS helper classes for spacing, alignment, visibility, and more in web development."
 ---
 
 # Style-Forge.Helpers

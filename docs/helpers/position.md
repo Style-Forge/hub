@@ -1,7 +1,7 @@
 ---
 title: Position
 titleTemplate: Style-Forge.Helpers
-description: "Position | Style-Forge.Helpers: versatile component for easy management of element positioning in web apps."
+description: "Versatile component for easy management of element positioning in web apps."
 
 head:
   - - meta
@@ -12,7 +12,7 @@ head:
       content: "Position | Style-Forge.Helpers"
   - - meta
     - property: og:description
-      content: "Position | Style-Forge.Helpers: versatile component for easy management of element positioning in web apps."
+      content: "Versatile component for easy management of element positioning in web apps."
   - - meta
     - property: og:url
       content: https://style-forge.dev/helpers/position.html
@@ -21,7 +21,7 @@ head:
       content: "Position | Style-Forge.Helpers"
   - - meta
     - name: twitter:description
-      content: "Position | Style-Forge.Helpers: versatile component for easy management of element positioning in web apps."
+      content: "Versatile component for easy management of element positioning in web apps."
 ---
 
 # Position

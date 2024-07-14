@@ -1,7 +1,7 @@
 ---
 title: Style-Forge.Themes
 titleTemplate: false
-description: "Style-Forge.Themes: powerful tool for managing and applying customizable themes in web applications."
+description: "Powerful tool for managing and applying customizable themes in web applications."
 
 head:
   - - meta
@@ -12,7 +12,7 @@ head:
       content: Style-Forge.Themes
   - - meta
     - property: og:description
-      content: "Style-Forge.Themes: powerful tool for managing and applying customizable themes in web applications."
+      content: "Powerful tool for managing and applying customizable themes in web applications."
   - - meta
     - property: og:url
       content: https://style-forge.dev/themes/
@@ -21,7 +21,7 @@ head:
       content: Style-Forge.Themes
   - - meta
     - name: twitter:description
-      content: "Style-Forge.Themes: powerful tool for managing and applying customizable themes in web applications."
+      content: "Powerful tool for managing and applying customizable themes in web applications."
 ---
 
 # Style-Forge.Themes

@@ -1,7 +1,7 @@
 ---
 title: File
 titleTemplate: Style-Forge.Form
-description: "File | Style-Forge.Form: versatile component for easy creation, styling, and handling of file inputs in web apps."
+description: "Versatile component for easy creation, styling, and handling of file inputs in web apps."
 
 head:
   - - meta
@@ -12,7 +12,7 @@ head:
       content: "File | Style-Forge.Form"
   - - meta
     - property: og:description
-      content: "File | Style-Forge.Form: versatile component for easy creation, styling, and handling of file inputs in web apps."
+      content: "Versatile component for easy creation, styling, and handling of file inputs in web apps."
   - - meta
     - property: og:url
       content: https://style-forge.dev/form/file.html
@@ -21,7 +21,7 @@ head:
       content: "File | Style-Forge.Form"
   - - meta
     - name: twitter:description
-      content: "File | Style-Forge.Form: versatile component for easy creation, styling, and handling of file inputs in web apps."
+      content: "Versatile component for easy creation, styling, and handling of file inputs in web apps."
 ---
 
 # File

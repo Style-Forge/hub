@@ -1,7 +1,7 @@
 ---
 title: Display
 titleTemplate: Style-Forge.Helpers
-description: "Display | Style-Forge.Helpers: versatile component for easy management of display properties in web apps."
+description: "Versatile component for easy management of display properties in web apps."
 
 head:
   - - meta
@@ -12,7 +12,7 @@ head:
       content: "Display | Style-Forge.Helpers"
   - - meta
     - property: og:description
-      content: "Display | Style-Forge.Helpers: versatile component for easy management of display properties in web apps."
+      content: "Versatile component for easy management of display properties in web apps."
   - - meta
     - property: og:url
       content: https://style-forge.dev/helpers/display.html
@@ -21,7 +21,7 @@ head:
       content: "Display | Style-Forge.Helpers"
   - - meta
     - name: twitter:description
-      content: "Display | Style-Forge.Helpers: versatile component for easy management of display properties in web apps."
+      content: "Versatile component for easy management of display properties in web apps."
 ---
 
 # Display

@@ -1,7 +1,7 @@
 ---
 title: Style-Forge.Patterns
 titleTemplate: false
-description: "Style-Forge.Patterns: versatile CSS library with pre-defined classes for responsive, consistent user interfaces."
+description: "Versatile CSS library with pre-defined classes for responsive, consistent user interfaces."
 
 head:
   - - meta
@@ -12,7 +12,7 @@ head:
       content: Style-Forge.Patterns
   - - meta
     - property: og:description
-      content: "Style-Forge.Patterns: versatile CSS library with pre-defined classes for responsive, consistent user interfaces."
+      content: "Versatile CSS library with pre-defined classes for responsive, consistent user interfaces."
   - - meta
     - property: og:url
       content: https://style-forge.dev/patterns/
@@ -21,7 +21,7 @@ head:
       content: Style-Forge.Patterns
   - - meta
     - name: twitter:description
-      content: "Style-Forge.Patterns: versatile CSS library with pre-defined classes for responsive, consistent user interfaces."
+      content: "Versatile CSS library with pre-defined classes for responsive, consistent user interfaces."
 ---
 
 # Style-Forge.Patterns

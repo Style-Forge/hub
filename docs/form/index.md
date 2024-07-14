@@ -1,7 +1,7 @@
 ---
 title: Style-Forge.Form
 titleTemplate: false
-description: "Style-Forge.Form: versatile library for easy form creation, validation, styling, and submission in web apps."
+description: "Versatile library for easy form creation, validation, styling, and submission in web apps."
 
 head:
   - - meta
@@ -12,7 +12,7 @@ head:
       content: Style-Forge.Form
   - - meta
     - property: og:description
-      content: "Style-Forge.Form: versatile library for easy form creation, validation, styling, and submission in web apps."
+      content: "Versatile library for easy form creation, validation, styling, and submission in web apps."
   - - meta
     - property: og:url
       content: https://style-forge.dev/form/
@@ -21,7 +21,7 @@ head:
       content: Style-Forge.Form
   - - meta
     - name: twitter:description
-      content: "Style-Forge.Form: versatile library for easy form creation, validation, styling, and submission in web apps."
+      content: "Versatile library for easy form creation, validation, styling, and submission in web apps."
 ---
 
 # Style-Forge.Form

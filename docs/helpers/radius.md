@@ -1,7 +1,7 @@
 ---
 title: Radius
 titleTemplate: Style-Forge.Helpers
-description: "Radius | Style-Forge.Helpers: versatile component for easy management of border-radius properties in web apps."
+description: "Versatile component for easy management of border-radius properties in web apps."
 
 head:
   - - meta
@@ -12,7 +12,7 @@ head:
       content: "Radius | Style-Forge.Helpers"
   - - meta
     - property: og:description
-      content: "Radius | Style-Forge.Helpers: versatile component for easy management of border-radius properties in web apps."
+      content: "Versatile component for easy management of border-radius properties in web apps."
   - - meta
     - property: og:url
       content: https://style-forge.dev/helpers/radius.html
@@ -21,7 +21,7 @@ head:
       content: "Radius | Style-Forge.Helpers"
   - - meta
     - name: twitter:description
-      content: "Radius | Style-Forge.Helpers: versatile component for easy management of border-radius properties in web apps."
+      content: "Versatile component for easy management of border-radius properties in web apps."
 ---
 
 # Radius

@@ -1,7 +1,7 @@
 ---
 title: Button
 titleTemplate: Style-Forge.Form
-description: "Button | Style-Forge.Form: versatile component for easy creation, styling, and interaction handling of buttons in web apps."
+description: "Versatile component for easy creation, styling, and interaction handling of buttons in web apps."
 
 head:
   - - meta
@@ -12,7 +12,7 @@ head:
       content: "Button | Style-Forge.Form"
   - - meta
     - property: og:description
-      content: "Button | Style-Forge.Form: versatile component for easy creation, styling, and interaction handling of buttons in web apps."
+      content: "Versatile component for easy creation, styling, and interaction handling of buttons in web apps."
   - - meta
     - property: og:url
       content: https://style-forge.dev/form/button.html
@@ -21,7 +21,7 @@ head:
       content: "Button | Style-Forge.Form"
   - - meta
     - name: twitter:description
-      content: "Button | Style-Forge.Form: versatile component for easy creation, styling, and interaction handling of buttons in web apps."
+      content: "Versatile component for easy creation, styling, and interaction handling of buttons in web apps."
 ---
 
 # Buttons

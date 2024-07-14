@@ -1,7 +1,7 @@
 ---
 title: Z-Index
 titleTemplate: Style-Forge.Helpers
-description: "Z-Index | Style-Forge.Helpers: versatile component for easy management of z-index properties in web apps."
+description: "Versatile component for easy management of z-index properties in web apps."
 
 head:
   - - meta
@@ -12,7 +12,7 @@ head:
       content: "Z-Index | Style-Forge.Helpers"
   - - meta
     - property: og:description
-      content: "Z-Index | Style-Forge.Helpers: versatile component for easy management of z-index properties in web apps."
+      content: "Versatile component for easy management of z-index properties in web apps."
   - - meta
     - property: og:url
       content: https://style-forge.dev/helpers/z-index.html
@@ -21,7 +21,7 @@ head:
       content: "Z-Index | Style-Forge.Helpers"
   - - meta
     - name: twitter:description
-      content: "Z-Index | Style-Forge.Helpers: versatile component for easy management of z-index properties in web apps."
+      content: "Versatile component for easy management of z-index properties in web apps."
 ---
 
 # Z-Index

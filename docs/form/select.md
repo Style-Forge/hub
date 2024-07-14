@@ -1,7 +1,7 @@
 ---
 title: Select
 titleTemplate: Style-Forge.Form
-description: "Select | Style-Forge.Form: versatile component for easy creation, styling, and handling of dropdown selects in web apps."
+description: "Versatile component for easy creation, styling, and handling of dropdown selects in web apps."
 
 head:
   - - meta
@@ -12,7 +12,7 @@ head:
       content: "Select | Style-Forge.Form"
   - - meta
     - property: og:description
-      content: "Select | Style-Forge.Form: versatile component for easy creation, styling, and handling of dropdown selects in web apps."
+      content: "Versatile component for easy creation, styling, and handling of dropdown selects in web apps."
   - - meta
     - property: og:url
       content: https://style-forge.dev/form/select.html
@@ -21,7 +21,7 @@ head:
       content: "Select | Style-Forge.Form"
   - - meta
     - name: twitter:description
-      content: "Select | Style-Forge.Form: versatile component for easy creation, styling, and handling of dropdown selects in web apps."
+      content: "Versatile component for easy creation, styling, and handling of dropdown selects in web apps."
 ---
 
 # Select

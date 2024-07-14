@@ -1,7 +1,7 @@
 ---
 title: Style-Forge.Base
 titleTemplate: false
-description: "Style-Forge.Base: foundational CSS variables, base styles, typography, colors, utilities for consistent design."
+description: "Foundational CSS variables, base styles, typography, colors, utilities for consistent design."
 
 head:
   - - meta
@@ -12,7 +12,7 @@ head:
       content: Style-Forge.Base
   - - meta
     - property: og:description
-      content: "Style-Forge.Base: foundational CSS variables, base styles, typography, colors, utilities for consistent design."
+      content: "Foundational CSS variables, base styles, typography, colors, utilities for consistent design."
   - - meta
     - property: og:url
       content: https://style-forge.dev/base/
@@ -21,7 +21,7 @@ head:
       content: Style-Forge.Base
   - - meta
     - name: twitter:description
-      content: "Style-Forge.Base: foundational CSS variables, base styles, typography, colors, utilities for consistent design."
+      content: "Foundational CSS variables, base styles, typography, colors, utilities for consistent design."
 ---
 
 # Style-Forge.Base

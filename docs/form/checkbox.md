@@ -1,7 +1,7 @@
 ---
 title: Checkbox
 titleTemplate: Style-Forge.Form
-description: "Checkbox | Style-Forge.Form: versatile component for easy creation, styling, and state management of checkboxes in web apps."
+description: "Versatile component for easy creation, styling, and state management of checkboxes in web apps."
 
 head:
   - - meta
@@ -12,7 +12,7 @@ head:
       content: "Checkbox | Style-Forge.Form"
   - - meta
     - property: og:description
-      content: "Checkbox | Style-Forge.Form: versatile component for easy creation, styling, and state management of checkboxes in web apps."
+      content: "Versatile component for easy creation, styling, and state management of checkboxes in web apps."
   - - meta
     - property: og:url
       content: https://style-forge.dev/form/checkbox.html
@@ -21,7 +21,7 @@ head:
       content: "Checkbox | Style-Forge.Form"
   - - meta
     - name: twitter:description
-      content: "Checkbox | Style-Forge.Form: versatile component for easy creation, styling, and state management of checkboxes in web apps."
+      content: "Versatile component for easy creation, styling, and state management of checkboxes in web apps."
 ---
 
 # Checkbox

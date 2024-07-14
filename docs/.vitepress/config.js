@@ -3,7 +3,7 @@ import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 
 export default defineConfig({
   title: "Style-Forge",
-  description: "Style-Forge: CSS framework with themes, utilities, flexbox, and grid for creating responsive websites",
+  description: "CSS framework with themes, utilities, flexbox, and grid for creating responsive websites",
 
   head: [
     ['meta', { name: 'keywords', content: 'style-forge, CSS framework, modern design, responsive design, utilities, web development, frontend, UI components, CSS grid, CSS flexbox, themes, form validation, custom themes, grid, flex, input, select, switch, textarea, helpers, colors' }],
@@ -15,12 +15,12 @@ export default defineConfig({
     ['link', { rel: 'manifest', href: '/site.webmanifest' }],
 
     ['meta', { property: 'og:title', content: 'Style-Forge' }],
-    ['meta', { property: 'og:description', content: 'Style-Forge: CSS framework with themes, utilities, flexbox, and grid for creating responsive websites' }],
+    ['meta', { property: 'og:description', content: 'CSS framework with themes, utilities, flexbox, and grid for creating responsive websites' }],
     ['meta', { property: 'og:url', content: 'https://style-forge.dev' }],
     ['meta', { property: 'og:image', content: '/images/main.png' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { name: 'twitter:title', content: 'Style-Forge' }],
-    ['meta', { name: 'twitter:description', content: 'Style-Forge: CSS framework with themes, utilities, flexbox, and grid for creating responsive websites' }],
+    ['meta', { name: 'twitter:description', content: 'CSS framework with themes, utilities, flexbox, and grid for creating responsive websites' }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:image', content: '/images/main.png' }],
 

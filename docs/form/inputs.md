@@ -1,7 +1,7 @@
 ---
 title: Inputs
 titleTemplate: Style-Forge.Form
-description: "Inputs | Style-Forge.Form: versatile components for easy creation, styling, and validation of various input elements in web apps."
+description: "Versatile components for easy creation, styling, and validation of various input elements in web apps."
 
 head:
   - - meta
@@ -12,7 +12,7 @@ head:
       content: "Inputs | Style-Forge.Form"
   - - meta
     - property: og:description
-      content: "Inputs | Style-Forge.Form: versatile components for easy creation, styling, and validation of various input elements in web apps."
+      content: "Versatile components for easy creation, styling, and validation of various input elements in web apps."
   - - meta
     - property: og:url
       content: https://style-forge.dev/form/inputs.html
@@ -21,7 +21,7 @@ head:
       content: "Inputs | Style-Forge.Form"
   - - meta
     - name: twitter:description
-      content: "Inputs | Style-Forge.Form: versatile components for easy creation, styling, and validation of various input elements in web apps."
+      content: "Versatile components for easy creation, styling, and validation of various input elements in web apps."
 ---
 
 # Inputs
