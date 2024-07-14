@@ -24,7 +24,7 @@ head:
       content: "Radius | Style-Forge.Helpers: versatile component for easy management of border-radius properties in web apps."
 ---
 
-# Border Radius
+# Radius
 
 The border radius utility classes help manage the roundness of the corners of an element. These classes allow you to control the border-radius property easily.
 
