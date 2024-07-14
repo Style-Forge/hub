@@ -358,11 +358,14 @@ const isDark = ref(false);
 
 const setDark = () => isDark.value = document.documentElement.classList.contains('dark');
 
-const observer = new MutationObserver(setDark);
-observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+let observer
+if (typeof MutationObserver !== 'undefined') {
+  observer = new MutationObserver(setDark);
+  observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+}
 
 onMounted(setDark);
-onBeforeUnmount(() => observer.disconnect());
+onBeforeUnmount(() => observer?.disconnect());
 
 const hasDark = () => {
   localStorage['vitepress-theme-appearance'] = !isDark.value ? 'auto' : 'light';
