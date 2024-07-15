@@ -12,7 +12,35 @@ hero:
     - theme: brand
       text: Documentation
       link: /guide
+
+features:
+  - icon: 🎯
+    title: Ease of Use
+    details: Easily integrates and configures, saving you time.
+    link: guide/
+  - icon: 📱 
+    title: Responsive Design
+    details: Supports flexbox and grid for creating adaptive websites.
+    link: helpers/
+  - icon: 🛠️ 
+    title: Wide Range of Components
+    details: Includes various interface elements like buttons, forms, and tables.
+    link: form/
+  - icon: 🎨 
+    title: Themes and Styles
+    details: Diverse styles and themes for quick and flexible customization.
+    link: themes/
+  - icon: 🌈 
+    title: Color Palettes
+    details: Handy tools for managing colors and themes.
+    link: colors/
+  - icon: ✅ 
+    title: Form Validation
+    details: Intuitive tools for form validation, ensuring data quality.
+    link: form/validate.html
 ---
+
+<br />
 
 <div class="shields">
 
