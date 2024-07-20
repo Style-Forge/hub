@@ -919,10 +919,10 @@ speakingurl@^14.0.1:
   resolved "https://registry.yarnpkg.com/speakingurl/-/speakingurl-14.0.1.tgz#f37ec8ddc4ab98e9600c1c9ec324a8c48d772a53"
   integrity sha512-1POYv7uv2gXoyGFpBCmpDVSNV74IfsWlDW216UPjbWufNf+bSU6GdbDsxdcxtfwb4xlI3yxzOTKClUosxARYrQ==
 
-style-forge.base@^5.3.1:
-  version "5.3.1"
-  resolved "https://registry.yarnpkg.com/style-forge.base/-/style-forge.base-5.3.1.tgz#8cd50a4c39e688bd22b1d2e4ed9b2e26664e9b5c"
-  integrity sha512-sYWUdJy/fRsINYQubx7N3+h3/3270N/5ddkfvqJ4vGcYUPfXa2ZQ5M4Jq0OaJIZ8Pif1IN+2c4UGb0/Jt+pmAQ==
+style-forge.base@^5.3.2:
+  version "5.3.2"
+  resolved "https://registry.yarnpkg.com/style-forge.base/-/style-forge.base-5.3.2.tgz#9d45c7d3f1569fb718c1e7527d3fb13fbd651982"
+  integrity sha512-KrD76kXWuSj1yn6iIVBCGQRrQ1xuFYm06UossNfNC9KqZt2/nNRl3wha6VTaEs3+p5q5e1RbPQja0MbFkWQsLA==
 
 style-forge.colors@^1.2.0:
   version "1.2.0"
