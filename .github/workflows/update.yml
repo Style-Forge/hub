@@ -36,8 +36,8 @@ jobs:
       - name: Wait for 10 seconds
         run: sleep 10
 
-      - name: Update dependencies
-        run: yarn upgrade --latest
+      - name: Update specific package
+        run: yarn upgrade ${{ github.event.client_payload.package_name }} --latest
 
       - name: Increment version
         run: |
@@ -56,7 +56,8 @@ jobs:
         run: git add package.json yarn.lock style-forge.css
 
       - name: Commit
-        run: git commit -m 'chore update dependencies and increment version'
+        run: |
+          git commit -m 'chore: update ${{ github.event.client_payload.package_name }} and increment version'
 
       - name: Push
         run: git push origin main --tags
