@@ -1,6 +1,6 @@
 {
   "name": "style-forge",
-  "version": "3.8.3",
+  "version": "3.8.8",
   "description": "Style-Forge: CSS framework with themes, utilities, flexbox, and grid for creating responsive websites.",
   "type": "module",
   "main": "style-forge.css",
@@ -51,11 +51,11 @@
   },
   "dependencies": {
     "style-forge.base": "^5.3.2",
-    "style-forge.colors": "^1.2.0",
-    "style-forge.form": "^3.3.0",
-    "style-forge.helpers": "^2.4.0",
-    "style-forge.patterns": "^2.0.15",
-    "style-forge.themes": "^1.1.1"
+    "style-forge.colors": "^1.2.1",
+    "style-forge.form": "^3.3.1",
+    "style-forge.helpers": "^2.4.1",
+    "style-forge.patterns": "^2.0.16",
+    "style-forge.themes": "^1.1.2"
   },
   "bugs": {
     "url": "https://github.com/sarmaged/style-forge/issues"
