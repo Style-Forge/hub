@@ -1,4 +1,4 @@
-name: Update and Publish Style-Forge
+name: Publish
 
 on:
   repository_dispatch:
