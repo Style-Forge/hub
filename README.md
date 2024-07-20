@@ -19,7 +19,7 @@ If you would like to contribute, please refer to the contributing guidelines in 
 
 <table>
   <tr>
-    <th>Repositories</th>
+    <th>Module</th>
     <th>Version</th>
     <th>Description</th>
   </tr>
