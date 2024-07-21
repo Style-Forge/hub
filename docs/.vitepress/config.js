@@ -167,7 +167,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/sarmaged/style-forge' },
+      { icon: 'github', link: 'https://github.com/Style-Forge' },
       { icon: 'npm', link: 'https://npmjs.com/package/style-forge' }
     ]
   },
