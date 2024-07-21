@@ -944,10 +944,10 @@ style-forge.patterns@^2.0.16:
   resolved "https://registry.yarnpkg.com/style-forge.patterns/-/style-forge.patterns-2.0.16.tgz#b370ad46e427838954751c7f4a92e90c8d7723f5"
   integrity sha512-mPS+T/AfzzGaCgoqhdWdij77JlhIqY+mQYyp4LleKKZ8+2nGHWVabT0bTqUtu1qSn+JGdHSwiQiBY224QE3mRQ==
 
-style-forge.themes@^1.1.3:
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/style-forge.themes/-/style-forge.themes-1.1.3.tgz#4e60e627d0a02451bc799432c84edf9379fe453b"
-  integrity sha512-kUXZNiomNKghCtPhHmPGP4LvFUCO7OA7xe9w7nOimmCQcG44+N9RRwVkhPREVuZyVMr9ZpE0QoBEotUmjv58dg==
+style-forge.themes@^1.1.4:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/style-forge.themes/-/style-forge.themes-1.1.4.tgz#23160c28aad3c455fceedb5a7e7aedf344a76d6f"
+  integrity sha512-oD9Ny6lAt258qOYqbQbxn/tssMPNF19Es9I+DLJOqKMXqmrq5GHFuhpuMzZvJGjUI6reZKualWad+Lu0JM4WsA==
 
 superjson@^2.2.1:
   version "2.2.1"
