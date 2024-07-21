@@ -6,7 +6,7 @@
   "main": "style-forge.css",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sarmaged/style-forge.git"
+    "url": "git+https://github.com/Style-Forge/hub.git"
   },
   "author": "Sarmaged <sarmaged@gmail.com>",
   "license": "MIT",
@@ -58,9 +58,9 @@
     "style-forge.themes": "^1.1.3"
   },
   "bugs": {
-    "url": "https://github.com/sarmaged/style-forge/issues"
+    "url": "https://github.com/Style-Forge/hub/issues"
   },
-  "homepage": "https://github.com/sarmaged/style-forge#readme",
+  "homepage": "https://style-forge.dev/",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   }

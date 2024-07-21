@@ -31,8 +31,8 @@ head:
 ![npm](https://img.shields.io/npm/v/style-forge.colors)
 ![license](https://img.shields.io/npm/l/style-forge.colors)
 ![npm](https://img.shields.io/npm/dm/style-forge.colors)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/36308e559c9a4815bdcaf747e7804807)](https://app.codacy.com/gh/Sarmaged/style-forge.colors/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
-![build](https://github.com/Sarmaged/style-forge.colors/actions/workflows/publish.yml/badge.svg)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/e659ed33f24740a6942f68b7f87e254f)](https://app.codacy.com/gh/Style-Forge/colors/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+![build](https://github.com/Style-Forge/colors/actions/workflows/publish.yml/badge.svg)
 
 </div>
 

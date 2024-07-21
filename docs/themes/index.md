@@ -31,8 +31,8 @@ head:
 ![npm](https://img.shields.io/npm/v/style-forge.themes)
 ![license](https://img.shields.io/npm/l/style-forge.themes)
 ![npm](https://img.shields.io/npm/dm/style-forge.themes)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/de14604fdf364dccb2a2194a5b36e3c5)](https://app.codacy.com/gh/Sarmaged/style-forge.themes/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
-![build](https://github.com/Sarmaged/style-forge.themes/actions/workflows/publish.yml/badge.svg)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/1d2b8e1397f34fccb75e7dbd4ca34c29)](https://app.codacy.com/gh/Style-Forge/themes/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+![build](https://github.com/Style-Forge/themes/actions/workflows/publish.yml/badge.svg)
 
 </div>
 
