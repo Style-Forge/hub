@@ -23,53 +23,6 @@ export default defineConfig({
     ['meta', { name: 'twitter:description', content: 'CSS framework with themes, utilities, flexbox, and grid for creating responsive websites' }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:image', content: '/images/main.png' }],
-
-    ...(process.env.NODE_ENV === 'production' ? [
-      // Google Analytics
-      [
-        'script',
-        { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-YG8WG38YDF' }
-      ],
-      [
-        'script',
-        {},
-        `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-YG8WG38YDF');
-        `
-      ],
-      // Tarteaucitron.js
-      [
-        'script',
-        { src: 'https://cdn.jsdelivr.net/npm/tarteaucitronjs@latest/tarteaucitron.min.js', type: 'text/javascript' }
-      ],
-      [
-        'script',
-        {},
-        `
-          tarteaucitron.init({
-            "privacyUrl": "",
-            "hashtag": "#tarteaucitron",
-            "cookieName": "tarteaucitron",
-            "orientation": "bottom",
-            "showAlertSmall": true,
-            "cookieslist": true,
-            "adblocker": false,
-            "AcceptAllCta": true,
-            "highPrivacy": true,
-            "handleBrowserDNTRequest": false,
-            "removeCredit": false,
-            "moreInfoLink": true,
-            "useExternalCss": false,
-            "cookieDomain": ""
-          });
-          tarteaucitron.user.gtagUa = 'G-YG8WG38YDF';
-          (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
-        `
-      ]
-    ] : [])
   ],
 
   themeConfig: {
