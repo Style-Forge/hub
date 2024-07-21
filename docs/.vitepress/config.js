@@ -35,8 +35,8 @@ export default defineConfig({
     ],
 
     footer: {
-      message: 'Released under the <a href="https://github.com/sarmaged/style-forge/blob/main/LICENSE">MIT License</a>.',
-      copyright: 'Copyright © 2024-present <a href="https://github.com/sarmaged">Dmitrii Sagalov</a>'
+      message: 'Released under the <a href="https://opensource.org/license/MIT">MIT License</a>.',
+      copyright: 'Copyright © 2023-present Dmitrii Sagalov'
     },
 
     sidebar: [
