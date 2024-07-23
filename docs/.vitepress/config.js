@@ -23,6 +23,9 @@ export default defineConfig({
     ['meta', { name: 'twitter:description', content: 'CSS framework with themes, utilities, flexbox, and grid for creating responsive websites' }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:image', content: '/images/main.png' }],
+
+    ['script', { async: true, defer: true, src: 'https://scripts.simpleanalyticscdn.com/latest.js' }],
+    ['noscript', {}, '<img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" />'],
   ],
 
   themeConfig: {
