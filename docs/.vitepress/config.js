@@ -38,7 +38,7 @@ export default defineConfig({
     ],
 
     footer: {
-      message: 'Released under the <a href="https://opensource.org/license/MIT">MIT License</a>.',
+      message: 'Released under the <a href="https://opensource.org/license/MIT">MIT License</a><br /><a href="/privacy-policy">Privacy Policy</a>',
       copyright: 'Copyright © 2023-present Dmitrii Sagalov'
     },
 
