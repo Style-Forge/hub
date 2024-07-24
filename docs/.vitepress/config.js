@@ -193,7 +193,5 @@ export default defineConfig({
     config: md => {
       md.use(tabsMarkdownPlugin)
     }
-  },
-
-  lastUpdated: true
+  }
 })
