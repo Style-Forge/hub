@@ -4,6 +4,7 @@ import DefaultTheme from 'vitepress/theme'
 import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
 import highlight from '../components/highlight.vue'
 import actions from '../components/actions.vue'
+import simpleAnalytics from '../simpleAnalytics.js'
 
 import './var.css'
 import './style.css'
@@ -18,5 +19,6 @@ export default {
     app.component('highlight', highlight)
     app.component('actions', actions)
     enhanceAppWithTabs(app);
+    simpleAnalytics(app);
   }
 }
