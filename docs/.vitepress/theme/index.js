@@ -12,13 +12,14 @@ import './style.css'
 /** @type {import('vitepress').Theme} */
 export default {
   ...DefaultTheme,
-  Layout: () => {
-    return h(DefaultTheme.Layout, null, {})
-  },
+  Layout: () => h(DefaultTheme.Layout, null, {}),
   enhanceApp({ app }) {
     app.component('highlight', highlight)
     app.component('actions', actions)
-    enhanceAppWithTabs(app);
-    simpleAnalytics(app);
+    enhanceAppWithTabs(app)
+
+    if (process.env.NODE_ENV === 'production') {
+      simpleAnalytics()
+    }
   }
 }
