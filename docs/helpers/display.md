@@ -38,7 +38,7 @@ The display utilities are categorized based on the type of display behavior they
 <tr><th>Class</th><th>Description</th></tr>
 </thead>
 <tbody>
-<tr><td><b>d:b</b> / <b>show</b></td><td>block</td></tr>
+<tr><td><b>d:b</b></td><td>block</td></tr>
 <tr><td><b>d:n</b> / <b>hide</b></td><td>none</td></tr>
 <tr><td><b>d:f</b></td><td>flex</td></tr>
 <tr><td><b>d:g</b></td><td>grid</td></tr>

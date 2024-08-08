@@ -80,7 +80,7 @@ import 'style-forge.helpers';
 ```css
 @import 'style-forge.helpers/src/var.css';
 
-@import 'style-forge.helpers/src/constent-position.css';
+@import 'style-forge.helpers/src/content-position.css';
 @import 'style-forge.helpers/src/display.css';
 @import 'style-forge.helpers/src/flex.css';
 @import 'style-forge.helpers/src/gap.css';
@@ -99,7 +99,7 @@ import 'style-forge.helpers';
 ```js
 import 'style-forge.helpers/src/var.css';
 
-import 'style-forge.helpers/src/constent-position.css';
+import 'style-forge.helpers/src/content-position.css';
 import 'style-forge.helpers/src/display.css';
 import 'style-forge.helpers/src/flex.css';
 import 'style-forge.helpers/src/gap.css';

@@ -26,7 +26,7 @@ head:
 
 # Content-position
 
-The file `constent-position.css` contains a set of CSS classes for aligning elements within a container. These classes manage the alignment of content, items, and individual elements along both the main axis (horizontal) and the cross axis (vertical) in a flexbox or grid layout.
+The file `content-position.css` contains a set of CSS classes for aligning elements within a container. These classes manage the alignment of content, items, and individual elements along both the main axis (horizontal) and the cross axis (vertical) in a flexbox or grid layout.
 
 <table class="table">
   <tbody>
