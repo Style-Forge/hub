@@ -32,34 +32,67 @@ This section presents various types of button elements that can be used in HTML 
 
 ## button
 
-<button :class="['sf-button', { 'sf-loading': loading }]" :disabled="disabled">Submit</button>
+<button :class="['sf-button', { 'sf-loading': loading }]" :disabled="disabled">Button</button>
+
+:::tabs key:import
+== button
 
 <highlight lang="html">
 &lt;button class="{{ sClasses }}"{{ isDisabled }}&gt;Button&lt;/button&gt;
 </highlight>
 
+== input
+
+<highlight lang="html">
+&lt;input class="{{ sClasses }}" type="button" value="Button"{{ isDisabled }} /&gt;
+</highlight>
+
+:::
+
 ## submit
 
 <button :class="['sf-button', { 'sf-loading': loading }]" :disabled="disabled" type="submit">Submit</button>
 
+:::tabs key:import
+== button
+
 <highlight lang="html">
-&lt;button class="{{ sClasses }}" type="submit"{{ isDisabled }}&gt;Button&lt;/button&gt;
+&lt;button class="{{ sClasses }}" type="submit"{{ isDisabled }}&gt;Submit&lt;/button&gt;
 </highlight>
+
+== input
+
+<highlight lang="html">
+&lt;input class="{{ sClasses }}" type="submit" value="Submit"{{ isDisabled }} /&gt;
+</highlight>
+
+:::
 
 ## reset
 
 <button :class="['sf-button', { 'sf-loading': loading }]" :disabled="disabled" type="reset">Reset</button>
 
+:::tabs key:import
+== button
+
 <highlight lang="html">
-&lt;button class="{{ sClasses }}" type="reset"{{ isDisabled }}&gt;Button&lt;/button&gt;
+&lt;button class="{{ sClasses }}" type="reset"{{ isDisabled }}&gt;Reset&lt;/button&gt;
 </highlight>
+
+== input
+
+<highlight lang="html">
+&lt;input class="{{ sClasses }}" type="reset" value="Reset"{{ isDisabled }} /&gt;
+</highlight>
+
+:::
 
 ## anchor button
 
-<a :href="disabled ? null : '#'" :class="['sf-button', { 'sf-loading': loading }]">Anchor Button</a>
+<a :href="disabled ? null : '#'" :class="['sf-button', { 'sf-loading': loading }]">Anchor button</a>
 
 <highlight lang="html">
-&lt;a{{ disabled ? null : ' href="#"'}} class="{{ sClasses }}"&gt;Button&lt;/a&gt;
+&lt;a{{ disabled ? null : ' href="#"'}} class="{{ sClasses }}"&gt;Anchor button&lt;/a&gt;
 </highlight>
 
 ## Conclusion
@@ -70,9 +103,6 @@ Using these examples, you can create a variety of forms with different types of 
 import { ref, computed } from 'vue';
 
 import 'style-forge.form/src/var.css';
-import 'style-forge.form/src/base.css';
-import 'style-forge.form/src/global.css';
-import 'style-forge.form/src/pseudo-classes.css';
 
 import 'style-forge.form/src/loading.css';
 import 'style-forge.form/src/checkbox-radio.css';

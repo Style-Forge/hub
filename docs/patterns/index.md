@@ -531,9 +531,7 @@ text... text...</p>
 import { reactive, computed } from 'vue';
 
 import 'style-forge.form/src/var.css';
-import 'style-forge.form/src/base.css';
-import 'style-forge.form/src/global.css';
-import 'style-forge.form/src/pseudo-classes.css';
+
 import 'style-forge.form/src/switch.css';
 
 import 'style-forge.patterns';

@@ -229,24 +229,26 @@ import 'style-forge.colors/src/colors/20/{{ selected }}.css';
 You can change the color in the dark theme to another color by using classes that are applied only in the dark theme. 
 This allows you to set different colors for light and dark themes.
 
-<label class="sf-switch">
-<input :checked="isDark" type="checkbox" @click="hasDark" /> <span>Theme: {{ isDark ? 'dark' : 'light' }}</span>
-</label>
-
-<div class="d:f">
-  <button class="VPSwitch VPSwitchAppearance" type="button" role="switch" title="Switch to light theme" aria-checked="true">
-    <span class="check">
-      <span class="icon">
-        <span class="vpi-sun sun"></span>
-        <span class="vpi-moon moon"></span>
+<div class="d:f:y">
+  <label class="sf-switch">
+    <input :checked="isDark" type="checkbox" @click="hasDark" /> <span>Theme: {{ isDark ? 'dark' : 'light' }}</span>
+  </label>
+  
+  <div class="d:f">
+    <button class="VPSwitch VPSwitchAppearance" type="button" role="switch" title="Switch to light theme" aria-checked="true">
+      <span class="check">
+        <span class="icon">
+          <span class="vpi-sun sun"></span>
+          <span class="vpi-moon moon"></span>
+        </span>
       </span>
-    </span>
-  </button>
-</div>
+    </button>
+  </div>
 
-<div class="example d:f even">
-  <div :class="['sf-c-blue:90', 'ta:c', 'y:c:c']">original</div>
-  <div :class="['sf-c-red:20:dark', 'sf-c-blue:90', 'ta:c', 'y:c:c']">red:20:dark</div>
+  <div class="example d:f even">
+    <div :class="['sf-c-blue:90', 'ta:c', 'y:c:c']">original</div>
+    <div :class="['sf-c-red:20:dark', 'sf-c-blue:90', 'ta:c', 'y:c:c']">red:20:dark</div>
+  </div>
 </div>
 
 ```html
@@ -305,9 +307,6 @@ style-forge.colors/
 import { ref, onMounted, onBeforeUnmount } from 'vue';
 
 import 'style-forge.form/src/var.css';
-import 'style-forge.form/src/base.css';
-import 'style-forge.form/src/global.css';
-import 'style-forge.form/src/pseudo-classes.css';
 
 import 'style-forge.form/src/switch.css';
 

@@ -80,20 +80,15 @@ import 'style-forge.form';
 ```css
 /* Require */
 @import 'style-forge.form/src/var.css';
-@import 'style-forge.form/src/base.css';
-@import 'style-forge.form/src/global.css';
-@import 'style-forge.form/src/pseudo-classes.css';
 
 /* Inputs */
-@import 'style-forge.form/src/input.css';
 @import 'style-forge.form/src/button.css';
 @import 'style-forge.form/src/checkbox-radio.css';
-@import 'style-forge.form/src/select.css';
-@import 'style-forge.form/src/textarea.css';
 @import 'style-forge.form/src/color.css';
 @import 'style-forge.form/src/file.css';
-
-@import 'style-forge.form/src/time.css';
+@import 'style-forge.form/src/input.css';
+@import 'style-forge.form/src/select.css';
+@import 'style-forge.form/src/textarea.css';
 
 /* Custom inputs */
 @import 'style-forge.form/src/switch.css';
@@ -108,20 +103,15 @@ import 'style-forge.form';
 ```js
 // Require
 import 'style-forge.form/src/var.css';
-import 'style-forge.form/src/base.css';
-import 'style-forge.form/src/global.css';
-import 'style-forge.form/src/pseudo-classes.css';
 
 // Inputs
-import 'style-forge.form/src/input.css';
 import 'style-forge.form/src/button.css';
 import 'style-forge.form/src/checkbox-radio.css';
-import 'style-forge.form/src/select.css';
-import 'style-forge.form/src/textarea.css';
 import 'style-forge.form/src/color.css';
 import 'style-forge.form/src/file.css';
-
-import 'style-forge.form/src/time.css';
+import 'style-forge.form/src/input.css';
+import 'style-forge.form/src/select.css';
+import 'style-forge.form/src/textarea.css';
 
 // Custom inputs
 import 'style-forge.form/src/switch.css';
@@ -140,11 +130,16 @@ import 'style-forge.form/src/validate.css';
 
 ```css
 :root {
+  /* font-family */
+  --sf-form-ff: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+  /* font-size */
+  --sf-form-fz: 0.95rem;
+  --sf-form-fz-small: 0.75rem;
+
   --sf-gap: 0.5em;
 
   --sf-disabled: 0.4; /* opacity */
-
-  --sf-fz-small: 0.75rem; /* font-size */
 
   --sf-form-radius: 0.5em;
 
@@ -152,7 +147,7 @@ import 'style-forge.form/src/validate.css';
   --sf-form-p-input-inline: 0.5em;
 
   /* switch */
-  --sf-form-switch-size: 1em;
+  --sf-form-switch-size: 1rem;
 
   /* colors */
   --sf-form-c-white: 0 0% 100%;

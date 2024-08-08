@@ -217,9 +217,6 @@ The file `constent-position.css` contains a set of CSS classes for aligning elem
 import { ref, computed } from 'vue'; 
 
 import 'style-forge.form/src/var.css';
-import 'style-forge.form/src/base.css';
-import 'style-forge.form/src/global.css';
-import 'style-forge.form/src/pseudo-classes.css';
 
 import 'style-forge.form/src/switch.css';
 import 'style-forge.form/src/select.css';

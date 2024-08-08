@@ -221,7 +221,16 @@ Using these examples, you can create forms with input elements that have validat
 <script setup>
 import { ref, computed } from 'vue';
 
-import 'style-forge.form';
+import 'style-forge.form/src/var.css';
+
+import 'style-forge.form/src/loading.css';
+
+import 'style-forge.form/src/checkbox-radio.css';
+import 'style-forge.form/src/input.css';
+import 'style-forge.form/src/select.css';
+import 'style-forge.form/src/switch.css';
+import 'style-forge.form/src/textarea.css';
+import 'style-forge.form/src/validate.css';
 
 const loading = ref(false);
 const disabled = ref(false);
@@ -235,3 +244,9 @@ const ldgSelect = computed(() => ['sf-select', 'validates', isLoading.value].fil
 const ldgTextarea = computed(() => ['sf-textarea', 'validates', isLoading.value].filter(x => x).join(' '));
 const ldgButton = computed(() => ['sf-button', isLoading.value].filter(x => x).join(' '));
 </script>
+
+<style scoped>
+fieldset {
+  padding: 1em;
+}
+</style>

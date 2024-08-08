@@ -53,9 +53,6 @@ Using these examples, you can create forms with checkbox elements. All elements 
 import { ref, computed } from 'vue';
 
 import 'style-forge.form/src/var.css';
-import 'style-forge.form/src/base.css';
-import 'style-forge.form/src/global.css';
-import 'style-forge.form/src/pseudo-classes.css';
 
 import 'style-forge.form/src/loading.css';
 import 'style-forge.form/src/checkbox-radio.css';

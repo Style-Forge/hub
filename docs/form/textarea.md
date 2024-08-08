@@ -49,9 +49,6 @@ Using this example, you can create forms with textarea elements. All elements ar
 import { ref, computed } from 'vue';
 
 import 'style-forge.form/src/var.css';
-import 'style-forge.form/src/base.css';
-import 'style-forge.form/src/global.css';
-import 'style-forge.form/src/pseudo-classes.css';
 
 import 'style-forge.form/src/loading.css';
 import 'style-forge.form/src/checkbox-radio.css';
