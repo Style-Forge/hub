@@ -19,6 +19,7 @@ hero:
   display: flex;
   align-items: center;
 }
+
 .VPContent.is-home .VPHome {
   margin: 0;
   flex-grow: 1;
