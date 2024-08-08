@@ -33,17 +33,32 @@ The overflow utility classes help manage the behavior of content that overflows 
 <table class="d:t w">
 <thead>
 <tr><th colspan="3">Class</th><th>Description</th></tr>
-<tr><th>X/Y</th><th>X</th><th>Y</th><th></th></tr>
+<tr><th>*</th><th>X</th><th>Y</th><th></th></tr>
 </thead>
 <tbody>
-<tr><td><b>ov</b></td><td><b>ov:x</b></td><td><b>ov:y</b></td><td>auto</td></tr>
-<tr><td><b>ov:h</b></td><td><b>ov:x:h</b></td><td><b>ov:y:h</b></td><td>hidden</td></tr>
-<tr><td><b>ov:s</b></td><td><b>ov:x:s</b></td><td><b>ov:y:s</b></td><td>scroll</td></tr>
-<tr><td><b>ov:v</b></td><td><b>ov:x:v</b></td><td><b>ov:y:v</b></td><td>visible</td></tr>
+<tr><td><code>ov</code></td><td><code>ov:x</code></td><td><code>ov:y</code></td><td>auto</td></tr>
+<tr>
+  <td><code>ov:h</code></td>
+  <td><code>ov:x:h</code> / <code>ov:h:x</code></td>
+  <td><code>ov:y:h</code> / <code>ov:h:y</code></td>
+  <td>hidden</td>
+</tr>
+<tr>
+  <td><code>ov:s</code></td>
+  <td><code>ov:x:s</code> / <code>ov:s:x</code></td>
+  <td><code>ov:y:s</code> / <code>ov:s:y</code></td>
+  <td>scroll</td>
+</tr>
+<tr>
+  <td><code>ov:v</code></td>
+  <td><code>ov:x:v</code> / <code>ov:v:x</code></td>
+  <td><code>ov:y:v</code> / <code>ov:v:y</code></td>
+  <td>visible</td>
+</tr>
 </tbody>
 </table>
 
-## ov
+## overflow: auto
 
 The `ov` class sets the overflow property to `auto`, allowing the content to be scrolled if necessary.
 
@@ -57,7 +72,7 @@ The `ov` class sets the overflow property to `auto`, allowing the content to be 
   <div style="width: 200%; height: 200px;">Content that overflows...</div>
 </div>
 
-## ov:h
+## overflow: hidden
 
 The `ov:h` class sets the overflow property to `hidden`, clipping the overflowing content.
 
@@ -71,7 +86,7 @@ The `ov:h` class sets the overflow property to `hidden`, clipping the overflowin
   <div style="width: 200%; height: 200px;">Content that overflows...</div>
 </div>
 
-## ov:s
+## overflow: scroll
 
 The `ov:s` class sets the overflow property to `scroll`, adding scrollbars regardless of whether the content overflows.
 
@@ -85,7 +100,7 @@ The `ov:s` class sets the overflow property to `scroll`, adding scrollbars regar
   <div style="width: 200%; height: 200px;">Content that overflows...</div>
 </div>
 
-### ov:v
+### overflow: visible
 
 The `ov:v` class sets the overflow property to `visible`, allowing the content to overflow the container.
 
@@ -112,7 +127,7 @@ The `ov:v` class sets the overflow property to `visible`, allowing the content t
 
 </div>
 
-#### ov:x
+#### overflow-x: auto
 
 The `ov:x` class sets the overflow-x property to `auto`.
 
@@ -127,9 +142,9 @@ The `ov:x` class sets the overflow-x property to `auto`.
 </div>
 
 
-#### ov\:x\:h
+#### overflow-x: hidden
 
-The `ov:x:h` class sets the overflow-x property to `hidden`.
+The `ov:x:h` / `ov:h:x` class sets the overflow-x property to `hidden`.
 
 ```html
 <div class="ov:x:h">
@@ -141,9 +156,9 @@ The `ov:x:h` class sets the overflow-x property to `hidden`.
   <div style="width: 200%; height: 200px;">Content that overflows...</div>
 </div>
 
-#### ov\:x\:s
+#### overflow-x: scroll
 
-The `ov:x:s` class sets the overflow-x property to `scroll`.
+The `ov:x:s` / `ov:s:x` class sets the overflow-x property to `scroll`.
 
 ```html
 <div class="ov:x:s">
@@ -155,9 +170,9 @@ The `ov:x:s` class sets the overflow-x property to `scroll`.
   <div style="width: 200%; height: 200px;">Content that overflows...</div>
 </div>
 
-#### ov\:x\:v
+#### overflow-x: visible
 
-The `ov:x:v` class sets the overflow-x property to `visible`.
+The `ov:x:v` / `ov:v:x` class sets the overflow-x property to `visible`.
 
 ```html
 <div class="ov:x:v">
@@ -180,7 +195,7 @@ The `ov:x:v` class sets the overflow-x property to `visible`.
 
 </div>
 
-#### ov:y
+#### overflow-y: auto
 
 The `ov:y` class sets the overflow-y property to `auto`.
 
@@ -194,9 +209,9 @@ The `ov:y` class sets the overflow-y property to `auto`.
   <div style="width: 200%; height: 200px;">Content that overflows...</div>
 </div>
 
-#### ov:y:h
+#### overflow-y: hidden
 
-The `ov:y:h` class sets the overflow-y property to `hidden`.
+The `ov:y:h` / `ov:h:y` class sets the overflow-y property to `hidden`.
 
 ```html
 <div class="ov:y:h">
@@ -208,9 +223,9 @@ The `ov:y:h` class sets the overflow-y property to `hidden`.
   <div style="width: 200%; height: 200px;">Content that overflows...</div>
 </div>
 
-#### ov:y:s
+#### overflow-y: scroll
 
-The `ov:y:s` class sets the overflow-y property to `scroll`.
+The `ov:y:s` / `ov:s:y` class sets the overflow-y property to `scroll`.
 
 ```html
 <div class="ov:y:s">
@@ -222,9 +237,9 @@ The `ov:y:s` class sets the overflow-y property to `scroll`.
   <div style="width: 200%; height: 200px;">Content that overflows...</div>
 </div>
 
-#### ov:y:v
+#### overflow-y: visible
 
-The `ov:y:v` class sets the overflow-y property to `visible`.
+The `ov:y:v` / `ov:v:y` class sets the overflow-y property to `visible`.
 
 ```html
 <div class="ov:y:v">
