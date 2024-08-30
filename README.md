@@ -13,6 +13,12 @@
 
 To check out docs, visit [style-forge.dev](https://style-forge.dev).
 
+## Support the project ⭐
+
+If you feel awesome and want to support us in a small way, please consider starring and sharing the repo! This helps us getting known and grow the community. 🙏
+
+<img src="https://github.com/style-forge/hub/raw/main/public/github-star.gif" alt="style-forge-star" />
+
 ## Contributing
 
 If you would like to contribute, please refer to the contributing guidelines in the following repositories:
