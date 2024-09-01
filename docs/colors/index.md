@@ -295,11 +295,7 @@ style-forge.colors/
 │   │       ├── aliceblue.css
 │   │       ├── ...
 │   │       └── yellowgreen.css
-│   ├── 10.css
-│   ├── 20.css
 │   └── web.css
-├── 10.css
-├── 20.css
 └── colors.css - It is dafault (web.css)
 ```
 
@@ -310,7 +306,7 @@ import 'style-forge.form/src/var.css';
 
 import 'style-forge.form/src/switch.css';
 
-import 'style-forge.colors/20.css';
+import './20.css';
 
 let observer;
 const activated = ref(false);
