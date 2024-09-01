@@ -101,49 +101,13 @@ If you decide to use another option [10 or 20] **lightness gradient**, you shoul
 Example: <a href="#choose-your-color">Choose your color</a>
 :::
 
-<div class="colors d:f:x wrap gap:0">
-  <div
-    v-for="color in colors"
-    :key="color"
-    :title="color"
-    :class="'sf-c-' + color"
-  />
-</div>
-
-10 lightness gradient
-
-:::tabs key:import
-== CSS
-```css
-@import 'style-forge.colors/10.css';
-```
-== JS
-```js
-import 'style-forge.colors/10.css';
-```
-:::
-
-
-20 lightness gradient
-
-:::tabs key:import
-== CSS
-```css
-@import 'style-forge.colors/20.css';
-```
-== JS
-```js
-import 'style-forge.colors/20.css';
-```
-:::
-
 ## Choose your color
 You can select a single color with [10 or 20] lightness gradient
 
 <div class="d:f:y">
   <div class="pos:s t z:1">
     <label class="sf-switch">
-      <input v-model="activated" type="checkbox" /> <span>{{ activated ? 'Web ' + webColors.length : 'All ' + colors.length }} colors</span>
+      <span>{{ 'All ' + colors.length }}</span> <input v-model="activated" type="checkbox" /> <span>{{ 'Web ' + webColors.length }} colors</span>
     </label>
     <div :class="['colors', 'select', 'hover', 'd:f:x', 'wrap', 'gap:0', { activated }]">
       <div
