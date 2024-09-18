@@ -34,9 +34,7 @@
     "colors"
   ],
   "scripts": {
-    "build": "node builder.js",
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs"
+    "build": "node builder.js"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.19",
@@ -44,10 +42,7 @@
     "postcss-combine-duplicated-selectors": "^10.0.3",
     "postcss-discard-comments": "^7.0.1",
     "postcss-import": "^16.1.0",
-    "postcss-minify": "^1.1.0",
-    "shiki": "^1.12.1",
-    "vitepress": "^1.3.2",
-    "vitepress-plugin-tabs": "^0.5.0"
+    "postcss-minify": "^1.1.0"
   },
   "dependencies": {
     "style-forge.base": "^5.3.4",
@@ -60,7 +55,7 @@
   "bugs": {
     "url": "https://github.com/Style-Forge/hub/issues"
   },
-  "homepage": "https://style-forge.dev/",
+  "homepage": "https://style-forge.github.io/",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   }

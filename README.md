@@ -11,7 +11,7 @@
 
 ## Documentation
 
-To check out docs, visit [style-forge.dev](https://style-forge.dev).
+To check out docs, visit [https://style-forge.github.io/](https://style-forge.github.io/).
 
 ## Support the project ⭐
 
@@ -64,10 +64,6 @@ If you would like to contribute, please refer to the contributing guidelines in 
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Authors
-
-- **Dmitrii Sagalov** - *Expert in interface development* - [Sarmaged](https://github.com/Sarmaged)
 
 ## Contact
 
