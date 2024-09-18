@@ -64,7 +64,3 @@ If you would like to contribute, please refer to the contributing guidelines in 
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-If you have any questions or suggestions, please open an issue in [Issues](https://github.com/Style-Forge/hub/issues).
