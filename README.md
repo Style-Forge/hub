@@ -11,7 +11,7 @@
 
 ## Documentation
 
-To check out docs, visit [https://style-forge.github.io/](https://style-forge.github.io/).
+To check out docs, visit [style-forge.github.io](https://style-forge.github.io/).
 
 ## Support the project ⭐
 
