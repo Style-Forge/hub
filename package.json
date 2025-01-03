@@ -1,6 +1,6 @@
 {
   "name": "style-forge",
-  "version": "4.3.7",
+  "version": "2025.01.03",
   "description": "Style-Forge: CSS framework with themes, utilities, flexbox, and grid for creating responsive websites.",
   "type": "module",
   "main": "style-forge.css",
