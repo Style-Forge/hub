@@ -1,8 +1,10 @@
-name: Publish
+name: Release
 
 on:
-  repository_dispatch:
-    types: [update-style-forge]
+  pull_request:
+    types: [closed]
+    branches:
+      - main
 
 permissions:
   contents: write
@@ -42,10 +44,10 @@ jobs:
       - name: Upgrade dependency
         run: yarn upgrade ${{ github.event.client_payload.package_name }} --latest
 
-      - name: Generate version from date (YYYY.MM.DD)
+      - name: Generate version from date (YYYY.M.D)
         id: generate_version
         run: |
-          VERSION=$(date +'%Y.%m.%d')
+          VERSION="v$(date +'%Y.%m.%d' | sed 's/0//g')"
           echo "VERSION=$VERSION" >> $GITHUB_ENV
           echo "Generated version: $VERSION"
 
@@ -61,7 +63,12 @@ jobs:
         run: |
           git add package.json yarn.lock style-forge.css
           git commit -m "chore: update ${{ github.event.client_payload.package_name }} to version ${{ env.VERSION }}"
-          git push origin main --tags
+          git push origin main
+
+      - name: Create and push version tag
+        run: |
+          git tag ${{ env.VERSION }}
+          git push origin ${{ env.VERSION }}
 
       - name: Set up NPM auth
         run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
