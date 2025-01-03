@@ -36,33 +36,32 @@ jobs:
       - name: Fetch all tags
         run: git fetch --tags
 
-      - name: Yarn
-        run: |
-          yarn install --frozen-lockfile
-          yarn upgrade ${{ github.event.client_payload.package_name }} --latest
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
 
-      - name: Increment version
+      - name: Upgrade dependency
+        run: yarn upgrade ${{ github.event.client_payload.package_name }} --latest
+
+      - name: Generate version from date (YYYY.MM.DD)
+        id: generate_version
         run: |
-          if [ "${{ github.event.client_payload.update_type }}" == "major" ]; then
-            yarn version --major
-          elif [ "${{ github.event.client_payload.update_type }}" == "minor" ]; then
-            yarn version --minor
-          else
-            yarn version --patch
-          fi
+          VERSION=$(date +'%Y.%m.%d')
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
+          echo "Generated version: $VERSION"
+
+      - name: Update version in package.json
+        run: |
+          jq --arg new_version "${{ env.VERSION }}" '.version = $new_version' package.json > temp.json && mv temp.json package.json
+          echo "Updated package.json to version: ${{ env.VERSION }}"
 
       - name: Build project
         run: yarn build
 
-      - name: Git add
-        run: git add package.json yarn.lock style-forge.css
-
-      - name: Commit
+      - name: Commit and push changes
         run: |
-          git commit -m 'chore: update ${{ github.event.client_payload.package_name }} and increment version'
-
-      - name: Push
-        run: git push origin main --tags
+          git add package.json yarn.lock style-forge.css
+          git commit -m "chore: update ${{ github.event.client_payload.package_name }} to version ${{ env.VERSION }}"
+          git push origin main --tags
 
       - name: Set up NPM auth
         run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
@@ -72,7 +71,7 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      - name: Update Style-Forge documentation
+      - name: Trigger documentation update
         run: |
           curl -X POST \
             -H "Accept: application/vnd.github.v3+json" \
