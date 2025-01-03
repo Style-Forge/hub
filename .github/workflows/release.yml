@@ -10,7 +10,7 @@ permissions:
   contents: write
 
 jobs:
-  update-publish:
+  release:
     runs-on: ubuntu-latest
 
     steps:
